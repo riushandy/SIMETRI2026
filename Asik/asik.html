@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="id" class="overflow-x-hidden [scroll-padding-top:90px]">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -26,300 +27,409 @@
         }
     </style>
 </head>
+
 <body class="w-full overflow-x-clip">
     <!-- NavBar Section -->
-    <header class="sticky top-0 z-50">
-        <nav class="relative flex h-[90px] w-full items-center justify-between border-b-[6px] border-[#4C1C0E] bg-[#7A3D21] px-[clamp(1rem,6.25vw,5.625rem)] max-[767px]:h-[72px] max-[767px]:px-4 min-[641px]:max-[1023px]:h-[80px] min-[641px]:max-[1023px]:px-[clamp(1.25rem,5vw,3rem)]">
-            <div class="flex min-w-0 items-center gap-[clamp(0.75rem,4vw,4rem)]">
-                <img src="NavBar/logo-simetri.png" class="h-auto w-[clamp(3.25rem,6vw,5rem)] shrink-0 max-[767px]:w-[3.25rem] min-[641px]:max-[1023px]:w-16" alt="Logo Simetri">
-                <ul id="siteNavLinks" data-open="false" class="m-0 hidden list-none items-center gap-[clamp(1rem,4vw,4rem)] p-0 data-[open=true]:flex lg:flex max-[1023px]:data-[open=true]:absolute max-[1023px]:data-[open=true]:left-0 max-[1023px]:data-[open=true]:right-0 max-[1023px]:data-[open=true]:top-full max-[1023px]:data-[open=true]:z-[100] max-[767px]:data-[open=true]:flex-col max-[767px]:data-[open=true]:items-center max-[767px]:data-[open=true]:gap-0 max-[767px]:data-[open=true]:border-b-4 max-[767px]:data-[open=true]:border-[#4C1C0E] max-[767px]:data-[open=true]:bg-[#7A3D21] max-[767px]:data-[open=true]:px-4 max-[767px]:data-[open=true]:pt-2 max-[767px]:data-[open=true]:pb-4 max-[767px]:data-[open=true]:shadow-[0_8px_12px_rgba(33,15,8,0.25)] min-[641px]:max-[1023px]:data-[open=true]:justify-center min-[641px]:max-[1023px]:data-[open=true]:gap-[clamp(1.5rem,6vw,3rem)] min-[641px]:max-[1023px]:data-[open=true]:border-b-4 min-[641px]:max-[1023px]:data-[open=true]:border-[#4C1C0E] min-[641px]:max-[1023px]:data-[open=true]:bg-[#7A3D21] min-[641px]:max-[1023px]:data-[open=true]:shadow-[0_8px_12px_rgba(33,15,8,0.25)] min-[641px]:max-[1023px]:data-[open=true]:p-4">
-                    <!-- Isi link halaman disini!!! (Tema & Materi: ganti "#" dengan halaman aslinya) -->
-                    <li>
-                        <a href="#home" class="max-[767px]:flex max-[767px]:min-h-12 max-[767px]:items-center max-[767px]:justify-center">
-                            <p class="font-[Wildbreath] text-[#C07E4E] text-4xl hover:text-[#F9DCB4]">Home</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="max-[767px]:flex max-[767px]:min-h-12 max-[767px]:items-center max-[767px]:justify-center">
-                            <p class="font-[Wildbreath] text-[#C07E4E] text-4xl hover:text-[#F9DCB4]">Tema</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="max-[767px]:flex max-[767px]:min-h-12 max-[767px]:items-center max-[767px]:justify-center">
-                            <p class="font-[Wildbreath] text-[#C07E4E] text-4xl hover:text-[#F9DCB4]">Materi</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#about" class="max-[767px]:flex max-[767px]:min-h-12 max-[767px]:items-center max-[767px]:justify-center">
-                            <p class="font-[Wildbreath] text-4xl text-[#F9DCB4] underline decoration-2">Home</p>
-                        </a>
-                    </li>
+    <header class="fixed top-0 left-0 w-full z-50">
+        <nav
+            class="flex items-center justify-between bg-[#7A3D21] px-6 xl:px-[90px] h-[90px] outline outline-[6px] outline-[#4C1C0E]">
+            <div class="flex items-center gap-16">
+                <img src="NavBar/logo-simetri.png"
+                    class="w-[93.8px] h-[92.73px] md:w-[132px] md:h-[132px] object-contain" alt="Logo SIMETRI">
+                <ul class="hidden xl:flex items-center gap-16 text-[32px]">
+                    <li><a href="..\Home\homepage.html" style="font-family: 'The Wild Breath of Zelda';"
+                            class="text-[#C07E4E] hover:text-[#F9DCB4]">Home</a></li>
+                    <li><a href="..\Tema\pages\Tema.html" style="font-family: 'The Wild Breath of Zelda';"
+                            class="text-[#C07E4E] hover:text-[#F9DCB4]">Tema</a></li>
+                    <li><a href="..\Materi\Materi.html" style="font-family: 'The Wild Breath of Zelda';"
+                            class="text-[#C07E4E] hover:text-[#F9DCB4]">Materi</a></li>
+                    <li><a href="..\Asik\asik.html" style="font-family: 'The Wild Breath of Zelda';"
+                            class="underline text-[#F9DCB4]">Asik</a></li>
                 </ul>
             </div>
-            <div class="hidden shrink-0 items-center gap-[clamp(0.5rem,1.1vw,0.9375rem)] lg:flex">
-                <a href="https://x.com/HMSI_ITS">
-                    <img src="NavBar/Exclude.png" alt="X Simetri" class="h-auto w-[clamp(1.75rem,3vw,2.6rem)] hover:opacity-85 transition-opacity">
+
+            <div class="hidden xl:flex items-center justify-end gap-[15px]">
+                <a href="https://x.com/hmsi_its" target="_blank" rel="noopener noreferrer" class="flex shrink-0">
+                    <img src="NavBar/Exclude.png" class="w-[41.58px] h-[41.58px] transition-transform hover:scale-110"
+                        alt="X">
                 </a>
-                <a href="https://www.tiktok.com/@hmsi_its">
-                    <img src="NavBar/Tiktok.png" alt="Tiktok Simetri" class="h-auto w-[clamp(1.75rem,3vw,2.6rem)] hover:opacity-85 transition-opacity">
+                <a href="https://www.tiktok.com/@hmsi_its" target="_blank" rel="noopener noreferrer"
+                    class="flex shrink-0">
+                    <img src="NavBar/Tiktok.png" class="w-[41.58px] h-[41.58px] transition-transform hover:scale-110"
+                        alt="TikTok">
                 </a>
-                <a href="https://www.instagram.com/simetri.hmsiits/">
-                    <img src="NavBar/ig-logo.png" alt="Instagram Simetri" class="h-auto w-[clamp(1.75rem,3vw,2.6rem)] hover:opacity-85 transition-opacity">
+                <a href="https://www.instagram.com/simetri.hmsiits" target="_blank" rel="noopener noreferrer"
+                    class="flex shrink-0">
+                    <img src="NavBar/ig-logo.png" class="w-[41.58px] h-[41.58px] transition-transform hover:scale-110"
+                        alt="Instagram">
                 </a>
-                <a href="https://www.youtube.com/@layarHMSI/featured">
-                    <img src="NavBar/yt-logo.png" alt="Youtube Simetri" class="h-auto w-[clamp(1.75rem,3vw,2.6rem)] hover:opacity-85 transition-opacity">
+                <a href="https://youtube.com/@layarhmsi" target="_blank" rel="noopener noreferrer"
+                    class="flex shrink-0">
+                    <img src="NavBar/yt-logo.png" class="w-[41.58px] h-[41.58px] transition-transform hover:scale-110"
+                        alt="YouTube">
                 </a>
             </div>
-            <button id="HamburgerMenu" class="z-[60] flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-[#4C1C0E] max-[767px]:h-11 max-[767px]:w-11 lg:hidden" type="button" aria-label="Buka menu navigasi" aria-expanded="false" aria-controls="siteNavLinks">
-                <img id="iconHamburger" src="NavBar/hamburgerMenu.png" alt="Menu" class="w-[25.98px] h-[19.49px]">
-                <img id="iconClose" src="NavBar/closeX.png" alt="Close" class="w-[19.49px] h-[19.49px] hidden">
+
+            <button id="menu-btn"
+                class="flex xl:hidden items-center justify-center w-12 h-12 bg-[#4C1C0E] rounded-[9.35px]"
+                aria-label="Buka menu" aria-expanded="false">
+                <svg id="icon-open" xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24"
+                    stroke="#F9DCB4" stroke-width="2" stroke-linecap="round">
+                    <path d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+                <svg id="icon-close" xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 hidden" fill="none"
+                    viewBox="0 0 24 24" stroke="#F9DCB4" stroke-width="2" stroke-linecap="round">
+                    <path d="M6 6l12 12M18 6L6 18" />
+                </svg>
             </button>
         </nav>
+
+        <div id="mobile-menu"
+            class="hidden xl:hidden absolute w-full top-full left-0 bg-[#F6EBD7] border-b-[6px] border-[#4C1C0E]">
+            <ul class="flex flex-col text-[32px] leading-[36px]">
+                <li><a href="..\Home\homepage.html" style="font-family: 'The Wild Breath of Zelda';"
+                        class="block w-full py-4 text-center text-[#C07E4E] hover:bg-[#F9DCB4] hover:text-[#7A3D21]">Home</a>
+                </li>
+                <li><a href="..\Tema\pages\Tema.html" style="font-family: 'The Wild Breath of Zelda';"
+                        class="block w-full py-4 text-center text-[#C07E4E] hover:bg-[#F9DCB4] hover:text-[#7A3D21]">Tema</a>
+                </li>
+                <li><a href="..\Materi\Materi.html" style="font-family: 'The Wild Breath of Zelda';"
+                        class="block w-full py-4 text-center text-[#C07E4E] hover:bg-[#F9DCB4] hover:text-[#7A3D21]">Materi</a>
+                </li>
+                <li><a href="..\Asik\asik.html" style="font-family: 'The Wild Breath of Zelda';"
+                        class="block w-full py-4 text-center bg-[#F9DCB4] text-[#7A3D21] underline underline-offset-4">Asik</a>
+                </li>
+            </ul>
+            <div class="flex items-center justify-center gap-[15px] h-[88.22px] pt-4 pb-8">
+                <a href="https://x.com/hmsi_its" target="_blank" rel="noopener noreferrer" class="flex shrink-0">
+                    <img src="NavBar/Exclude2.png" style="filter: url(#tint);"
+                        class="w-[41.58px] h-[41.58px] transition-transform hover:scale-110 active:scale-95" alt="X">
+                </a>
+                <a href="https://www.tiktok.com/@hmsi_its" target="_blank" rel="noopener noreferrer"
+                    class="flex shrink-0">
+                    <img src="NavBar/Tiktok2.png" style="filter: url(#tint);"
+                        class="w-[41.58px] h-[41.58px] transition-transform hover:scale-110 active:scale-95"
+                        alt="TikTok">
+                </a>
+                <a href="https://www.instagram.com/simetri.hmsiits" target="_blank" rel="noopener noreferrer"
+                    class="flex shrink-0">
+                    <img src="NavBar/ig-logo2.png" style="filter: url(#tint);"
+                        class="w-[41.58px] h-[41.58px] transition-transform hover:scale-110 active:scale-95"
+                        alt="Instagram">
+                </a>
+                <a href="https://youtube.com/@layarhmsi" target="_blank" rel="noopener noreferrer"
+                    class="flex shrink-0">
+                    <img src="NavBar/yt-logo2.png" style="filter: url(#tint);"
+                        class="w-[41.58px] h-[41.58px] transition-transform hover:scale-110 active:scale-95"
+                        alt="YouTube">
+                </a>
+            </div>
+        </div>
     </header>
 
     <!-- Hero Section -->
-    <section id="home" class="relative overflow-hidden bg-[#085857] h-auto aspect-[1440/1407]">
-        <img
-            src="heroSection/bg-hero.svg"
-            alt="Lanskap fantasi ASIK"
-            class="absolute inset-0 h-full w-full object-cover object-[center_22%] min-[768px]:object-center"
-        >
-        
-        <div class="absolute left-1/2 top-[16.06%] z-10 flex h-auto w-[87.5%] max-w-[1260px] -translate-x-1/2 flex-col items-center justify-center">
-            <h1 class="w-full text-center text-[max(120px,12.7vw)] font-judul font-normal leading-none tracking-[0] text-white [filter:drop-shadow(0_9px_0_#7A3D21)] [-webkit-text-stroke:2px_#7A3D21] [paint-order:stroke_fill] flex items-center justify-center">
-                ASIK
+    <section id="home"
+        class="relative flex items-center justify-center w-full overflow-hidden bg-[#085857] h-auto aspect-[1440/1407]">
+        <img src="heroSection/bg-hero.svg" alt="Lanskap fantasi ASIK"
+            class="absolute inset-0 h-full w-full object-cover object-[center_22%] min-[768px]:object-center">
+
+        <!-- Nilai top disesuaikan: mobile (top-[50%]), tablet (md:top-[44%]), desktop (lg:top-[38%]) -->
+        <div
+            class="absolute w-[320px] sm:w-[450px] md:w-[580px] lg:w-[708px] top-[50%] md:top-[44%] lg:top-[38%] -translate-y-1/2 text-center flex flex-col items-center gap-1.5 sm:gap-2 md:gap-4">
+
+            <!-- Judul ASIK! -->
+            <h1 style="font-family: 'The Wild Breath of Zelda';"
+                class="text-[60px] sm:text-[90px] md:text-[120px] lg:text-[160px] leading-none text-white [-webkit-text-stroke:1px_#7A3D21] md:[-webkit-text-stroke:2px_#7A3D21] [paint-order:stroke_fill] [filter:drop-shadow(0_6px_0_#7A3D21)] md:[filter:drop-shadow(0_9px_0_#7A3D21)]">
+                ASIK!
             </h1>
-            <div class="relative mt-[0.4rem] aspect-[1947/250] w-[max(380px,40vw)] max-w-none">
-                <img
-                    src="heroSection/paper-hero.png"
-                    alt=""
-                    class="absolute inset-0 h-full w-full object-fill mt-0.5"
-                >
-        
-                <p class="font-teks absolute inset-0 flex items-center justify-center px-[3%] text-center text-[max(22px,2.2vw)] font-bold leading-none text-[#7A3D21]">
+
+            <!-- Kertas Subtitle -->
+            <div class="flex items-center justify-center relative w-full">
+                <p class="absolute z-20 text-[14px] sm:text-[20px] md:text-[26px] lg:text-[32px] leading-tight font-bold md:font-normal text-[#7A3D21] [-webkit-text-stroke:0.1px_#7A3D21] md:[-webkit-text-stroke:0.5px_#7A3D21] [paint-order:stroke_fill]"
+                    style="font-family: 'Times New Roman', Times, serif;">
                     Asistensi Simetri Kuy!
                 </p>
+                <img src="heroSection/paper-hero.png" alt="" class="relative z-10 w-full h-auto">
             </div>
+
         </div>
     </section>
-
     <!-- About Section -->
     <section id="about" class="relative h-[170vw] overflow-hidden md:h-auto md:aspect-[1440/1568]">
         <img src="About/bg-about.svg" alt="Background About" class="absolute inset-0 h-full w-full object-cover">
-        <div class="absolute left-1/2 top-[35vw] w-[160%] -translate-x-1/2 overflow-hidden [container-type:inline-size] md:top-[25.87%] md:w-[75.2%] aspect-[1083/701]">
+        <div
+            class="absolute left-1/2 top-[35vw] w-[160%] -translate-x-1/2 overflow-hidden [container-type:inline-size] md:top-[25.87%] md:w-[75.2%] aspect-[1083/701]">
             <img src="About/book.png" alt="Book" class="block h-full w-full object-cover">
-            <div class="@container absolute top-[15%] left-1/2 -translate-x-1/2 gap-3.5 items-center text-left md:text-center text-[#4C1C0E] w-[80vw] md:w-[60vw] columns-2 md:columns-1">
-                <h2 class="mb-[1.4cqw] font-judul text-[7vw] md:text-[6vw] font-normal leading-none text-[#FFF3DB] [text-shadow:0_2px_0_#9A542F,0_4px_0_#71391F,0_7.1px_0_rgba(0,0,0,0.25)] [-webkit-text-stroke:2.4px_#4C1C0E] [paint-order:stroke_fill]">APA ITU ASIK</h2>
+            <div
+                class="@container absolute top-[15%] left-1/2 -translate-x-1/2 gap-3.5 items-center text-left md:text-center text-[#4C1C0E] w-[80vw] md:w-[60vw] columns-2 md:columns-1">
+                <h2
+                    class="mb-[1.4cqw] font-judul text-[7vw] md:text-[6vw] font-normal leading-none text-[#FFF3DB] [text-shadow:0_2px_0_#9A542F,0_4px_0_#71391F,0_7.1px_0_rgba(0,0,0,0.25)] [-webkit-text-stroke:2.4px_#4C1C0E] [paint-order:stroke_fill]">
+                    APA ITU ASIK!</h2>
                 <p class="m-0 font-teks text-[3.6vw] md:text-[1.8vw] w-full font-bold leading-[1.22]">
-                    ASIK (Asistensi SIMETRI Kuy) merupakan program pelatihan dan pembekalan bagi mahasiswa yang akan menjadi mentor dalam kegiatan SIMETRI. Kegiatan ini dirancang untuk memberikan pemahaman materi, metode pengajaran, 
-                    serta simulasi mentoring agar mentor siap dalam mendampingi peserta. ASIK tidak hanya berfokus pada penguasaan materi, tetapi juga pada pengembangan soft skills seperti komunikasi, public speaking, teamwork, dan problem solving.
+                    ASIK (Asistensi SIMETRI Kuy) merupakan program pelatihan dan pembekalan bagi mahasiswa yang akan
+                    menjadi mentor dalam kegiatan SIMETRI. Kegiatan ini dirancang untuk memberikan pemahaman materi,
+                    metode pengajaran,
+                    serta simulasi mentoring agar mentor siap dalam mendampingi peserta. ASIK tidak hanya berfokus pada
+                    penguasaan materi, tetapi juga pada pengembangan soft skills seperti komunikasi, public speaking,
+                    teamwork, dan problem solving.
                 </p>
             </div>
         </div>
     </section>
 
     <!-- Dokumentasi Section -->
-    <section id="dokumentasi" class="relative h-auto w-full overflow-hidden bg-[#085857] pt-10">
+    <section id="dokumentasi" class="relative h-auto w-full overflow-hidden bg-[#085857]">
+        <!-- Background Gambar Section -->
         <picture class="relative block w-full">
-            <source
-                media="(max-width: 767px)"
-                srcset="section2-dokumentasi/bg-dokumentasi-mobile.jpeg"
-            >
-            <img
-                src="section2-dokumentasi/bg-desktop.png"
-                alt="Background"
-                 class="block w-full h-auto"
-            >
+            <source media="(max-width: 767px)" srcset="section2-dokumentasi/bg-dokumentasi-mobile.jpeg">
+            <img src="section2-dokumentasi/bg-desktop.png" alt="Background" class="block w-full h-auto object-cover">
         </picture>
-            
-        <div class="absolute inset-0 top-[40vw] md:top-[18.5vw]">
-            <h2 class="relative z-[4] mx-auto mt-0 mb-10 w-fit text-center text-[10vw] md:text-[6vw] font-judul font-normal leading-none text-[#FFFFFF] [filter:drop-shadow(0_6px_0_#7A3D21)] [-webkit-text-stroke:2px_#4C1C0E] [paint-order:stroke_fill] md:[-webkit-text-stroke:4px_#4C1C0E]">DOKUMENTASI</h2>
-    
-            <div class="relative z-[2] mx-auto w-[85vw] md:w-[60vw]">
-                <img src="section2-dokumentasi/bg-fotodokumentasi.png" alt="Background" class="relative inset-0 z-[1] h-auto w-full">
 
-                <div class="absolute inset-x-0 top-0 h-full">
-                    <!-- Buttons -->
-                    <button id="docPrev" class="absolute top-1/2 -translate-y-1/2 left-[-1vw] z-[3] w-[10vw] md:w-[6vw] h-auto cursor-pointer z-5" type="button" aria-label="Sebelumnya">
+        <!-- Content Overlay: Posisikan tepat di tengah latar dengan padding ringkas -->
+        <div class="absolute inset-0 z-10 flex flex-col items-center justify-center py-4 md:py-8">
+
+            <!-- Judul Dokumentasi -->
+            <h2
+                class="relative z-[4] mx-auto mb-2 sm:mb-4 md:mb-6 w-fit text-center text-[7.5vw] sm:text-[6vw] md:text-[5vw] font-judul font-normal leading-none text-[#FFFFFF] [filter:drop-shadow(0_4px_0_#7A3D21)] md:[filter:drop-shadow(0_6px_0_#7A3D21)] [-webkit-text-stroke:1.5px_#4C1C0E] md:[-webkit-text-stroke:3.5px_#4C1C0E] [paint-order:stroke_fill]">
+                DOKUMENTASI
+            </h2>
+
+            <!-- Bingkai Kertas Utama -->
+            <div class="relative z-[2] w-[92vw] sm:w-[85vw] md:w-[65vw] max-w-[900px] flex items-center justify-center">
+
+                <!-- Latar Bingkai Kertas Putih -->
+                <img src="section2-dokumentasi/bg-fotodokumentasi.png" alt="Background Frame"
+                    class="relative inset-0 z-[1] w-full h-auto object-contain">
+
+                <!-- Content Overlay Dalam Bingkai -->
+                <div class="absolute inset-0 z-[2] flex flex-col items-center justify-center p-[2.5vw] md:p-[2vw]">
+
+                    <!-- Tombol Prev -->
+                    <button id="docPrev"
+                        class="absolute left-[0.5vw] md:left-[1vw] top-1/2 -translate-y-1/2 z-[10] w-[7vw] sm:w-[5vw] md:w-[4vw] h-auto cursor-pointer hover:scale-110 transition-transform focus:outline-none"
+                        type="button" aria-label="Sebelumnya">
                         <img src="section2-dokumentasi/chevron-left.png" alt="Left Arrow" class="w-full">
                     </button>
-                    <button id="docNext" class="absolute top-1/2 -translate-y-1/2 right-[-0.5vw] z-[3] w-[10vw] md:w-[6vw] h-auto cursor-pointer z-5" type="button" aria-label="Berikutnya">
+
+                    <!-- Tombol Next -->
+                    <button id="docNext"
+                        class="absolute right-[0.5vw] md:right-[1vw] top-1/2 -translate-y-1/2 z-[10] w-[7vw] sm:w-[5vw] md:w-[4vw] h-auto cursor-pointer hover:scale-110 transition-transform focus:outline-none"
+                        type="button" aria-label="Berikutnya">
                         <img src="section2-dokumentasi/chevron-right.png" alt="Right Arrow" class="w-full">
                     </button>
-                    <!-- Carousel -->
-                    <div class="relative z-[2] overflow-hidden">
-                        <div id="docTrack" data-index="0" class="relative flex transition-transform mt-[4vw] md:mt-[3vw] duration-500 ease-in-out">
+
+                    <!-- Track Carousel Foto (Diberi margin-bottom sedikit agar tidak menutupi dots) -->
+                    <div
+                        class="w-[82%] md:w-[84%] h-[78%] md:h-[80%] mb-3 md:mb-4 flex items-center overflow-hidden rounded-md">
+                        <div id="docTrack" data-index="0"
+                            class="relative flex w-full h-full transition-transform duration-500 ease-in-out">
                             <!-- Card 1 -->
-                            <div class="flex shrink-0 basis-full flex-col items-center px-6 pt-4 pb-8">
-                                <img src="section2-dokumentasi/dokumentasi1.png" alt="Dokumentasi 1" class="block w-[70vw] md:w-[48vw]">
+                            <div class="flex shrink-0 basis-full justify-center items-center p-0.5 sm:p-1">
+                                <img src="section2-dokumentasi/dokumentasi1.jpg" alt="Dokumentasi 1"
+                                    class="block w-full h-full object-cover rounded-sm shadow-sm">
                             </div>
-                            <!-- Card 2 (ganti src sesuai nama file aslimu) -->
-                            <div class="flex shrink-0 basis-full flex-col items-center px-6 pt-4 pb-8">
-                                <img src="section2-dokumentasi/dokumentasi2.png" alt="Dokumentasi 2" class="block w-[70vw] md:w-[48vw]">
+                            <!-- Card 2 -->
+                            <div class="flex shrink-0 basis-full justify-center items-center p-0.5 sm:p-1">
+                                <img src="section2-dokumentasi/dokumentasi2.jpg" alt="Dokumentasi 2"
+                                    class="block w-full h-full object-cover rounded-sm shadow-sm">
                             </div>
-                            <!-- Card 3 (ganti src sesuai nama file aslimu) -->
-                            <div class="flex shrink-0 basis-full flex-col items-center px-6 pt-4 pb-8">
-                                <img src="section2-dokumentasi/dokumentasi3.png" alt="Dokumentasi 3" class="block w-[70vw] md:w-[48vw]">
+                            <!-- Card 3 -->
+                            <div class="flex shrink-0 basis-full justify-center items-center p-0.5 sm:p-1">
+                                <img src="section2-dokumentasi/dokumentasi3.jpg" alt="Dokumentasi 3"
+                                    class="block w-full h-full object-cover rounded-sm shadow-sm">
+                            </div>
+                            <!-- Card 4 -->
+                            <div class="flex shrink-0 basis-full justify-center items-center p-0.5 sm:p-1">
+                                <img src="section2-dokumentasi/dokumentasi4.jpg" alt="Dokumentasi 4"
+                                    class="block w-full h-full object-cover rounded-sm shadow-sm">
+                            </div>
+                            <!-- Card 5 -->
+                            <div class="flex shrink-0 basis-full justify-center items-center p-0.5 sm:p-1">
+                                <img src="section2-dokumentasi/dokumentasi5.jpg" alt="Dokumentasi 5"
+                                    class="block w-full h-full object-cover rounded-sm shadow-sm">
                             </div>
                         </div>
                     </div>
-                    <!-- Dots -->
-                    <div id="docDots" class="absolute flex items-center justify-center left-1/2 -translate-x-1/2 bottom-[3vw] z-[3] gap-[0.5vw]"></div>
+
+                    <!-- Pagination Dots (Posisi dinaikkan: bottom-[2.5vw] / bottom-[3.5vw] di mobile) -->
+                    <div id="docDots"
+                        class="absolute left-1/2 -translate-x-1/2 bottom-[3.5vw] sm:bottom-[2.5vw] md:bottom-[2vw] z-[10] flex items-center justify-center gap-[1vw] sm:gap-[0.5vw]">
+                    </div>
+
                 </div>
             </div>
         </div>
     </section>
-
-    <!-- 
-    ---------------------------------------------------------------------------------------------------------------------
-                                                    NOTICE
-    ---------------------------------------------------------------------------------------------------------------------
-    Carousel pengajar di grouping nya pake javascript secara otomatis.
-    Jadi SAAT INISIALISASI, kalo layar nya web maka dia 3 kartu per slide, kalo layarnya mobile, dia 1 kartu per slide
-    ---------------------------------------------------------------------------------------------------------------------
-    Jadi kalo mau jumlah kartunya sesuai, HARUS DI REFRESH
-    ---------------------------------------------------------------------------------------------------------------------
-    -->
     <!-- Pengajar dan Mentor Section -->
     <section id="pengajar" class="relative h-auto w-full overflow-hidden bg-[#085857] top-[-0.1px]">
         <picture class="relative block w-full">
-            <source
-                media="(max-width: 767px)"
-                srcset="PengajarMentor/bg-section4-mobile.svg"
-            >
-            <img
-                src="PengajarMentor/bg-pengajar.png"
-                alt="Background"
-                 class="block w-full h-auto"
-            >
+            <source media="(max-width: 767px)" srcset="PengajarMentor/bg-section4-mobile.svg">
+            <img src="PengajarMentor/bg-pengajar.png" alt="Background" class="block w-full h-auto">
         </picture>
-            
+
         <div class="absolute inset-0 top-[30vw] md:top-[13vw]">
-            <h2 class="relative z-[4] mx-auto mb-[6vw] md:mb-[1vw] w-[90vw] md:w-fit text-center text-[12vw] md:text-[6vw] font-judul font-normal leading-none text-[#FFFFFF] [filter:drop-shadow(0_6px_0_#085857)] [-webkit-text-stroke:2px_#143D37] [paint-order:stroke_fill] md:[-webkit-text-stroke:4px_#143D37]">
+            <h2
+                class="relative z-[4] mx-auto mb-[6vw] md:mb-[1vw] w-[90vw] md:w-fit text-center text-[12vw] md:text-[6vw] font-judul font-normal leading-none text-[#FFFFFF] [filter:drop-shadow(0_6px_0_#085857)] [-webkit-text-stroke:2px_#143D37] [paint-order:stroke_fill] md:[-webkit-text-stroke:4px_#143D37]">
                 PENGAJAR DAN MENTOR
             </h2>
-    
-            <div class="relative z-[2] mx-auto w-[75vw] md:w-[80vw]">
-                <div class="relative h-[93vw] md:h-[40vw] overflow-hidden">
+
+            <div class="relative z-[2] mx-auto w-[94vw] md:w-[80vw]">
+                <div class="relative h-[125vw] md:h-[40vw] overflow-hidden">
                     <!-- Buttons -->
-                    <button id="pengPrev" class="absolute top-1/2 -translate-y-1/2 left-[-1vw] z-[3] w-[10vw] md:w-[6vw] h-auto cursor-pointer z-5" type="button" aria-label="Sebelumnya">
+                    <button id="pengPrev"
+                        class="absolute top-1/2 -translate-y-1/2 left-[-1vw] z-[3] w-[7vw] md:w-[6vw] h-auto cursor-pointer z-5"
+                        type="button" aria-label="Sebelumnya">
                         <img src="PengajarMentor/cheveron-left-green.png" alt="Left Arrow" class="w-full">
                     </button>
-                    <button id="pengNext" class="absolute top-1/2 -translate-y-1/2 right-[-0.5vw] z-[3] w-[10vw] md:w-[6vw] h-auto cursor-pointer z-5" type="button" aria-label="Berikutnya">
+                    <button id="pengNext"
+                        class="absolute top-1/2 -translate-y-1/2 right-[-0.5vw] z-[3] w-[7vw] md:w-[6vw] h-auto cursor-pointer z-5"
+                        type="button" aria-label="Berikutnya">
                         <img src="PengajarMentor/cheveron-right-green.png" alt="Right Arrow" class="w-full">
                     </button>
                     <!-- Carousel -->
                     <div class="relative z-[2]  overflow-hidden ">
-                        <div id="pengTrack" data-index="0" class="relative flex transition-transform duration-500 ease-in-out">
-                            <img src="PengajarMentor/Card.png" alt="Card 1" class="block w-[55vw] md:w-[20vw] drop-shadow-lg">
-                            <img src="PengajarMentor/Card.png" alt="Card 2" class="block w-[55vw] md:w-[20vw] drop-shadow-lg">
-                            <img src="PengajarMentor/Card.png" alt="Card 3" class="block w-[55vw] md:w-[20vw] drop-shadow-lg">
-                            <img src="PengajarMentor/Card.png" alt="Card 4" class="block w-[55vw] md:w-[20vw] drop-shadow-lg">
-                            <img src="PengajarMentor/Card.png" alt="Card 5" class="block w-[55vw] md:w-[20vw] drop-shadow-lg">
-                            <img src="PengajarMentor/Card.png" alt="Card 6" class="block w-[55vw] md:w-[20vw] drop-shadow-lg">
-                            <img src="PengajarMentor/Card.png" alt="Card 7" class="block w-[55vw] md:w-[20vw] drop-shadow-lg">
-                            <img src="PengajarMentor/Card.png" alt="Card 8" class="block w-[55vw] md:w-[20vw] drop-shadow-lg">
-                            <img src="PengajarMentor/Card.png" alt="Card 9" class="block w-[55vw] md:w-[20vw] drop-shadow-lg">
-                            <img src="PengajarMentor/Card.png" alt="Card 10" class="block w-[55vw] md:w-[20vw] drop-shadow-lg">
-                            <img src="PengajarMentor/Card.png" alt="Card 11" class="block w-[55vw] md:w-[20vw] drop-shadow-lg">
-                            <img src="PengajarMentor/Card.png" alt="Card 12" class="block w-[55vw] md:w-[20vw] drop-shadow-lg">
+                        <div id="pengTrack" data-index="0"
+                            class="relative flex transition-transform duration-500 ease-in-out">
+                            <img src="PengajarMentor/Mentor Card.png" alt="Card 1"
+                                class="block w-[55vw] md:w-[20vw] drop-shadow-lg">
+                            <img src="PengajarMentor/Mentor Card-1.png" alt="Card 2"
+                                class="block w-[55vw] md:w-[20vw] drop-shadow-lg">
+                            <img src="PengajarMentor/Mentor Card-2.png" alt="Card 3"
+                                class="block w-[55vw] md:w-[20vw] drop-shadow-lg">
+                            <img src="PengajarMentor/Profile Card.png" alt="Card 4"
+                                class="block w-[55vw] md:w-[20vw] drop-shadow-lg">
+                            <img src="PengajarMentor/Profile Card-1.png" alt="Card 5"
+                                class="block w-[55vw] md:w-[20vw] drop-shadow-lg">
+                            <img src="PengajarMentor/Profile Card-2.png" alt="Card 6"
+                                class="block w-[55vw] md:w-[20vw] drop-shadow-lg">
+                            <img src="PengajarMentor/Profile Card-3.png" alt="Card 7"
+                                class="block w-[55vw] md:w-[20vw] drop-shadow-lg">
+                            <img src="PengajarMentor/Profile Card-4.png" alt="Card 8"
+                                class="block w-[55vw] md:w-[20vw] drop-shadow-lg">
+                            <img src="PengajarMentor/Profile Card-5.png" alt="Card 9"
+                                class="block w-[55vw] md:w-[20vw] drop-shadow-lg">
+                            <img src="PengajarMentor/Profile Card-6.png" alt="Card 10"
+                                class="block w-[55vw] md:w-[20vw] drop-shadow-lg">
+                            <img src="PengajarMentor/Profile Card-7.png" alt="Card 11"
+                                class="block w-[55vw] md:w-[20vw] drop-shadow-lg">
+                            <img src="PengajarMentor/Profile Card-8.png" alt="Card 12"
+                                class="block w-[55vw] md:w-[20vw] drop-shadow-lg">
+                            <img src="PengajarMentor/Profile Card-9.png" alt="Card 13"
+                                class="block w-[55vw] md:w-[20vw] drop-shadow-lg">
+                            <img src="PengajarMentor/Profile Card-10.png" alt="Card 14"
+                                class="block w-[55vw] md:w-[20vw] drop-shadow-lg">
+                            <img src="PengajarMentor/Profile Card-11.png" alt="Card 15"
+                                class="block w-[55vw] md:w-[20vw] drop-shadow-lg">
+                            <img src="PengajarMentor/Profile Card-12.png" alt="Card 16"
+                                class="block w-[55vw] md:w-[20vw] drop-shadow-lg">
+                            <img src="PengajarMentor/Profile Card-13.png" alt="Card 17"
+                                class="block w-[55vw] md:w-[20vw] drop-shadow-lg">
+                            <img src="PengajarMentor/Profile Card-14.png" alt="Card 18"
+                                class="block w-[55vw] md:w-[20vw] drop-shadow-lg">
+                            <img src="PengajarMentor/Profile Card-15.png" alt="Card 19"
+                                class="block w-[55vw] md:w-[20vw] drop-shadow-lg">
+                            <img src="PengajarMentor/Profile Card-16.png" alt="Card 20"
+                                class="block w-[55vw] md:w-[20vw] drop-shadow-lg">
+                            <img src="PengajarMentor/Profile Card-17.png" alt="Card 21"
+                                class="block w-[55vw] md:w-[20vw] drop-shadow-lg">
+                            <img src="PengajarMentor/Profile Card-18.png" alt="Card 22"
+                                class="block w-[55vw] md:w-[20vw] drop-shadow-lg">
+                            <img src="PengajarMentor/Profile Card-19.png" alt="Card 23"
+                                class="block w-[55vw] md:w-[20vw] drop-shadow-lg">
+                            <img src="PengajarMentor/Profile Card-20.png" alt="Card 24"
+                                class="block w-[55vw] md:w-[20vw] drop-shadow-lg">
+                            <img src="PengajarMentor/Profile Card-21.png" alt="Card 25"
+                                class="block w-[55vw] md:w-[20vw] drop-shadow-lg">
+                            <img src="PengajarMentor/Profile Card-22.png" alt="Card 26"
+                                class="block w-[55vw] md:w-[20vw] drop-shadow-lg">
+                            <img src="PengajarMentor/Profile Card-23.png" alt="Card 27"
+                                class="block w-[55vw] md:w-[20vw] drop-shadow-lg">
                         </div>
                     </div>
                     <!-- Dots -->
-                    <div id="pengDots" class="absolute flex items-center justify-center left-1/2 -translate-x-1/2 bottom-[3vw] z-[3] gap-[0.5vw]"></div>
+                    <div id="pengDots" class="absolute flex items-center justify-center left-1/2 -translate-x-1/2 bottom-[14vw] md:bottom-[3vw] z-[3] gap-[0.5vw]"></div>
+
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-[url('Footer/bg-footer.png')] relative isolate grid place-items-center overflow-hidden bg-[#4C1C0E] px-[8vw] py-[8vw] pb-20 text-[#F6D8A5] max-[767px]:min-h-[500px] max-[767px]:px-[14vw] max-[767px]:pt-[105px] max-[767px]:pb-[72px]">
-        <div class="relative">  
-            <picture class="relative block w-full">
-                <source
-                    media="(max-width: 767px)"
-                    srcset="Footer/frame-footer-mobile.png"
-                >
-                <img
-                    src="Footer/frame-footer.png"
-                    alt="Background"
-                >
-            </picture>
-            <div class="absolute inset-0">
-                <div class="grid w-[min(100%,1000px)] h-full grid-cols-[minmax(180px,1fr)_minmax(0,2fr)] gap-[clamp(2rem,7vw,6rem)] max-[767px]:grid-cols-1 max-[767px]:gap-6">
-                    <nav class="text-center md:ml-[clamp(6rem,14vw,12rem)] flex flex-col gap-[0.45rem] flex-wrap justify-center" aria-label="Navigasi footer">
-                        <a class="text-[4vw] md:text-[2vw] font-judul text-[#D59A62] no-underline hover:text-[#F6D8A5] focus-visible:text-[#F6D8A5]" href="#home">HOME</a>
-                        <a class="text-[4vw] md:text-[2vw] font-judul text-[#D59A62] no-underline hover:text-[#F6D8A5] focus-visible:text-[#F6D8A5]" href="#about">TEMA</a>
-                        <a class="text-[4vw] md:text-[2vw] font-judul text-[#D59A62] no-underline hover:text-[#F6D8A5] focus-visible:text-[#F6D8A5]" href="#about">MATERI</a>
-                        <a class="text-[4vw] md:text-[2vw] font-judul text-[#D59A62] no-underline hover:text-[#F6D8A5] focus-visible:text-[#F6D8A5]" href="#about">ASIK</a>
-                    </nav>
-                    <div class="mx-[5vw]">
-                        <h2 class="mb-4 mt-0 text-center font-teks text-[clamp(1.2rem,2vw,1.75rem)] text-[#F6D8A5]">Didukung Oleh</h2>
-                        <div class="grid grid-cols-4 items-center gap-4 max-[767px]:gap-[0.8rem]">
-                            <img src="Footer/DPTSI.png" alt="DPTSI ITS" loading="lazy" class="block max-h-[44px] w-full object-contain max-[767px]:max-h-[34px]">
-                            <img src="Footer/Logo SI.png" alt="Sistem Informasi ITS" loading="lazy" class="block max-h-[44px] w-full object-contain max-[767px]:max-h-[34px]">
-                            <img src="Footer/ITS Advancing Humanity SVG.png" alt="ITS Advancing Humanity" loading="lazy" class="block max-h-[44px] w-full object-contain max-[767px]:max-h-[34px]">
-                            <img src="Footer/ITS KBB.png" alt="ITS Kampus Budaya dan Berkarakter" loading="lazy" class="block max-h-[44px] w-full object-contain max-[767px]:max-h-[34px]">
-                        </div>
-                        <div class="mx-auto mt-4 grid w-[84%] grid-cols-4 items-center gap-4 max-[767px]:mt-[0.8rem] max-[767px]:w-full max-[767px]:gap-[0.8rem]">
-                            <img src="Footer/Logo Kabinet.png" alt="Kabinet Pilar Aksi" loading="lazy" class="block max-h-[44px] w-full object-contain max-[767px]:max-h-[34px]">
-                            <img src="Footer/SIMETRI.png" alt="SIMETRI" loading="lazy" class="block max-h-[44px] w-full object-contain max-[767px]:max-h-[34px]">
-                            <img src="Footer/diktisaintek.png" alt="Diktisaintek Berdampak" loading="lazy" class="block max-h-[44px] w-full object-contain max-[767px]:max-h-[34px]">
-                            <img src="Footer/HMSI.png" alt="Himpunan Mahasiswa Sistem Informasi" loading="lazy" class="block max-h-[44px] w-full object-contain max-[767px]:max-h-[34px]">
-                        </div>
-                        <p class="mt-8 mb-0 text-center font-teks text-[clamp(0.9rem,1.5vw,1.2rem)] font-bold text-[#F6D8A5] max-[767px]:mt-[1.4rem]">&copy; SIMETRI HMSI ITS</p>
+    <footer
+        class="absolute w-full h-auto py-[30px] px-[24px] md:py-[78px] md:px-[90px] flex items-center justify-center overflow-hidden bg-[url('footer/bg-footer.png')] bg-cover bg-center">
+        <img src="footer/frame-footer-mobile.png" alt=""
+            class="block md:hidden relative w-full h-full pointer-events-none">
+        <img src="footer/frame-footer.png" alt="" class="hidden md:block relative w-full h-full pointer-events-none">
+
+        <div class="absolute z-[2] flex flex-col md:flex-row items-center justify-center gap-[14px] md:gap-[120px]">
+
+            <nav class="flex flex-col items-center gap-[12px]">
+                <a href="..\Home\homepage.html"
+                    class="text-[#C07E4E] text-[24px] tracking-[0.3px] hover:text-[#F9DCB4] md:text-[27px]"
+                    style="font-family:'The Wild Breath of Zelda',serif;">Home</a>
+                <a href="..\Tema\pages\Tema.html"
+                    class="text-[#C07E4E] text-[24px] tracking-[0.3px] hover:text-[#F9DCB4] md:text-[27px]"
+                    style="font-family:'The Wild Breath of Zelda',serif;">Tema</a>
+                <a href="..\Materi\Materi.html"
+                    class="text-[#C07E4E] text-[24px] tracking-[0.3px] hover:text-[#F9DCB4] md:text-[27px]"
+                    style="font-family:'The Wild Breath of Zelda',serif;">Materi</a>
+                <a href="..\Asik\asik.html"
+                    class="text-[#C07E4E] text-[24px] tracking-[0.3px] hover:text-[#F9DCB4] md:text-[27px]"
+                    style="font-family:'The Wild Breath of Zelda',serif;">Asik</a>
+            </nav>
+
+            <div class="flex flex-col items-center justify-center gap-[31px] md:gap-[48px] text-center">
+                <div>
+                    <h3 class="text-[#F9DCB4] text-[18.38px] font-semibold md:text-[28px] [-webkit-text-stroke:0.5px_#f0c28a]"
+                        style="font-family:'Times New Roman',serif;">
+                        Didukung Oleh
+                    </h3>
+
+                    <div class="flex items-center justify-center gap-[10.63px] md:gap-[17px]">
+                        <img src="footer/Group 1410136690.png" alt=""
+                            class="w-[93px] h-[32px] md:w-[142px] md:h-[50px]">
+                        <img src="footer/Logo SI.png" alt="" class="w-[73px] h-[27px] md:w-[111px] md:h-[42px]">
+                        <img src="footer/ITS Advancing Humanity SVG.png" alt=""
+                            class="w-[50px] h-[27px] md:w-[76px] md:h-[41px]">
+                        <img src="footer/Group 13906.png" alt=""
+                            class="w-[70px] h-[28px] object-contain md:w-[54px] md:h-[47px]">
+                    </div>
+
+                    <div class="flex items-center justify-center gap-[10.63px] md:gap-[17px]">
+                        <img src="footer/Logo Kabinet.png" alt=""
+                            class="shrink-0 object-contain w-[84px] h-[25px] md:w-[128px] md:h-[39px]">
+                        <img src="footer/Frame 48098812.png" alt=""
+                            class="shrink-0 object-contain w-[23px] h-[32px] md:w-[43px] md:h-[48px]">
+                        <img src="footer/diktisaintek.png" alt=""
+                            class="shrink-0 object-contain w-[32px] h-[27px] md:w-[49px] md:h-[42px]">
+                        <img src="footer/Mask group.png" alt=""
+                            class="shrink-0 object-contain w-[56px] h-[33px] md:w-[86px] md:h-[50px]">
                     </div>
                 </div>
+
+                <p class="text-[#F9DCB4] text-[13.13px] font-bold leading-[1.4] md:text-[20px]"
+                    style="font-family:'Times New Roman',serif;">
+                    © SIMETRI HMSI ITS
+                </p>
             </div>
-        </div>    
+        </div>
     </footer>
 
     <script>
-        /* ===== Navbar ===== */
-        const navToggle = document.getElementById('HamburgerMenu');
-        const navLinks = document.getElementById('siteNavLinks');
-        const hamburgerIcon = document.getElementById('iconHamburger');
-        const closeIcon = document.getElementById('iconClose');
+        // ---- Mobile menu ----
+        const btn = document.getElementById("menu-btn");
+        const menu = document.getElementById("mobile-menu");
 
-        const closeNavMenu = () => {
-            navToggle.setAttribute('aria-expanded', 'false');
-            navToggle.setAttribute('aria-label', 'Buka menu navigasi');
-            navLinks.dataset.open = 'false';
-            hamburgerIcon.classList.remove('hidden');
-            closeIcon.classList.add('hidden');
-        };
-
-        navToggle.addEventListener('click', () => {
-            const isOpen = navToggle.getAttribute('aria-expanded') === 'true';
-            if (isOpen) {
-                closeNavMenu();
-                return;
-            }
-
-            navToggle.setAttribute('aria-expanded', 'true');
-            navToggle.setAttribute('aria-label', 'Tutup menu navigasi');
-            navLinks.dataset.open = 'true';
-            hamburgerIcon.classList.add('hidden');
-            closeIcon.classList.remove('hidden');
+        btn.addEventListener("click", () => {
+            const nowOpen = menu.classList.toggle("hidden") === false;
+            document.getElementById("icon-open").classList.toggle("hidden");
+            document.getElementById("icon-close").classList.toggle("hidden");
+            btn.setAttribute("aria-expanded", String(nowOpen));
         });
 
-        navLinks.addEventListener('click', (event) => {
-            if (event.target.closest('a') && window.innerWidth < 1024) {
-                closeNavMenu();
-            }
-        });
-
-        window.addEventListener('keydown', (event) => {
-            if (event.key === 'Escape') {
-                closeNavMenu();
-            }
-        });
-
-        window.addEventListener('resize', () => {
-            if (window.innerWidth >= 1024) {
-                closeNavMenu();
-            }
-        });
+        const DOT = "h-[18px] rounded-full transition-all duration-300";
+        const DOT_ON = "bg-[#7A3D21] w-[47px]";
+        const DOT_OFF = "bg-[#C07E4E] w-[18px]";
 
         /* ===== Carousel Dokumentasi ===== */
         const docTrack = document.getElementById('docTrack');
@@ -336,9 +446,9 @@
             docDots.appendChild(dot);
         }
 
-        function updateDocDots(){
+        function updateDocDots() {
             [...docDots.children].forEach((dot, i) => {
-                if(i === docIndex){
+                if (i === docIndex) {
                     dot.classList.add("bg-[#7A3D21]", "w-[3vw]");
                     dot.classList.remove("bg-[#C07E4E]", "w-[1.5vw]");
                 } else {
@@ -357,36 +467,46 @@
         document.getElementById('docPrev').addEventListener('click', () => goToDoc(docIndex - 1));
         document.getElementById('docNext').addEventListener('click', () => goToDoc(docIndex + 1));
         goToDoc(0);
-        
+
         /* ===== Carousel Pengajar ===== */
         const pengTrack = document.getElementById('pengTrack');
         const pengDots = document.getElementById('pengDots');
-        
+
         const pengCards = [...pengTrack.children];
 
         const isMobile = window.innerWidth < 768;
-        const cardsPerSlide = isMobile ? 1 : 3;
 
-        for (let i = 0; i < pengCards.length; i += cardsPerSlide) {
+        // Semua layar: slide pertama 3 kartu, slide berikutnya 4 kartu
+        let start = 0;
+        let isFirstSlide = true;
+
+        while (start < pengCards.length) {
+            const size = isFirstSlide ? 3 : 4;
+            const group = pengCards.slice(start, start + size);
+
             const slide = document.createElement('div');
-
             slide.className =
-                'flex shrink-0 basis-full items-center justify-center gap-[2vw] px-6 pt-4 pb-8';
+                'flex flex-wrap content-center shrink-0 basis-full items-center justify-center gap-[3vw] md:flex-nowrap md:gap-[2vw] px-[4vw] md:px-6 pt-4 pb-8';
 
-            pengCards.slice(i, i + cardsPerSlide).forEach((card, index) => {
-                
+            group.forEach((card, index) => {
+                // kecilkan kartu supaya 4 kartu muat dalam 1 slide
+                card.classList.remove('w-[55vw]', 'md:w-[20vw]');
+                card.classList.add('w-[34vw]', 'md:w-[17vw]', 'shrink-0');
+
+                // rotasi hanya di desktop
                 if (!isMobile) {
                     if (index === 0) {
                         card.classList.add('-rotate-[0.77deg]');
-                    } else if (index === 2) {
+                    } else if (index === group.length - 1 && group.length > 1) {
                         card.classList.add('rotate-[1.8deg]');
                     }
                 }
-
                 slide.appendChild(card);
             });
 
             pengTrack.appendChild(slide);
+            start += size;
+            isFirstSlide = false;
         }
 
         const pengSlides = pengTrack.children;
@@ -401,9 +521,9 @@
             pengDots.appendChild(dot);
         }
 
-        function updatePengDots(){
+        function updatePengDots() {
             [...pengDots.children].forEach((dot, i) => {
-                if(i === pengIndex){
+                if (i === pengIndex) {
                     dot.classList.add("bg-[#143D37]", "w-[3vw]");
                     dot.classList.remove("bg-[#217269]", "w-[1.5vw]");
                 } else {
@@ -424,4 +544,5 @@
         goToPeng(0);
     </script>
 </body>
+
 </html>
