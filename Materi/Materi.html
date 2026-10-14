@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Materi</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        zelda: ['"zelda"', 'sans-serif'],
+                        baskerville: ['"baskerville"', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        @font-face {
+            font-family: 'zelda';
+            src: url('./font/zelda.otf') format('opentype');
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'baskerville';
+            src: url('./font/baskerville.ttf') format('truetype');
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        .button {
+            display: inline-block;
+            white-space: nowrap;
+            font-size: 3cqw;
+            padding: 0.3em 0.8em;
+            border-radius: 0.4em;
+            background: linear-gradient(to bottom, #FA7F3E 50%, #F58B40 50%);
+            border: 1px solid #FFB25B;
+            color: white;
+            text-shadow: 0 0.08em 0 #7A3D21;
+            box-shadow: 0 0 0 0.1em #6B2E1A, 0 0.3em 0 0.1em #6B2E1A;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100 font-zelda">
+    <header class="sticky top-0 z-[10] border-b-[6px] border-[#4C1C0E]">
+        <nav class="flex items-center justify-between bg-[#7A3D21] px-6 md:px-16 h-[90px]">
+            <div class="flex items-center gap-12 lg:gap-16">
+                <img src="images/navbar/logo-simetri.png" alt="Logo Simetri"
+                    class="h-[92.72998046875px] lg:h-[132.78564453125px] w-auto">
+                <ul class="hidden md:flex items-center gap-10 lg:gap-14 text-2xl lg:text-[32px] text-[#C07E4E]">
+                    <li><a href="#" class="hover:text-[#F9DCB4] transition-colors">Home</a></li>
+                    <li><a href="#" class="hover:text-[#F9DCB4] transition-colors">Tema</a></li>
+                    <li><a href="#" class="underline underline-offset-8 text-[#F9DCB4]">Materi</a></li>
+                    <li><a href="#" class="hover:text-[#F9DCB4] transition-colors">Asik</a></li>
+                </ul>
+            </div>
+
+            <div class="hidden md:flex items-center gap-3 lg:gap-4">
+                <a href="https://x.com/HMSI_ITS?s=20" target="_blank">
+                    <img src="images/navbar/twitter-logo.png" alt="Twitter"
+                        class="h-9 lg:h-10 w-auto hover:opacity-85 transition-opacity">
+                </a>
+                <a href="https://www.tiktok.com/@hmsi_its" target="_blank">
+                    <img src="images/navbar/Tiktok.png" alt="Tiktok"
+                        class="h-9 lg:h-10 w-auto hover:opacity-85 transition-opacity">
+                </a>
+                <a href="https://www.instagram.com/hmsi_its/" target="_blank">
+                    <img src="images/navbar/ig-logo.png" alt="Instagram"
+                        class="h-9 lg:h-10 w-auto hover:opacity-85 transition-opacity">
+                </a>
+                <a href="https://www.youtube.com/@layarHMSI" target="_blank">
+                    <img src="images/navbar/yt-logo.png" alt="Youtube"
+                        class="h-9 lg:h-10 w-auto hover:opacity-85 transition-opacity">
+                </a>
+            </div>
+
+            <button id="menu-btn" class="md:hidden bg-[#4C1C0E] rounded-xl flex justify-center items-center w-12 h-12">
+                <img id="menu-icon" src="images/navbar/hamburger-menu.svg" alt="Menu" class="w-6 h-auto">
+            </button>
+        </nav>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-[#F6EBD7] shadow-xl text-center">
+            <ul class="flex flex-col text-2xl text-[#C07E4E] gap-[10px] text-[32px]">
+                <li class="py-4 hover:underline underline-offset-8 hover:text-[#7A3D21] hover:bg-[#F9DCB4]"><a href="#">Home</a></li>
+                <li class="py-4 hover:underline underline-offset-8 hover:text-[#7A3D21] hover:bg-[#F9DCB4]"><a href="#">Tema</a></li>
+                <li class="py-4 hover:underline underline-offset-8 hover:text-[#7A3D21] hover:bg-[#F9DCB4]"><a href="#" class="underline underline-offset-8 text-[#7A3D21]">Materi</a>
+                </li>
+                <li class="py-4 hover:underline underline-offset-8 hover:text-[#7A3D21] hover:bg-[#F9DCB4]"><a href="#">Asik</a></li>
+            </ul>
+
+            <div class="flex justify-center items-center gap-[15px] py-4">
+                <a href="https://x.com/HMSI_ITS?s=20" target="_blank" rel="noopener noreferrer">
+                    <img src="images/navbar/twitter-dark.svg" alt="Twitter" class="h-10 w-auto hover:opacity-85 transition-opacity">
+                </a>
+                <a href="https://www.tiktok.com/@hmsi_its" target="_blank" rel="noopener noreferrer">
+                    <img src="images/navbar/Tiktok-dark.svg" alt="Tiktok" class="h-10 w-auto hover:opacity-85 transition-opacity">
+                </a>
+                <a href="https://www.instagram.com/hmsi_its/" target="_blank" rel="noopener noreferrer">
+                    <img src="images/navbar/ig-logo-dark.svg" alt="Instagram" class="h-10 w-auto hover:opacity-85 transition-opacity">
+                </a>
+                <a href="https://www.youtube.com/@layarHMSI" target="_blank" rel="noopener noreferrer">
+                    <img src="images/navbar/yt-logo-dark.svg" alt="Youtube" class="h-10 w-auto hover:opacity-85 transition-opacity">
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section>
+            <div class="relative">
+                <img src="images/materi/bg-hero.svg" alt="hero"
+                    class="block w-full h-[130vw] object-cover object-center md:h-auto">
+
+                <div class="absolute inset-0 flex flex-col justify-center items-center md:justify-center md:pt-0">
+                    <h1
+                        class="text-white text-[10vw] md:text-[5vw] [-webkit-text-stroke:0.04em_#7A3D21] [paint-order:stroke_fill] [text-shadow:0_5px_0_#7A3D21]">
+                        WHAT YOU WILL LEARN</h1>
+
+                    <div class="wood relative">
+                        <img class="w-[92vw] md:w-[50vw]" src="images/materi/wood-hero.png" alt="wood">
+                        <div
+                            class="wood-content text-white absolute inset-0 text-center mt-[1.2vw] text-[1.8vw] font-serif">
+                            <p class="text-[3vw] md:text-[1.5vw] mt-[1vw] md:mt-0">Four days of real learning, real
+                                building, and walking away</p>
+                            <p class="text-[3vw] md:text-[1.5vw]">with something you actually made</p>
+                        </div>
+                    </div>
+
+                    <a href="https://drive.google.com/drive/folders/1TkwIuBJVa_2qAAn-PETQ8rFqpkqygu3P?usp=drive_link"
+                        target="_blank">
+                        <button
+                            class="button mt-[0.5vw] text-[3.5vw] md:text-[1.5vw] hover:bg-[linear-gradient(to_bottom,#ee915f_50%,#e38c4e_50%)]">ACCES
+                            MODUL
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="relative">
+            <div class="overflow-hidden">
+                <img src="images/materi/bg-about.svg" alt="about"
+                    class="block w-full h-[185vw] object-cover object-center md:h-auto">
+            </div>
+            <div class="absolute left-1/2 top-[55%] -translate-x-1/2 -translate-y-1/2 w-[100%]  md:w-[80%]">
+                <img src="images/materi/paper-about.png" alt="about" class="object-cover hidden md:block">
+                <img src="images/materi/paper-about-mobile.png" alt="about"
+                    class="object-cover block md:hidden h-[100%] mt-[17vw]">
+
+                <div
+                    class="absolute md:top-0 inset-0 z-10 flex flex-col items-center justify-center md:mx-[9vw] mx-10 gap-1 md:gap-2">
+                    <h1
+                        class="text-white md:text-[clamp(25px,5vw,100px)] mt-[15vw] md:mt-[0.1vw] md:[text-shadow:0px_5px_0px_#7A3D21] text-[clamp(20px,9vw,100px)] [text-shadow:0px_5px_0px_#7A3D21] [-webkit-text-stroke:1px_#7A3D21] md:[-webkit-text-stroke:1px_#7A3D21]">
+                        YOUR JOURNEY STARTS HERE
+                    </h1>
+                    <p
+                        class="font-['Times_New_Roman',serif] text-[clamp(10px,3vw,80px)] md:text-[clamp(10px,1.5vw,80px)] font-bold text-orange-800 text-justify">
+                        Di SIMETRI, peserta belajar tiga hal yang menjadi fondasi dunia web modern. HTML dan CSS
+                        sebagai bahasa dasar yang membentuk struktur dan tampilan sebuah halaman. Tailwind CSS dan
+                        Flowbite sebagai cara yang lebih efisien untuk membangun antarmuka yang rapi dan konsisten.
+                        Dan JavaScript sebagai lapisan yang membuat website menjadi hidup responsif terhadap
+                        interaksi, bergerak, dan terasa nyata. Ketiganya diajarkan secara bertahap, langsung
+                        dipraktikkan, dan pada akhirnya bersatu dalam satu karya yang sepenuhnya milik peserta.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="relative font-['Times_New_Roman',serif]">
+            <img src="images/materi/bg-section3.svg" alt="section3"
+                class="absolute inset-0 w-full h-full object-cover object-center z-0">
+            <div class="relative z-[4] w-full px-4 flex flex-col items-center gap-6">
+                <!-- FAQ Item 1 -->
+                <div class="faq-item mb-4 w-full">
+                    <button
+                        class="faq-button relative z-10 flex w-full items-center justify-between rounded-[20px] border-[8px] border-[#4c1c0e] bg-[#7A3D21] px-6 py-6 text-left">
+                        <span class="text-[24px] text-white ">
+                            Day 1 (10 Okt)
+                        </span>
+                        <span class="flex h-[38px] w-[38px] items-center justify-center rounded-[12px] bg-[#4c1c0e]">
+                            <img src="images/materi/chevron-down.png" alt="chevron"
+                                class="faq-icon transition-transform duration-300">
+                        </span>
+                    </button>
+                    <div class="faq-content -mt-8 pt-2 grid grid-rows-[0fr] transition-all duration-300">
+                        <div class="overflow-hidden ">
+                            <div class="w-full rounded-b-[20px] border-[8px] border-[#7A3D21] bg-[#C07E4E]">
+                                <p class="p-4 pt-[6vw] md:pt-[3vw] text-[3vw] md:text-[2vw] text-white text-justify">
+                                    Pengenalan & Dasar-Dasar Web Development Peserta akan mengenal SIMETRI,
+                                    memahami dasar-dasar website, serta mempelajari konsep dan struktur
+                                    dasar dalam pengembangan web.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- FAQ Item 2 -->
+                <div class="faq-item mb-4 w-full">
+                    <button
+                        class="faq-button relative z-10 flex w-full items-center justify-between rounded-[20px] border-[8px] border-[#4c1c0e] bg-[#7A3D21] px-6 py-6 text-left">
+                        <span class="text-[24px] text-white ">
+                            Day 2 (11 Okt)
+                        </span>
+                        <span class="flex h-[38px] w-[38px] items-center justify-center rounded-[12px] bg-[#4c1c0e]">
+                            <img src="images/materi/chevron-down.png" alt="chevron"
+                                class="faq-icon transition-transform duration-300">
+                        </span>
+                    </button>
+                    <div class="faq-content -mt-8 pt-2 grid grid-rows-[0fr] transition-all duration-300">
+                        <div class="overflow-hidden ">
+                            <div class="w-full rounded-b-[20px] border-[8px] border-[#7A3D21] bg-[#C07E4E]">
+
+                                <p class="p-4 pt-[6vw] md:pt-[3vw] text-[3vw] md:text-[2vw] text-white text-justify">
+                                    Praktik & Pengembangan Website Peserta mulai menerapkan materi yang
+                                    telah dipelajari melalui praktik langsung dan mengembangkan bagian awal
+                                    dari website mereka.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- FAQ Item 3 -->
+                <div class="faq-item mb-4 w-full">
+                    <button
+                        class="faq-button relative z-10 flex w-full items-center justify-between rounded-[20px] border-[8px] border-[#4c1c0e] bg-[#7A3D21] px-6 py-6 text-left">
+                        <span class="text-[24px] text-white ">
+                            Day 3 (17 Okt)
+                        </span>
+                        <span class="flex h-[38px] w-[38px] items-center justify-center rounded-[12px] bg-[#4c1c0e]">
+                            <img src="images/materi/chevron-down.png" alt="chevron"
+                                class="faq-icon transition-transform duration-300">
+                        </span>
+                    </button>
+                    <div class="faq-content -mt-8 pt-2 grid grid-rows-[0fr] transition-all duration-300">
+                        <div class="overflow-hidden ">
+                            <div class="w-full rounded-b-[20px] border-[8px] border-[#7A3D21] bg-[#C07E4E]">
+
+                                <p class="p-4 pt-[6vw] md:pt-[3vw] text-[3vw] md:text-[2vw] text-white text-justify">
+                                    Pengembangan & Penyempurnaan Website Peserta melanjutkan proses pengembangan
+                                    website,
+                                    menerapkan materi lanjutan, serta menyempurnakan tampilan dan fungsi website.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- FAQ Item 4 -->
+                <div class="faq-item mb-4 w-full">
+                    <button
+                        class="faq-button relative z-10 flex w-full items-center justify-between rounded-[20px] border-[8px] border-[#4c1c0e] bg-[#7A3D21] px-6 py-6 text-left">
+                        <span class="text-[24px] text-white ">
+                            Day 4 (18 Okt)
+                        </span>
+                        <span class="flex h-[38px] w-[38px] items-center justify-center rounded-[12px] bg-[#4c1c0e]">
+                            <img src="images/materi/chevron-down.png" alt="chevron"
+                                class="faq-icon transition-transform duration-300">
+                        </span>
+                    </button>
+                    <div class="faq-content -mt-8 pt-2 grid grid-rows-[0fr] transition-all duration-300">
+                        <div class="overflow-hidden ">
+                            <div class="w-full rounded-b-[20px] border-[8px] border-[#7A3D21] bg-[#C07E4E]">
+
+                                <p class="p-4 pt-[6vw] md:pt-[3vw] text-[3vw] md:text-[2vw] text-white text-justify">
+                                    Finalisasi & Presentasi Peserta menyelesaikan website yang telah dibuat, melakukan
+                                    finalisasi,
+                                    dan menunjukkan hasil pembelajaran selama mengikuti rangkaian SIMETRI.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- What Awaits You Section -->
+        <section class="relative">
+            <!-- Background Image -->
+            <img src="images/materi/bg-section4.svg" alt="Section 4 Background"
+                class="block w-full h-[130vw] object-cover object-center md:h-auto">
+
+            <!-- Content Container -->
+            <div class="absolute inset-0 flex flex-col items-center justify-center px-4 py-8">
+                <!-- Title Text -->
+                <h2
+                    class="text-white text-[10.67vw] md:text-[5.56vw] [-webkit-text-stroke:0.04em_#7A3D21] [paint-order:stroke_fill] drop-shadow-[0_4px_0_#7A3D21] text-center leading-none mb-6 md:mb-10 font-zelda">
+                    WHAT AWAITS YOU
+                </h2>
+
+                <!-- Carousel Track Outer Container -->
+                <div
+                    class="relative w-full max-w-[340px] sm:max-w-[500px] md:max-w-[750px] lg:max-w-[850px] overflow-hidden">
+                    <!-- Carousel Inner Track -->
+                    <div id="Track" class="flex transition-transform duration-500 ease-in-out">
+
+                        <!-- CARD 1 -->
+                        <div id="card-1" class="w-full flex-shrink-0 relative flex items-center justify-center">
+                            <img src="images/materi/card.svg" alt="Card Background Desktop"
+                                class="hidden md:block w-full h-auto object-contain drop-shadow-md">
+                            <img src="images/materi/card-mobile.svg" alt="Card Background Mobile"
+                                class="block md:hidden w-full h-auto object-contain drop-shadow-md">
+                            <div class="absolute inset-0 flex flex-col justify-between p-6 md:p-12 my-auto">
+                                <div class="flex flex-col gap-2 md:gap-3 mt-2 md:mt-4 md:px-10">
+                                    <h3
+                                        class="text-[#4C1C0E] text-[40px] md:text-[48px] text-left leading-tight">
+                                        TECHNICAL MEETING
+                                    </h3>
+                                    <p class="text-[#7A3D21] text-[20px] md:text-[32px] font-bold">
+                                        9 Oktober 2026, (Jam menyusul)
+                                    </p>
+                                </div>
+                                <p
+                                    class="font-baskerville text-[#7A3D21] text-[18px] md:text-[32px] leading-tight max-w-[90%] text-left md:px-10">
+                                    Persiapan sebelum petualangan dimulai — instalasi VSCode, Node.js, GitHub, dan semua
+                                    tools yang dibutuhkan, dilakukan secara online sebelum hari pertama.
+                                </p>
+                                <div class="flex items-center justify-center gap-4 sm:gap-6 mb-2 md:mb-4 text-center">
+                                    <button
+                                        class="flex items-center justify-center w-[138px] h-[28px] md:w-[171px] md:h-[48px] bg-[#C07E4E] border border-[#F9DCB4] text-white text-[14px] md:text-[28px] text-center py-2 px-6 sm:px-8 rounded-md md:rounded-xl drop-shadow-[0_8px_0_#7A3D21] bg-[linear-gradient(to_bottom,#ee915f_50%,#e38c4e_50%)] hover:brightness-110 transition-all ">
+                                        PPT
+                                    </button>
+                                    <button
+                                        class="flex items-center justify-center w-[138px] h-[28px] md:w-[171px] md:h-[48px] bg-[#C07E4E] border border-[#F9DCB4] text-white text-[14px] md:text-[28px] text-center py-2 px-6 sm:px-8 rounded-md md:rounded-xl drop-shadow-[0_8px_0_#7A3D21] bg-[linear-gradient(to_bottom,#ee915f_50%,#e38c4e_50%)] hover:brightness-110 transition-all">
+                                        RECORDING
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 2 -->
+                        <div id="card-2" class="w-full flex-shrink-0 relative flex items-center justify-center">
+                            <img src="images/materi/card.svg" alt="Card Background Desktop"
+                                class="hidden md:block w-full h-auto object-contain drop-shadow-md">
+                            <img src="images/materi/card-mobile.svg" alt="Card Background Mobile"
+                                class="block md:hidden w-full h-auto object-contain drop-shadow-md">
+                            <div class="absolute inset-0 flex flex-col justify-between p-6 md:p-12 my-auto">
+                                <div class="flex flex-col gap-2 md:gap-3 mt-2 md:mt-4 md:px-10">
+                                    <h3
+                                        class="text-[#4C1C0E] text-[40px] md:text-[48px] text-left leading-tight">
+                                        DAY 1
+                                    </h3>
+                                    <p class="text-[#7A3D21] text-[20px] md:text-[32px] font-bold">
+                                        10 Oktober 2026, 08.30 - 14.45
+                                    </p>
+                                </div>
+                                <p
+                                    class="font-baskerville text-[#7A3D21] text-[18px] md:text-[32px] leading-tight max-w-[90%] text-left md:px-10">
+                                    Persiapan sebelum petualangan dimulai — instalasi VSCode, Node.js, GitHub, dan semua
+                                    tools yang dibutuhkan, dilakukan secara online sebelum hari pertama.
+                                </p>
+                                <div class="flex items-center justify-center gap-4 sm:gap-6 mb-2 md:mb-4 text-center">
+                                    <button
+                                        class="flex items-center justify-center w-[138px] h-[28px] md:w-[171px] md:h-[48px] bg-[#C07E4E] border border-[#F9DCB4] text-white text-[14px] md:text-[28px] text-center py-2 px-6 sm:px-8 rounded-md md:rounded-xl drop-shadow-[0_8px_0_#7A3D21] hover:brightness-110 transition-all">
+                                        PPT
+                                    </button>
+                                    <button
+                                        class="flex items-center justify-center w-[138px] h-[28px] md:w-[171px] md:h-[48px] bg-[#C07E4E] border border-[#F9DCB4] text-white text-[14px] md:text-[28px] text-center py-2 px-6 sm:px-8 rounded-md md:rounded-xl drop-shadow-[0_8px_0_#7A3D21] hover:brightness-110 transition-all">
+                                        RECORDING
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 3 -->
+                        <div id="card-1" class="w-full flex-shrink-0 relative flex items-center justify-center">
+                            <img src="images/materi/card.svg" alt="Card Background Desktop"
+                                class="hidden md:block w-full h-auto object-contain drop-shadow-md">
+                            <img src="images/materi/card-mobile.svg" alt="Card Background Mobile"
+                                class="block md:hidden w-full h-auto object-contain drop-shadow-md">
+                            <div class="absolute inset-0 flex flex-col justify-between p-6 md:p-12 my-auto">
+                                <div class="flex flex-col gap-2 md:gap-3 mt-2 md:mt-4 md:px-10">
+                                    <h3
+                                        class="text-[#4C1C0E] text-[40px] md:text-[48px] text-left leading-tight">
+                                        DAY 2
+                                    </h3>
+                                    <p class="text-[#7A3D21] text-[20px] md:text-[32px] font-bold">
+                                        11 Oktober 2026, 08.30 - 14.45
+                                    </p>
+                                </div>
+                                <p
+                                    class="font-baskerville text-[#7A3D21] text-[18px] md:text-[32px] leading-tight max-w-[90%] text-left md:px-10">
+                                    Tailwind CSS dan Flowbite membangun tampilan website 
+                                    yang modern dan efisien menggunakan utility class dan component library.
+                                </p>
+                                <div class="flex items-center justify-center gap-4 sm:gap-6 mb-2 md:mb-4 text-center">
+                                    <button
+                                        class="flex items-center justify-center w-[138px] h-[28px] md:w-[171px] md:h-[48px] bg-[#C07E4E] border border-[#F9DCB4] text-white text-[14px] md:text-[28px] text-center py-2 px-6 sm:px-8 rounded-md md:rounded-xl drop-shadow-[0_8px_0_#7A3D21] hover:brightness-110 transition-all">
+                                        PPT
+                                    </button>
+                                    <button
+                                        class="flex items-center justify-center w-[138px] h-[28px] md:w-[171px] md:h-[48px] bg-[#C07E4E] border border-[#F9DCB4] text-white text-[14px] md:text-[28px] text-center py-2 px-6 sm:px-8 rounded-md md:rounded-xl drop-shadow-[0_8px_0_#7A3D21] hover:brightness-110 transition-all">
+                                        RECORDING
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 4 -->
+                        <div id="card-1" class="w-full flex-shrink-0 relative flex items-center justify-center">
+                            <img src="images/materi/card.svg" alt="Card Background Desktop"
+                                class="hidden md:block w-full h-auto object-contain drop-shadow-md">
+                            <img src="images/materi/card-mobile.svg" alt="Card Background Mobile"
+                                class="block md:hidden w-full h-auto object-contain drop-shadow-md">
+                            <div class="absolute inset-0 flex flex-col justify-between p-6 md:p-12 my-auto">
+                                <div class="flex flex-col gap-2 md:gap-3 mt-2 md:mt-4 md:px-10">
+                                    <h3
+                                        class="text-[#4C1C0E] text-[40px] md:text-[48px] text-left leading-tight">
+                                        DAY 3
+                                    </h3>
+                                    <p class="text-[#7A3D21] text-[20px] md:text-[32px] font-bold">
+                                        17 Oktober 2026, 08.30 - 14.45
+                                    </p>
+                                </div>
+                                <p
+                                    class="font-baskerville text-[#7A3D21] text-[18px] md:text-[32px] leading-tight max-w-[90%] text-left md:px-10">
+                                    JavaScript dasar DOM manipulation dan interaksi UI untuk membuat website 
+                                    menjadi hidup dan responsif terhadap pengguna.
+                                </p>
+                                <div class="flex items-center justify-center gap-4 sm:gap-6 mb-2 md:mb-4 text-center">
+                                    <button
+                                        class="flex items-center justify-center w-[138px] h-[28px] md:w-[171px] md:h-[48px] bg-[#C07E4E] border border-[#F9DCB4] text-white text-[14px] md:text-[28px] text-center py-2 px-6 sm:px-8 rounded-md md:rounded-xl drop-shadow-[0_8px_0_#7A3D21] hover:brightness-110 transition-all">
+                                        PPT
+                                    </button>
+                                    <button
+                                        class="flex items-center justify-center w-[138px] h-[28px] md:w-[171px] md:h-[48px] bg-[#C07E4E] border border-[#F9DCB4] text-white text-[14px] md:text-[28px] text-center py-2 px-6 sm:px-8 rounded-md md:rounded-xl drop-shadow-[0_8px_0_#7A3D21] hover:brightness-110 transition-all">
+                                        RECORDING
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 5 -->
+                        <div id="card-1" class="w-full flex-shrink-0 relative flex items-center justify-center">
+                            <img src="images/materi/card.svg" alt="Card Background Desktop"
+                                class="hidden md:block w-full h-auto object-contain drop-shadow-md">
+                            <img src="images/materi/card-mobile.svg" alt="Card Background Mobile"
+                                class="block md:hidden w-full h-auto object-contain drop-shadow-md">
+                            <div class="absolute inset-0 flex flex-col justify-between p-6 md:p-12 my-auto">
+                                <div class="flex flex-col gap-2 md:gap-3 mt-2 md:mt-4 md:px-10">
+                                    <h3
+                                        class="text-[#4C1C0E] text-[40px] md:text-[48px] text-left leading-tight">
+                                        DAY 4
+                                    </h3>
+                                    <p class="text-[#7A3D21] text-[20px] md:text-[32px] font-bold">
+                                        18 Oktober 2026, 08.30 - 14.45
+                                    </p>
+                                </div>
+                                <p
+                                    class="font-baskerville text-[#7A3D21] text-[18px] md:text-[32px] leading-tight max-w-[90%] text-left md:px-10">
+                                    Presentasi final project peserta mempresentasikan dan 
+                                    mendemonstrasikan website yang telah mereka bangun selama empat hari.
+                                </p>
+                                <div class="flex items-center justify-center gap-4 sm:gap-6 mb-2 md:mb-4 text-center">
+                                    <button
+                                        class="flex items-center justify-center w-[138px] h-[28px] md:w-[171px] md:h-[48px] bg-[#C07E4E] border border-[#F9DCB4] text-white text-[14px] md:text-[28px] text-center py-2 px-6 sm:px-8 rounded-md md:rounded-xl drop-shadow-[0_8px_0_#7A3D21] hover:brightness-110 transition-all">
+                                        PPT
+                                    </button>
+                                    <button
+                                        class="flex items-center justify-center w-[138px] h-[28px] md:w-[171px] md:h-[48px] bg-[#C07E4E] border border-[#F9DCB4] text-white text-[14px] md:text-[28px] text-center py-2 px-6 sm:px-8 rounded-md md:rounded-xl drop-shadow-[0_8px_0_#7A3D21] hover:brightness-110 transition-all">
+                                        RECORDING
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Navigation Controls (Arrow Left, Indicators, Arrow Right) -->
+                <div class="flex items-center justify-center gap-4 sm:gap-6 mt-6 md:mt-8 z-[4]">
+                    <button id="prev-btn"
+                        class="hover:scale-105 active:scale-95 transition-transform focus:outline-none">
+                        <img src="images/materi/arrow-left.png" alt="Previous" class="w-12 sm:w-16 md:w-20 h-auto">
+                    </button>
+
+                    <div id="dots-container" class="flex items-center gap-2 sm:gap-3"></div>
+
+                    <button id="next-btn"
+                        class="hover:scale-105 active:scale-95 transition-transform focus:outline-none">
+                        <img src="images/materi/arrow-right.png" alt="Next" class="w-12 sm:w-16 md:w-20 h-auto">
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    
+
+    <script>
+        //Navbar
+        const menuBtn = document.getElementById('menu-btn');
+        const menuIcon = document.getElementById('menu-icon');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        const hamburgerSrc = 'images/navbar/hamburger-menu.svg';
+        const closeSrc = 'images/navbar/x-icon.svg';
+
+        menuBtn.addEventListener('click', () => {
+            const isHidden = mobileMenu.classList.toggle('hidden');
+
+            if (isHidden) {
+                menuIcon.src = hamburgerSrc;
+            } else {
+                menuIcon.src = closeSrc;
+            }
+        });
+
+        // FAQ
+        const faqItems = document.querySelectorAll(".faq-item");
+
+        faqItems.forEach(function (item) {
+            const button = item.querySelector(".faq-button");
+            const content = item.querySelector(".faq-content");
+            const icon = item.querySelector(".faq-icon");
+
+            button.addEventListener("click", function () {
+                content.classList.toggle("grid-rows-[0fr]");
+                content.classList.toggle("grid-rows-[1fr]");
+                icon.classList.toggle("rotate-180");
+            });
+        });
+
+        // Carousel Track logic
+        const track = document.getElementById('Track');
+        const prevBtn = document.getElementById('prev-btn');
+        const nextBtn = document.getElementById('next-btn');
+        const dotsContainer = document.getElementById('dots-container');
+
+        const slides = Array.from(track.children);
+        let currentIndex = 0;
+
+        // Create dots dynamically
+        slides.forEach((_, index) => {
+            const dot = document.createElement('span');
+            dot.className = `dot sm:h-4 h-3 rounded-full transition-all cursor-pointer ${index === 0 ? 'w-6 sm:w-8 bg-[#7A3D21]' : 'w-3 sm:w-4 bg-[#C07E4E]'
+                }`;
+            dot.addEventListener('click', () => goToSlide(index));
+            dotsContainer.appendChild(dot);
+        });
+
+        const dots = Array.from(dotsContainer.children);
+
+        function updateDots() {
+            dots.forEach((dot, index) => {
+                if (index === currentIndex) {
+                    dot.className = 'dot w-6 sm:w-8 h-3 sm:h-4 bg-[#7A3D21] rounded-full transition-all cursor-pointer';
+                } else {
+                    dot.className = 'dot w-3 sm:w-4 h-3 sm:h-4 bg-[#C07E4E] rounded-full transition-all cursor-pointer';
+                }
+            });
+        }
+
+        function goToSlide(index) {
+            currentIndex = index;
+            track.style.transform = `translateX(-${currentIndex * 100}%)`;
+            updateDots();
+        }
+
+        nextBtn.addEventListener('click', () => {
+            currentIndex = (currentIndex + 1) % slides.length;
+            goToSlide(currentIndex);
+        });
+
+        prevBtn.addEventListener('click', () => {
+            currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+            goToSlide(currentIndex);
+        });
+    </script>
+    </body>
+
+    <footer class="relative w-full bg-[url(images/footer/bg-footer.png)] bg-cover bg-center flex justify-center items-center border-t-[16px] border-[#7A3D21] px-[4vw] py-[6vw] md:px-[5.5vw] md:py-[5vw]">
+
+        <div class="w-full aspect-[3/4] md:aspect-[2.85/1] bg-[url(images/footer/frame-footer-mobile.png)] md:bg-[url(images/footer/frame-footer.png)] bg-[length:100%_100%] bg-center bg-no-repeat flex flex-col md:flex-row justify-center items-center gap-[4vw] md:gap-[4vw]">
+
+            <div class="flex flex-col gap-[0.5vw] items-center justify-center text-[6vw] md:text-[3vw]">
+                <a class="text-[#C07E4E] hover:text-[#F9DCB4] transition-colors" href="">Home</a>
+                <a class="text-[#C07E4E] hover:text-[#F9DCB4] transition-colors" href="">Tema</a>
+                <a class="underline underline-offset-4 text-[#F9DCB4] transition-colors" href="">Materi</a>
+                <a class="text-[#C07E4E] hover:text-[#F9DCB4] transition-colors" href="">Asik</a>
+            </div>
+
+            <div class="flex flex-col items-center justify-center gap-[4vw] md:gap-[2vw]">
+                <div class="flex flex-col items-center justify-center gap-[2vw] md:gap-[0.8vw]">
+                    <p class="text-[4vw] md:text-[1.6vw] text-center text-[#F9DCB4] font-baskerville">Didukung Oleh</p>
+
+                    <div class="flex flex-row items-center justify-center gap-[2vw] md:gap-[1vw]">
+                        <img class="w-[22.9vw] md:w-[9.86vw] md:max-w-[9.86vw]" src="images/footer/Group 1410136690.png" alt="Logo ITS DSI">
+                        <img class="w-[16.24vw] md:w-[7.71vw]" src="images/footer/Logo SI.png" alt="Logo SI">
+                        <img class="w-[9.97vw] md:w-[5.32vw]" src="images/footer/ITS Advancing Humanity SVG.png" alt="Logo ITS Advancing Humanity">
+                        <img class="w-[6.92vw] md:w-[3.78vw]" src="images/footer/Group 13906.png" alt="Logo HMSI">
+                    </div>
+
+                    <div class="flex flex-row items-center justify-center gap-[2vw] md:gap-[1vw]">
+                        <img class="w-[18.9vw] md:w-[8.86vw]" src="images/footer/Logo Kabinet.png" alt="Logo Kabinet">
+                        <img class="w-[7.24vw] md:w-[3.71vw]" src="images/footer/Frame 48098812.png" alt="Logo Simetri">
+                        <img class="w-[7.97vw] md:w-[4.32vw]" src="images/footer/diktisaintek.png" alt="Logo Dikti Saintek">
+                        <img class="w-[11.92vw] md:w-[3.78vw]" src="images/footer/Mask group.png" alt="Logo Diesnatalis ITS">
+                    </div>
+                </div>
+
+                <p class="text-[3.5vw] md:text-[1.1vw] font-bold text-[#F9DCB4] font-['Times_New_Roman']">© SIMETRI HMSI ITS</p>
+            </div>
+        </div>
+    </footer>
+
+
+</html>

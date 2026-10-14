@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="id" class="overflow-x-hidden [scroll-padding-top:90px]">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asik</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        judul: ['WildBreath', 'serif'],
+                        teks: ['Times New Roman', 'Times', 'serif'],
+                    },
+                },
+            },
+        };
+    </script>
+    <style>
+        @font-face {
+            font-family: 'WildBreath';
+            src: url('the_wild_breath_of_zelda/The Wild Breath of Zelda.otf') format('opentype');
+            font-display: swap;
+        }
+    </style>
+</head>
+<body class="w-full overflow-x-clip">
+    <!-- NavBar Section -->
+    <header class="sticky top-0 z-50">
+        <nav class="relative flex h-[90px] w-full items-center justify-between border-b-[6px] border-[#4C1C0E] bg-[#7A3D21] px-[clamp(1rem,6.25vw,5.625rem)] max-[767px]:h-[72px] max-[767px]:px-4 min-[641px]:max-[1023px]:h-[80px] min-[641px]:max-[1023px]:px-[clamp(1.25rem,5vw,3rem)]">
+            <div class="flex min-w-0 items-center gap-[clamp(0.75rem,4vw,4rem)]">
+                <img src="NavBar/logo-simetri.png" class="h-auto w-[clamp(3.25rem,6vw,5rem)] shrink-0 max-[767px]:w-[3.25rem] min-[641px]:max-[1023px]:w-16" alt="Logo Simetri">
+                <ul id="siteNavLinks" data-open="false" class="m-0 hidden list-none items-center gap-[clamp(1rem,4vw,4rem)] p-0 data-[open=true]:flex lg:flex max-[1023px]:data-[open=true]:absolute max-[1023px]:data-[open=true]:left-0 max-[1023px]:data-[open=true]:right-0 max-[1023px]:data-[open=true]:top-full max-[1023px]:data-[open=true]:z-[100] max-[767px]:data-[open=true]:flex-col max-[767px]:data-[open=true]:items-center max-[767px]:data-[open=true]:gap-0 max-[767px]:data-[open=true]:border-b-4 max-[767px]:data-[open=true]:border-[#4C1C0E] max-[767px]:data-[open=true]:bg-[#7A3D21] max-[767px]:data-[open=true]:px-4 max-[767px]:data-[open=true]:pt-2 max-[767px]:data-[open=true]:pb-4 max-[767px]:data-[open=true]:shadow-[0_8px_12px_rgba(33,15,8,0.25)] min-[641px]:max-[1023px]:data-[open=true]:justify-center min-[641px]:max-[1023px]:data-[open=true]:gap-[clamp(1.5rem,6vw,3rem)] min-[641px]:max-[1023px]:data-[open=true]:border-b-4 min-[641px]:max-[1023px]:data-[open=true]:border-[#4C1C0E] min-[641px]:max-[1023px]:data-[open=true]:bg-[#7A3D21] min-[641px]:max-[1023px]:data-[open=true]:shadow-[0_8px_12px_rgba(33,15,8,0.25)] min-[641px]:max-[1023px]:data-[open=true]:p-4">
+                    <!-- Isi link halaman disini!!! (Tema & Materi: ganti "#" dengan halaman aslinya) -->
+                    <li>
+                        <a href="#home" class="max-[767px]:flex max-[767px]:min-h-12 max-[767px]:items-center max-[767px]:justify-center">
+                            <p class="font-[Wildbreath] text-[#C07E4E] text-4xl hover:text-[#F9DCB4]">Home</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="max-[767px]:flex max-[767px]:min-h-12 max-[767px]:items-center max-[767px]:justify-center">
+                            <p class="font-[Wildbreath] text-[#C07E4E] text-4xl hover:text-[#F9DCB4]">Tema</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="max-[767px]:flex max-[767px]:min-h-12 max-[767px]:items-center max-[767px]:justify-center">
+                            <p class="font-[Wildbreath] text-[#C07E4E] text-4xl hover:text-[#F9DCB4]">Materi</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#about" class="max-[767px]:flex max-[767px]:min-h-12 max-[767px]:items-center max-[767px]:justify-center">
+                            <p class="font-[Wildbreath] text-4xl text-[#F9DCB4] underline decoration-2">Home</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="hidden shrink-0 items-center gap-[clamp(0.5rem,1.1vw,0.9375rem)] lg:flex">
+                <a href="https://x.com/HMSI_ITS">
+                    <img src="NavBar/Exclude.png" alt="X Simetri" class="h-auto w-[clamp(1.75rem,3vw,2.6rem)] hover:opacity-85 transition-opacity">
+                </a>
+                <a href="https://www.tiktok.com/@hmsi_its">
+                    <img src="NavBar/Tiktok.png" alt="Tiktok Simetri" class="h-auto w-[clamp(1.75rem,3vw,2.6rem)] hover:opacity-85 transition-opacity">
+                </a>
+                <a href="https://www.instagram.com/simetri.hmsiits/">
+                    <img src="NavBar/ig-logo.png" alt="Instagram Simetri" class="h-auto w-[clamp(1.75rem,3vw,2.6rem)] hover:opacity-85 transition-opacity">
+                </a>
+                <a href="https://www.youtube.com/@layarHMSI/featured">
+                    <img src="NavBar/yt-logo.png" alt="Youtube Simetri" class="h-auto w-[clamp(1.75rem,3vw,2.6rem)] hover:opacity-85 transition-opacity">
+                </a>
+            </div>
+            <button id="HamburgerMenu" class="z-[60] flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-[#4C1C0E] max-[767px]:h-11 max-[767px]:w-11 lg:hidden" type="button" aria-label="Buka menu navigasi" aria-expanded="false" aria-controls="siteNavLinks">
+                <img id="iconHamburger" src="NavBar/hamburgerMenu.png" alt="Menu" class="w-[25.98px] h-[19.49px]">
+                <img id="iconClose" src="NavBar/closeX.png" alt="Close" class="w-[19.49px] h-[19.49px] hidden">
+            </button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative overflow-hidden bg-[#085857] h-auto aspect-[1440/1407]">
+        <img
+            src="heroSection/bg-hero.svg"
+            alt="Lanskap fantasi ASIK"
+            class="absolute inset-0 h-full w-full object-cover object-[center_22%] min-[768px]:object-center"
+        >
+        
+        <div class="absolute left-1/2 top-[16.06%] z-10 flex h-auto w-[87.5%] max-w-[1260px] -translate-x-1/2 flex-col items-center justify-center">
+            <h1 class="w-full text-center text-[max(120px,12.7vw)] font-judul font-normal leading-none tracking-[0] text-white [filter:drop-shadow(0_9px_0_#7A3D21)] [-webkit-text-stroke:2px_#7A3D21] [paint-order:stroke_fill] flex items-center justify-center">
+                ASIK
+            </h1>
+            <div class="relative mt-[0.4rem] aspect-[1947/250] w-[max(380px,40vw)] max-w-none">
+                <img
+                    src="heroSection/paper-hero.png"
+                    alt=""
+                    class="absolute inset-0 h-full w-full object-fill mt-0.5"
+                >
+        
+                <p class="font-teks absolute inset-0 flex items-center justify-center px-[3%] text-center text-[max(22px,2.2vw)] font-bold leading-none text-[#7A3D21]">
+                    Asistensi Simetri Kuy!
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="relative h-[170vw] overflow-hidden md:h-auto md:aspect-[1440/1568]">
+        <img src="About/bg-about.svg" alt="Background About" class="absolute inset-0 h-full w-full object-cover">
+        <div class="absolute left-1/2 top-[35vw] w-[160%] -translate-x-1/2 overflow-hidden [container-type:inline-size] md:top-[25.87%] md:w-[75.2%] aspect-[1083/701]">
+            <img src="About/book.png" alt="Book" class="block h-full w-full object-cover">
+            <div class="@container absolute top-[15%] left-1/2 -translate-x-1/2 gap-3.5 items-center text-left md:text-center text-[#4C1C0E] w-[80vw] md:w-[60vw] columns-2 md:columns-1">
+                <h2 class="mb-[1.4cqw] font-judul text-[7vw] md:text-[6vw] font-normal leading-none text-[#FFF3DB] [text-shadow:0_2px_0_#9A542F,0_4px_0_#71391F,0_7.1px_0_rgba(0,0,0,0.25)] [-webkit-text-stroke:2.4px_#4C1C0E] [paint-order:stroke_fill]">APA ITU ASIK</h2>
+                <p class="m-0 font-teks text-[3.6vw] md:text-[1.8vw] w-full font-bold leading-[1.22]">
+                    ASIK (Asistensi SIMETRI Kuy) merupakan program pelatihan dan pembekalan bagi mahasiswa yang akan menjadi mentor dalam kegiatan SIMETRI. Kegiatan ini dirancang untuk memberikan pemahaman materi, metode pengajaran, 
+                    serta simulasi mentoring agar mentor siap dalam mendampingi peserta. ASIK tidak hanya berfokus pada penguasaan materi, tetapi juga pada pengembangan soft skills seperti komunikasi, public speaking, teamwork, dan problem solving.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dokumentasi Section -->
+    <section id="dokumentasi" class="relative h-auto w-full overflow-hidden bg-[#085857] pt-10">
+        <picture class="relative block w-full">
+            <source
+                media="(max-width: 767px)"
+                srcset="section2-dokumentasi/bg-dokumentasi-mobile.jpeg"
+            >
+            <img
+                src="section2-dokumentasi/bg-desktop.png"
+                alt="Background"
+                 class="block w-full h-auto"
+            >
+        </picture>
+            
+        <div class="absolute inset-0 top-[40vw] md:top-[18.5vw]">
+            <h2 class="relative z-[4] mx-auto mt-0 mb-10 w-fit text-center text-[10vw] md:text-[6vw] font-judul font-normal leading-none text-[#FFFFFF] [filter:drop-shadow(0_6px_0_#7A3D21)] [-webkit-text-stroke:2px_#4C1C0E] [paint-order:stroke_fill] md:[-webkit-text-stroke:4px_#4C1C0E]">DOKUMENTASI</h2>
+    
+            <div class="relative z-[2] mx-auto w-[85vw] md:w-[60vw]">
+                <img src="section2-dokumentasi/bg-fotodokumentasi.png" alt="Background" class="relative inset-0 z-[1] h-auto w-full">
+
+                <div class="absolute inset-x-0 top-0 h-full">
+                    <!-- Buttons -->
+                    <button id="docPrev" class="absolute top-1/2 -translate-y-1/2 left-[-1vw] z-[3] w-[10vw] md:w-[6vw] h-auto cursor-pointer z-5" type="button" aria-label="Sebelumnya">
+                        <img src="section2-dokumentasi/chevron-left.png" alt="Left Arrow" class="w-full">
+                    </button>
+                    <button id="docNext" class="absolute top-1/2 -translate-y-1/2 right-[-0.5vw] z-[3] w-[10vw] md:w-[6vw] h-auto cursor-pointer z-5" type="button" aria-label="Berikutnya">
+                        <img src="section2-dokumentasi/chevron-right.png" alt="Right Arrow" class="w-full">
+                    </button>
+                    <!-- Carousel -->
+                    <div class="relative z-[2] overflow-hidden">
+                        <div id="docTrack" data-index="0" class="relative flex transition-transform mt-[4vw] md:mt-[3vw] duration-500 ease-in-out">
+                            <!-- Card 1 -->
+                            <div class="flex shrink-0 basis-full flex-col items-center px-6 pt-4 pb-8">
+                                <img src="section2-dokumentasi/dokumentasi1.png" alt="Dokumentasi 1" class="block w-[70vw] md:w-[48vw]">
+                            </div>
+                            <!-- Card 2 (ganti src sesuai nama file aslimu) -->
+                            <div class="flex shrink-0 basis-full flex-col items-center px-6 pt-4 pb-8">
+                                <img src="section2-dokumentasi/dokumentasi2.png" alt="Dokumentasi 2" class="block w-[70vw] md:w-[48vw]">
+                            </div>
+                            <!-- Card 3 (ganti src sesuai nama file aslimu) -->
+                            <div class="flex shrink-0 basis-full flex-col items-center px-6 pt-4 pb-8">
+                                <img src="section2-dokumentasi/dokumentasi3.png" alt="Dokumentasi 3" class="block w-[70vw] md:w-[48vw]">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Dots -->
+                    <div id="docDots" class="absolute flex items-center justify-center left-1/2 -translate-x-1/2 bottom-[3vw] z-[3] gap-[0.5vw]"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 
+    ---------------------------------------------------------------------------------------------------------------------
+                                                    NOTICE
+    ---------------------------------------------------------------------------------------------------------------------
+    Carousel pengajar di grouping nya pake javascript secara otomatis.
+    Jadi SAAT INISIALISASI, kalo layar nya web maka dia 3 kartu per slide, kalo layarnya mobile, dia 1 kartu per slide
+    ---------------------------------------------------------------------------------------------------------------------
+    Jadi kalo mau jumlah kartunya sesuai, HARUS DI REFRESH
+    ---------------------------------------------------------------------------------------------------------------------
+    -->
+    <!-- Pengajar dan Mentor Section -->
+    <section id="pengajar" class="relative h-auto w-full overflow-hidden bg-[#085857] top-[-0.1px]">
+        <picture class="relative block w-full">
+            <source
+                media="(max-width: 767px)"
+                srcset="PengajarMentor/bg-section4-mobile.svg"
+            >
+            <img
+                src="PengajarMentor/bg-pengajar.png"
+                alt="Background"
+                 class="block w-full h-auto"
+            >
+        </picture>
+            
+        <div class="absolute inset-0 top-[30vw] md:top-[13vw]">
+            <h2 class="relative z-[4] mx-auto mb-[6vw] md:mb-[1vw] w-[90vw] md:w-fit text-center text-[12vw] md:text-[6vw] font-judul font-normal leading-none text-[#FFFFFF] [filter:drop-shadow(0_6px_0_#085857)] [-webkit-text-stroke:2px_#143D37] [paint-order:stroke_fill] md:[-webkit-text-stroke:4px_#143D37]">
+                PENGAJAR DAN MENTOR
+            </h2>
+    
+            <div class="relative z-[2] mx-auto w-[75vw] md:w-[80vw]">
+                <div class="relative h-[93vw] md:h-[40vw] overflow-hidden">
+                    <!-- Buttons -->
+                    <button id="pengPrev" class="absolute top-1/2 -translate-y-1/2 left-[-1vw] z-[3] w-[10vw] md:w-[6vw] h-auto cursor-pointer z-5" type="button" aria-label="Sebelumnya">
+                        <img src="PengajarMentor/cheveron-left-green.png" alt="Left Arrow" class="w-full">
+                    </button>
+                    <button id="pengNext" class="absolute top-1/2 -translate-y-1/2 right-[-0.5vw] z-[3] w-[10vw] md:w-[6vw] h-auto cursor-pointer z-5" type="button" aria-label="Berikutnya">
+                        <img src="PengajarMentor/cheveron-right-green.png" alt="Right Arrow" class="w-full">
+                    </button>
+                    <!-- Carousel -->
+                    <div class="relative z-[2]  overflow-hidden ">
+                        <div id="pengTrack" data-index="0" class="relative flex transition-transform duration-500 ease-in-out">
+                            <img src="PengajarMentor/Card.png" alt="Card 1" class="block w-[55vw] md:w-[20vw] drop-shadow-lg">
+                            <img src="PengajarMentor/Card.png" alt="Card 2" class="block w-[55vw] md:w-[20vw] drop-shadow-lg">
+                            <img src="PengajarMentor/Card.png" alt="Card 3" class="block w-[55vw] md:w-[20vw] drop-shadow-lg">
+                            <img src="PengajarMentor/Card.png" alt="Card 4" class="block w-[55vw] md:w-[20vw] drop-shadow-lg">
+                            <img src="PengajarMentor/Card.png" alt="Card 5" class="block w-[55vw] md:w-[20vw] drop-shadow-lg">
+                            <img src="PengajarMentor/Card.png" alt="Card 6" class="block w-[55vw] md:w-[20vw] drop-shadow-lg">
+                            <img src="PengajarMentor/Card.png" alt="Card 7" class="block w-[55vw] md:w-[20vw] drop-shadow-lg">
+                            <img src="PengajarMentor/Card.png" alt="Card 8" class="block w-[55vw] md:w-[20vw] drop-shadow-lg">
+                            <img src="PengajarMentor/Card.png" alt="Card 9" class="block w-[55vw] md:w-[20vw] drop-shadow-lg">
+                            <img src="PengajarMentor/Card.png" alt="Card 10" class="block w-[55vw] md:w-[20vw] drop-shadow-lg">
+                            <img src="PengajarMentor/Card.png" alt="Card 11" class="block w-[55vw] md:w-[20vw] drop-shadow-lg">
+                            <img src="PengajarMentor/Card.png" alt="Card 12" class="block w-[55vw] md:w-[20vw] drop-shadow-lg">
+                        </div>
+                    </div>
+                    <!-- Dots -->
+                    <div id="pengDots" class="absolute flex items-center justify-center left-1/2 -translate-x-1/2 bottom-[3vw] z-[3] gap-[0.5vw]"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[url('Footer/bg-footer.png')] relative isolate grid place-items-center overflow-hidden bg-[#4C1C0E] px-[8vw] py-[8vw] pb-20 text-[#F6D8A5] max-[767px]:min-h-[500px] max-[767px]:px-[14vw] max-[767px]:pt-[105px] max-[767px]:pb-[72px]">
+        <div class="relative">  
+            <picture class="relative block w-full">
+                <source
+                    media="(max-width: 767px)"
+                    srcset="Footer/frame-footer-mobile.png"
+                >
+                <img
+                    src="Footer/frame-footer.png"
+                    alt="Background"
+                >
+            </picture>
+            <div class="absolute inset-0">
+                <div class="grid w-[min(100%,1000px)] h-full grid-cols-[minmax(180px,1fr)_minmax(0,2fr)] gap-[clamp(2rem,7vw,6rem)] max-[767px]:grid-cols-1 max-[767px]:gap-6">
+                    <nav class="text-center md:ml-[clamp(6rem,14vw,12rem)] flex flex-col gap-[0.45rem] flex-wrap justify-center" aria-label="Navigasi footer">
+                        <a class="text-[4vw] md:text-[2vw] font-judul text-[#D59A62] no-underline hover:text-[#F6D8A5] focus-visible:text-[#F6D8A5]" href="#home">HOME</a>
+                        <a class="text-[4vw] md:text-[2vw] font-judul text-[#D59A62] no-underline hover:text-[#F6D8A5] focus-visible:text-[#F6D8A5]" href="#about">TEMA</a>
+                        <a class="text-[4vw] md:text-[2vw] font-judul text-[#D59A62] no-underline hover:text-[#F6D8A5] focus-visible:text-[#F6D8A5]" href="#about">MATERI</a>
+                        <a class="text-[4vw] md:text-[2vw] font-judul text-[#D59A62] no-underline hover:text-[#F6D8A5] focus-visible:text-[#F6D8A5]" href="#about">ASIK</a>
+                    </nav>
+                    <div class="mx-[5vw]">
+                        <h2 class="mb-4 mt-0 text-center font-teks text-[clamp(1.2rem,2vw,1.75rem)] text-[#F6D8A5]">Didukung Oleh</h2>
+                        <div class="grid grid-cols-4 items-center gap-4 max-[767px]:gap-[0.8rem]">
+                            <img src="Footer/DPTSI.png" alt="DPTSI ITS" loading="lazy" class="block max-h-[44px] w-full object-contain max-[767px]:max-h-[34px]">
+                            <img src="Footer/Logo SI.png" alt="Sistem Informasi ITS" loading="lazy" class="block max-h-[44px] w-full object-contain max-[767px]:max-h-[34px]">
+                            <img src="Footer/ITS Advancing Humanity SVG.png" alt="ITS Advancing Humanity" loading="lazy" class="block max-h-[44px] w-full object-contain max-[767px]:max-h-[34px]">
+                            <img src="Footer/ITS KBB.png" alt="ITS Kampus Budaya dan Berkarakter" loading="lazy" class="block max-h-[44px] w-full object-contain max-[767px]:max-h-[34px]">
+                        </div>
+                        <div class="mx-auto mt-4 grid w-[84%] grid-cols-4 items-center gap-4 max-[767px]:mt-[0.8rem] max-[767px]:w-full max-[767px]:gap-[0.8rem]">
+                            <img src="Footer/Logo Kabinet.png" alt="Kabinet Pilar Aksi" loading="lazy" class="block max-h-[44px] w-full object-contain max-[767px]:max-h-[34px]">
+                            <img src="Footer/SIMETRI.png" alt="SIMETRI" loading="lazy" class="block max-h-[44px] w-full object-contain max-[767px]:max-h-[34px]">
+                            <img src="Footer/diktisaintek.png" alt="Diktisaintek Berdampak" loading="lazy" class="block max-h-[44px] w-full object-contain max-[767px]:max-h-[34px]">
+                            <img src="Footer/HMSI.png" alt="Himpunan Mahasiswa Sistem Informasi" loading="lazy" class="block max-h-[44px] w-full object-contain max-[767px]:max-h-[34px]">
+                        </div>
+                        <p class="mt-8 mb-0 text-center font-teks text-[clamp(0.9rem,1.5vw,1.2rem)] font-bold text-[#F6D8A5] max-[767px]:mt-[1.4rem]">&copy; SIMETRI HMSI ITS</p>
+                    </div>
+                </div>
+            </div>
+        </div>    
+    </footer>
+
+    <script>
+        /* ===== Navbar ===== */
+        const navToggle = document.getElementById('HamburgerMenu');
+        const navLinks = document.getElementById('siteNavLinks');
+        const hamburgerIcon = document.getElementById('iconHamburger');
+        const closeIcon = document.getElementById('iconClose');
+
+        const closeNavMenu = () => {
+            navToggle.setAttribute('aria-expanded', 'false');
+            navToggle.setAttribute('aria-label', 'Buka menu navigasi');
+            navLinks.dataset.open = 'false';
+            hamburgerIcon.classList.remove('hidden');
+            closeIcon.classList.add('hidden');
+        };
+
+        navToggle.addEventListener('click', () => {
+            const isOpen = navToggle.getAttribute('aria-expanded') === 'true';
+            if (isOpen) {
+                closeNavMenu();
+                return;
+            }
+
+            navToggle.setAttribute('aria-expanded', 'true');
+            navToggle.setAttribute('aria-label', 'Tutup menu navigasi');
+            navLinks.dataset.open = 'true';
+            hamburgerIcon.classList.add('hidden');
+            closeIcon.classList.remove('hidden');
+        });
+
+        navLinks.addEventListener('click', (event) => {
+            if (event.target.closest('a') && window.innerWidth < 1024) {
+                closeNavMenu();
+            }
+        });
+
+        window.addEventListener('keydown', (event) => {
+            if (event.key === 'Escape') {
+                closeNavMenu();
+            }
+        });
+
+        window.addEventListener('resize', () => {
+            if (window.innerWidth >= 1024) {
+                closeNavMenu();
+            }
+        });
+
+        /* ===== Carousel Dokumentasi ===== */
+        const docTrack = document.getElementById('docTrack');
+        const docDots = document.getElementById('docDots');
+        const docSlides = docTrack.children;
+        let docIndex = 0;
+
+        for (let i = 0; i < docSlides.length; i++) {
+            const dot = document.createElement('button');
+            dot.type = 'button';
+            dot.classList.add("h-[1.3vw]", "w-[1.5vw]", "cursor-pointer", "rounded-full", "bg-[#C07E4E]", "duration-300");
+            dot.setAttribute('aria-label', 'Slide ' + (i + 1));
+            dot.addEventListener('click', () => goToDoc(i));
+            docDots.appendChild(dot);
+        }
+
+        function updateDocDots(){
+            [...docDots.children].forEach((dot, i) => {
+                if(i === docIndex){
+                    dot.classList.add("bg-[#7A3D21]", "w-[3vw]");
+                    dot.classList.remove("bg-[#C07E4E]", "w-[1.5vw]");
+                } else {
+                    dot.classList.add("bg-[#C07E4E]", "w-[1.5vw]");
+                    dot.classList.remove("bg-[#7A3D21]", "w-[3vw]");
+                }
+            })
+        }
+
+        function goToDoc(index) {
+            docIndex = (index + docSlides.length) % docSlides.length;
+            docTrack.style.transform = `translateX(-${docIndex * 100}%)`;
+            updateDocDots();
+        }
+
+        document.getElementById('docPrev').addEventListener('click', () => goToDoc(docIndex - 1));
+        document.getElementById('docNext').addEventListener('click', () => goToDoc(docIndex + 1));
+        goToDoc(0);
+        
+        /* ===== Carousel Pengajar ===== */
+        const pengTrack = document.getElementById('pengTrack');
+        const pengDots = document.getElementById('pengDots');
+        
+        const pengCards = [...pengTrack.children];
+
+        const isMobile = window.innerWidth < 768;
+        const cardsPerSlide = isMobile ? 1 : 3;
+
+        for (let i = 0; i < pengCards.length; i += cardsPerSlide) {
+            const slide = document.createElement('div');
+
+            slide.className =
+                'flex shrink-0 basis-full items-center justify-center gap-[2vw] px-6 pt-4 pb-8';
+
+            pengCards.slice(i, i + cardsPerSlide).forEach((card, index) => {
+                
+                if (!isMobile) {
+                    if (index === 0) {
+                        card.classList.add('-rotate-[0.77deg]');
+                    } else if (index === 2) {
+                        card.classList.add('rotate-[1.8deg]');
+                    }
+                }
+
+                slide.appendChild(card);
+            });
+
+            pengTrack.appendChild(slide);
+        }
+
+        const pengSlides = pengTrack.children;
+        let pengIndex = 0;
+
+        for (let i = 0; i < pengSlides.length; i++) {
+            const dot = document.createElement('button');
+            dot.type = 'button';
+            dot.classList.add("h-[1.3vw]", "w-[1.5vw]", "cursor-pointer", "rounded-full", "bg-[#217269]", "duration-300");
+            dot.setAttribute('aria-label', 'Slide ' + (i + 1));
+            dot.addEventListener('click', () => goToPeng(i));
+            pengDots.appendChild(dot);
+        }
+
+        function updatePengDots(){
+            [...pengDots.children].forEach((dot, i) => {
+                if(i === pengIndex){
+                    dot.classList.add("bg-[#143D37]", "w-[3vw]");
+                    dot.classList.remove("bg-[#217269]", "w-[1.5vw]");
+                } else {
+                    dot.classList.add("bg-[#217269]", "w-[1.5vw]");
+                    dot.classList.remove("bg-[#143D37]", "w-[3vw]");
+                }
+            })
+        }
+
+        function goToPeng(index) {
+            pengIndex = (index + pengSlides.length) % pengSlides.length;
+            pengTrack.style.transform = `translateX(-${pengIndex * 100}%)`;
+            updatePengDots();
+        }
+
+        document.getElementById('pengPrev').addEventListener('click', () => goToPeng(pengIndex - 1));
+        document.getElementById('pengNext').addEventListener('click', () => goToPeng(pengIndex + 1));
+        goToPeng(0);
+    </script>
+</body>
+</html>

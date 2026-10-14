@@ -1,0 +1,374 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tema SIMETRI 2026</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="../assets/css/global.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baskervville:ital,wght@0,400..700;1,400..700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body class="font-Zelda">
+  <!-- start navbar -->
+    <header class="fixed top-0 left-0 w-full z-50">
+        <nav class="flex items-center justify-between bg-[#7A3D21] px-6 xl:px-[90px] h-[90px] outline outline-[6px] outline-[#4C1C0E]">
+            <div class="flex items-center gap-16">
+                <img src="../assets/images/navbar/logo-simetri.png" class="w-[93.8px] h-[92.73px] md:w-[132px] md:h-[132px] object-contain" alt="Logo SIMETRI">
+                <ul class="hidden xl:flex items-center gap-16 text-[32px]">
+                    <li><a href="homepage.html" style="font-family: 'The Wild Breath of Zelda';" class="text-[#C07E4E] hover:text-[#F9DCB4]">Home</a></li>
+                    <li><a href="#" style="font-family: 'The Wild Breath of Zelda';" class="underline text-[#F9DCB4]">Tema</a></li>
+                    <li><a href="#" style="font-family: 'The Wild Breath of Zelda';" class="text-[#C07E4E] hover:text-[#F9DCB4]">Materi</a></li>
+                    <li><a href="#" style="font-family: 'The Wild Breath of Zelda';" class="text-[#C07E4E] hover:text-[#F9DCB4]">Asik</a></li>
+                </ul>
+            </div>
+
+            <div class="hidden xl:flex items-center justify-end gap-[15px]">
+                <a href="https://x.com/hmsi_its" target="_blank" rel="noopener noreferrer" class="flex shrink-0">
+                    <img src="../assets/images/navbar/Exclude.png" class="w-[41.58px] h-[41.58px] transition-transform hover:scale-110" alt="X">
+                </a>
+                <a href="https://www.tiktok.com/@hmsi_its" target="_blank" rel="noopener noreferrer" class="flex shrink-0">
+                    <img src="../assets/images/navbar/Tiktok.png" class="w-[41.58px] h-[41.58px] transition-transform hover:scale-110" alt="TikTok">
+                </a>
+                <a href="https://www.instagram.com/simetri.hmsiits" target="_blank" rel="noopener noreferrer" class="flex shrink-0">
+                    <img src="../assets/images/navbar/ig-logo.png" class="w-[41.58px] h-[41.58px] transition-transform hover:scale-110" alt="Instagram">
+                </a>
+                <a href="https://youtube.com/@layarhmsi" target="_blank" rel="noopener noreferrer" class="flex shrink-0">
+                    <img src="../assets/images/navbar/yt-logo.png" class="w-[41.58px] h-[41.58px] transition-transform hover:scale-110" alt="YouTube">
+                </a>
+            </div>
+
+            <button id="menu-btn" class="flex xl:hidden items-center justify-center w-12 h-12 bg-[#4C1C0E] rounded-[9.35px]" aria-label="Buka menu" aria-expanded="false">
+                <svg id="icon-open" xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="#F9DCB4" stroke-width="2" stroke-linecap="round">
+                    <path d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+                <svg id="icon-close" xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 hidden" fill="none" viewBox="0 0 24 24" stroke="#F9DCB4" stroke-width="2" stroke-linecap="round">
+                    <path d="M6 6l12 12M18 6L6 18" />
+                </svg>
+            </button>
+        </nav>
+
+        <div id="mobile-menu" class="hidden xl:hidden absolute w-full top-full left-0 bg-[#F6EBD7] border-b-[6px] border-[#4C1C0E]">
+            <ul class="flex flex-col text-[32px] leading-[36px]">
+                <li><a href="homepage.html" style="font-family: 'The Wild Breath of Zelda';" class="block w-full py-4 text-center bg-[#F9DCB4] text-[#7A3D21] underline underline-offset-4">Home</a></li>
+                <li><a href="#" style="font-family: 'The Wild Breath of Zelda';" class="block w-full py-4 text-center text-[#C07E4E] hover:bg-[#F9DCB4] hover:text-[#7A3D21]">Tema</a></li>
+                <li><a href="#" style="font-family: 'The Wild Breath of Zelda';" class="block w-full py-4 text-center text-[#C07E4E] hover:bg-[#F9DCB4] hover:text-[#7A3D21]">Materi</a></li>
+                <li><a href="#" style="font-family: 'The Wild Breath of Zelda';" class="block w-full py-4 text-center text-[#C07E4E] hover:bg-[#F9DCB4] hover:text-[#7A3D21]">Asik</a></li>
+            </ul>
+            <div class="flex items-center justify-center gap-[15px] h-[88.22px] pt-4 pb-8">
+                <a href="https://x.com/hmsi_its" target="_blank" rel="noopener noreferrer" class="flex shrink-0">
+                    <img src="../assets/images/navbar/Exclude2.png" style="filter: url(#tint);" class="w-[41.58px] h-[41.58px] transition-transform hover:scale-110 active:scale-95" alt="X">
+                </a>
+                <a href="https://www.tiktok.com/@hmsi_its" target="_blank" rel="noopener noreferrer" class="flex shrink-0">
+                    <img src="../assets/images/navbar/Tiktok2.png" style="filter: url(#tint);" class="w-[41.58px] h-[41.58px] transition-transform hover:scale-110 active:scale-95" alt="TikTok">
+                </a>
+                <a href="https://www.instagram.com/simetri.hmsiits" target="_blank" rel="noopener noreferrer" class="flex shrink-0">
+                    <img src="../assets/images/navbar/ig-logo2.png" style="filter: url(#tint);" class="w-[41.58px] h-[41.58px] transition-transform hover:scale-110 active:scale-95" alt="Instagram">
+                </a>
+                <a href="https://youtube.com/@layarhmsi" target="_blank" rel="noopener noreferrer" class="flex shrink-0">
+                    <img src="../assets/images/navbar/yt-logo2.png" style="filter: url(#tint);" class="w-[41.58px] h-[41.58px] transition-transform hover:scale-110 active:scale-95" alt="YouTube">
+                </a>
+            </div>
+        </div>
+    </header>
+  <script src="../assets/js/mobileNav.js"></script>
+
+  <main>
+    <!-- hero section -->
+    <section
+      class="relative min-h-[100svh] w-full overflow-hidden bg-[url('../assets/images/bg-hero-mobile.svg')] 
+          md:bg-[url('../assets/images/bg-hero.svg')] bg-cover bg-bottom bg-no-repeat flex flex-col items-center justify-center px-4">
+      <!-- Title + subtitle -->
+      <div class="relative z-10 flex flex-col items-center -mt-20 md:-mt-32">
+        <h1 class="text-white title-outline text-center leading-none text-[4.5rem] md:text-[8rem] lg:text-[160px]
+               [text-shadow:0_4px_0_#7A3D21] md:[text-shadow:0_9px_0_#7A3D21]
+               [-webkit-text-stroke:3px_#7a3e24] [paint-order:stroke_fill]">
+          SIMETRI 2026
+        </h1>
+      </div>
+      <div
+        class="mt-3 md:mt-6 max-w-[320px] md:max-w-none px-8 py-4 md:px-16 bg-[url('../assets/images/kertas-hero-mobile.png')] md:bg-[url('../assets/images/kertas-hero.png')] bg-[length:100%_100%] bg-no-repeat">
+        <p
+          class="-mt-2 font-Baskervville font-bold lg:font-semibold text-outline text-[1.25rem]/[1.5rem] lg:text-[2rem] text-[#7a3e24] text-center md:whitespace-nowrap">
+          Build your personal website from zero to hero
+        </p>
+      </div>
+    </section>
+
+    <!--div background utama-->
+    <div
+      class="bg-[url(../assets/images/bg-about-mobile.svg)] bg-cover h-[917px] w-full flex justify-center items-center md:bg-[url(../assets/images/bg-about.svg)] md:h-[1041px]">
+      <!--div papar-->
+      <div
+        class="md:bg-[url(../assets/images/paper-about.png)] bg-no-repeat bg-contain bg-center w-[1005px] h-[565px] flex flex-col items-center justify-center px-7 md:px-16 xl:pt-[180px]">
+        <!-- content div -->
+        <div>
+          <!--text-->
+          <div class="flex flex-col gap-4 w-full items-center lg:px-[60px]">
+            <h1 class=" font-thin text-[#FFFFFF] title-outline text-center leading-none text-[2.5rem] lg:text-[5rem] [text-shadow:0_5px_0_#4C1C0E,1px_5px_0_#4C1C0E,-1px_5px_0_#4C1C0E]
+              [-webkit-text-stroke:3px_#4C1C0E] [paint-order:stroke_fill]">
+              GRAND THEME
+            </h1>
+
+            <p class="text-[#111810] text-justify font-bold text-[1rem] lg:text-[1.25rem] font-times">
+              SIMETRI 2026 adalah program pelatihan web development berbasis proyek yang diselenggarakan oleh Departemen
+              Social Development Himpunan Mahasiswa Sistem Informasi ITS,
+              ditujukan bagi siswa SMA dan SMK di Surabaya dan sekitarnya sepenuhnya gratis.
+              Tahun ini, peserta tidak sekadar belajar membuat website, mereka menjalani sebuah petualangan di dunia
+              Arksivara sebagai rekrutan Guild SIMETRI,
+              membangun Hero Code mereka sebagai bukti diri melawan CODEVOROUS sang naga yang lahir dari segala sesuatu
+              yang tidak pernah diselesaikan.
+              Empat hari. Satu website. Dan satu pembuktian bahwa mereka siap berdiri di era digital
+            </p>
+          </div>
+        </div>
+        <!-- botol & chest -->
+        <div class="hidden xl:flex justify-between w-[1230px]">
+          <img class="w-[272px] h-[231px]" src="../assets/images/bottle.png" alt="">
+          <img class="w-[290.3px] h-[242.65px]" src="../assets/images/chest.png" alt="">
+        </div>
+      </div>
+    </div>
+
+    <img class="w-full lg:hidden" src="../assets/images/upper-border-mobile.svg" alt="">
+    <img class="w-0 lg:w-full" src="../assets/images/upper-border-desktop.svg" alt="">
+
+    <!-- carousel -->
+    <section class="sect-carousel flex flex-col w-full justify-center">
+      <!-- div title -->
+      <div
+        class="flex bg-[url('../assets/images/faq/faq-bg-mobile.svg')] lg:bg-none lg:bg-[#085857] px-[45px] py-[30px] md:py-[60px] lg:py-[80px] justify-center">
+        <div
+          class="flex bg-[url(../assets/images/carousel/rock.svg)] aspect-[293.67/95.22] bg-no-repeat min-w-[293.67px] md:min-w-[442.83px] lg:min-w-[591.98px] bg-contain items-center justify-center">
+          <p class="font-thin text-white title-outline text-center leading-none text-[2.5rem] md:text-[4rem] lg:text-[5rem] [text-shadow:0_5px_0_#071B47,1px_5px_0_#071B47,-1px_5px_0_#071B47]
+              [-webkit-text-stroke:3px_#7A3D21] [paint-order:stroke_fill] uppercase">10 KERAJAAN</p>
+        </div>
+      </div>
+
+      <!-- div carousel content -->
+      <div class="relative w-full overflow-hidden aspect-[611/573] lg:aspect-[1440/1024]">
+        <!-- backgrounds (two layers for crossfade) -->
+        <div class="absolute inset-0 z-0">
+          <img id="bgA" src="../assets/images/carousel/ignis.jpg" alt=""
+            class="absolute inset-0 w-full h-full object-cover transition-opacity duration-700 opacity-100" />
+          <img id="bgB" src="" alt=""
+            class="absolute inset-0 w-full h-full object-cover transition-opacity duration-700 opacity-0" />
+        </div>
+
+        <!-- gradient filter -->
+        <div
+          class="absolute inset-0 z-[5] pointer-events-none bg-gradient-to-b from-[#1a0b2e] via-transparent to-[#1a0b2e]/80">
+        </div>
+
+        <!-- cave frame -->
+        <div class="absolute inset-0 z-10 pointer-events-none">
+          <img src="../assets/images/carousel/cave-top-mobile.svg" class="absolute lg:hidden top-0 left-0 w-full" />
+          <img src="../assets/images/carousel/cave-bottom-mobile.svg"
+            class="absolute lg:hidden bottom-0 left-0 w-full" />
+          <img src="../assets/images/carousel/cave-top-desktop.svg"
+            class="hidden lg:block absolute top-[-85px] left-0 w-full" />
+          <img src="../assets/images/carousel/cave-bottom-desktop.svg"
+            class="hidden lg:block absolute bottom-[-85px] left-0 w-full" />
+        </div>
+
+        <!-- content -->
+        <div class="absolute inset-0 z-20 flex items-center justify-between px-[48px] md:px-[110px] lg:px-[160px]">
+          <div id="realmText" class="flex flex-col gap-4 items-start transition-opacity duration-300">
+            <h5 id="realmName"
+              class="text-white title-outline leading-none text-[1.75rem] md:text-[3rem] lg:text-[5rem] [text-shadow:0_2px_0_#4C1C0E,1px_2px_0_#4C1C0E,-1px_2px_0_#4C1C0E] [-webkit-text-stroke:1px_#4C1C0E] [paint-order:stroke_fill] uppercase">
+              IGNIS REALM
+            </h5>
+            <a id="realmLink" href=""
+              style="--btn-a:#F36F41; --btn-b:#F39241; --btn-border:#F3B641; --btn-shadow:#6E3418;"
+              class="realm-btn inline-block px-[3vw] py-[1.2vw] md:px-5 md:py-2 lg:px-8 lg:py-3 rounded-[8px] border-double border-1 outline-1 outline-[#6E3418]/55 transition-all duration-100 hover:brightness-110 active:translate-y-[4px]">
+              <span id="realmBtnText"
+                class="block uppercase tracking-wide text-left leading-tight text-[3vw] md:text-[1.25rem] lg:text-[1.5rem] text-white [text-shadow:0_-1px_0_rgba(0,0,0,0.5),0_1px_0_rgba(255,255,255,0.4)]">
+                Take me to Ignis
+              </span>
+            </a>
+          </div>
+
+          <img id="realmCard" src="../assets/images/carousel/card-ignis.svg" alt=""
+            class="w-[113px] md:w-[200px] lg:w-[320px] [--glow:#FF6A1A] drop-shadow-[0_0_14px_var(--glow)] transition-opacity duration-300" />
+        </div>
+
+        <!-- arrows -->
+        <!-- previous -->
+        <button id="prevRealm" aria-label="Previous realm"
+          class="absolute left-[2vw] md:left-[3.75rem] opacity-50 hover:opacity-100 transition-opacity top-1/2 -translate-y-1/2 z-30">
+          <picture>
+            <source media="(min-width: 768px)" srcset="../assets/images/carousel/arrow-left-desktop.svg">
+            <img src="../assets/images/carousel/arrow-left-mobile.svg" alt="" class="h-[6.5vw] md:h-[55.21px]">
+          </picture>
+        </button>
+
+        <!-- next -->
+        <button id="nextRealm" aria-label="Next realm"
+          class="absolute right-[2vw] md:right-[3.75rem] opacity-50 hover:opacity-100 transition-opacity top-1/2 -translate-y-1/2 z-30">
+          <picture>
+            <source media="(min-width: 768px)" srcset="../assets/images/carousel/arrow-right-desktop.svg">
+            <img src="../assets/images/carousel/arrow-right-mobile.svg" alt="" class="h-[6.5vw] md:h-[55.21px]">
+          </picture>
+        </button>
+      </div>
+    </section>
+
+
+    <img class="w-full lg:hidden" src="../assets/images/upper-border-mobile.svg" alt="">
+    <img class="w-0 lg:w-full" src="../assets/images/upper-border-desktop.svg" alt="">
+
+    <!-- SECTION FAQ -->
+    <section
+      class="faq w-full bg-[url('../assets/images/faq/faq-bg-mobile.svg')] bg-cover bg-top bg-no-repeat pt-16 md:pt-24 px-4 md:px-10 flex flex-col items-center">
+      <!-- Judul FAQ -->
+      <h2
+        class="font-thin text-[3rem] md:text-[4rem] lg:text-[5rem] text-white uppercase tracking-wider text-center mb-8 md:mb-12
+                  [text-shadow:0_5px_0_#7A3D21,1px_5px_0_#7A3D21,-1px_5px_0_#7A3D21] lg:[text-shadow:0_10px_0_#7A3D21,1px_10px_0_#7A3D21,-1px_10px_0_#7A3D21]">
+        FAQ
+      </h2>
+      <!-- List FAQ (Mobile: 340px, gap 16px | Desktop: 1260px, gap 32px) -->
+      <div
+        class="w-[340px] md:w-[640px] lg:w-full lg:max-w-[1260px] flex flex-col gap-4 md:gap-8 mx-auto mb-[188.81px]">
+
+        <!-- BOX  1 -->
+        <div class="faq-item w-full">
+          <div class="faq-header relative z-10 flex items-center justify-between cursor-pointer
+                        w-full min-h-[80px] md:h-[152px]
+                        py-2 px-4 md:py-[24px] md:px-[48px]
+                        bg-[#7A3D21] 
+                        border-[6px] md:border-[8px] border-[#3A1709]
+                        rounded-[24px]">
+            <span
+              class="text-[#FFFFFF] font-times text-[24px] md:text-[36px] lg:text-[48px] font-thin pr-2 leading-none">
+              Apakah Pendaftaran SIMETRI Gratis ?
+            </span>
+            <button type="button" aria-label="Buka jawaban"
+              class="w-10 h-10 md:w-[68px] md:h-[68px] bg-[#4A1D0E] rounded-xl flex items-center justify-center shrink-0">
+              <img class="faq-icon w-5 h-5 md:w-8 md:h-8 transition-transform duration-300"
+                src="../assets/images/Extend.png" alt="Arrow" />
+            </button>
+          </div>
+          <div class="faq-content hidden -mt-6 md:-mt-10 mx-0 pt-10 md:pt-16 pb-5 md:pb-8 px-4 md:px-[32px]
+                        bg-[#C07E4E] border-[4px] md:border-[6px] border-t-0 border-[#7A3D21]
+                        rounded-b-[20px]">
+            <p
+              class="text-[#FFFFFF] font-thin font-times text-[20px] md:text-[26px] lg:text-[32px] leading-none md:leading-none text-justify">
+              Iya, 100% gratis tanpa biaya pendaftaran maupun biaya mengikuti kegiatan. Kamu hanya perlu membawa
+              semangat belajar dan laptop pribadi. 🚀
+            </p>
+          </div>
+        </div>
+
+        <!-- BOX 2 -->
+        <div class="faq-item w-full">
+          <div class="faq-header relative z-10 flex items-center justify-between cursor-pointer
+                        w-full min-h-[80px] md:h-[152px]
+                        py-2 px-4 md:py-[24px] md:px-[48px]
+                        bg-[#7A3D21] 
+                        border-[6px] md:border-[8px] border-[#3A1709]
+                        rounded-[24px]">
+            <span
+              class="text-[#FFFFFF] font-times text-[24px] md:text-[36px] lg:text-[48px] font-thin pr-2 leading-none">
+              Aku Tidak Punya Experience Dalam Coding, Apakah Boleh Ikut ?
+            </span>
+            <button type="button" aria-label="Buka jawaban"
+              class="w-10 h-10 md:w-[68px] md:h-[68px] bg-[#4A1D0E] rounded-xl flex items-center justify-center shrink-0">
+              <img class="faq-icon w-5 h-5 md:w-8 md:h-8 transition-transform duration-300"
+                src="../assets/images/Extend.png" alt="Arrow" />
+            </button>
+          </div>
+          <div class="faq-content hidden -mt-6 md:-mt-10 mx-0 pt-10 md:pt-16 pb-5 md:pb-8 px-4 md:px-[32px]
+                        bg-[#C07E4E] border-[4px] md:border-[6px] border-t-0 border-[#7A3D21]
+                        rounded-b-[20px]">
+            <p
+              class="text-[#FFFFFF] font-times font-thin text-[20px] md:text-[26px] lg:text-[32px] leading-none md:leading-none text-justify">
+              Tentu boleh! Justru SIMETRI dirancang khusus untuk pemula. Semua materi akan dimulai dari dasar dan
+              dijelaskan step by step oleh mentor yang berpengalaman.
+            </p>
+          </div>
+        </div>
+
+        <!-- BOX ITEM 3 -->
+        <div class="faq-item w-full">
+          <div class="faq-header relative z-10 flex items-center justify-between cursor-pointer
+                        w-full min-h-[80px] md:h-[152px]
+                        py-2 px-4 md:py-[24px] md:px-[48px]
+                        bg-[#7A3D21] 
+                        border-[6px] md:border-[8px] border-[#3A1709]
+                        rounded-[24px]">
+            <span
+              class="text-[#FFFFFF] font-times text-[24px] md:text-[36px] lg:text-[48px] font-thin pr-2 leading-none">
+              Aku Nggak Punya Laptop, Masih Boleh Ikut?
+            </span>
+            <button type="button" aria-label="Buka jawaban"
+              class="w-10 h-10 md:w-[68px] md:h-[68px] bg-[#4A1D0E] rounded-xl flex items-center justify-center shrink-0">
+              <img class="faq-icon w-5 h-5 md:w-8 md:h-8 transition-transform duration-300"
+                src="../assets/images/Extend.png" alt="Arrow" />
+            </button>
+          </div>
+          <div class="faq-content hidden -mt-6 md:-mt-10 mx-0 pt-10 md:pt-16 pb-5 md:pb-8 px-4 md:px-[32px]
+                        bg-[#C07E4E] border-[4px] md:border-[6px] border-t-0 border-[#7A3D21]
+                        rounded-b-[20px]">
+            <p
+              class="text-[#FFFFFF] font-times font-thin text-[20px] md:text-[26px] lg:text-[32px] leading-none md:leading-none text-justify">
+              Tentu boleh! Jika kamu belum memiliki laptop, panitia akan menyediakan laptop pinjaman selama kegiatan
+              berlangsung. Jadi jangan ragu dan malu untuk daftar SIMETRI ya!
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+
+    <footer
+      class="w-full bg-[url('../assets/images/99.Footer/bg-footer.png')] bg-cover bg-center px-4 py-8 lg:px-[90px] lg:py-[88px] lg:h-[605px] lg:border-t-[20px] lg:border-t-[#7A3D21] flex justify-center items-center">
+      <!-- frame -->
+      <div
+        class="w-full max-w-[360px] min-h-[520px] lg:max-w-none lg:min-h-0 lg:h-full bg-[url('../assets/images/99.Footer/frame-footer-mobile.png')] lg:bg-[url('../assets/images/99.Footer/frame-footer.png')] bg-center bg-contain bg-no-repeat px-6 py-14 lg:px-[60px] lg:py-10 flex items-center justify-center">
+        <!-- konten utama -->
+        <div class="flex flex-col lg:flex-row items-center justify-center gap-6 lg:gap-[100px]">
+          <!-- menu -->
+          <nav class="flex flex-col items-center lg:items-start gap-3 lg:gap-4">
+            <a class="text-[#F9DCB4] lg:text-[#C07E4E] text-[1.5rem] lg:text-[32px]" href="">Home</a>
+            <a class="text-[#F9DCB4] lg:text-[#C07E4E] text-[1.5rem] lg:text-[32px] underline" href="">Tema</a>
+            <a class="text-[#F9DCB4] lg:text-[#C07E4E] text-[1.5rem] lg:text-[32px]" href="">Materi</a>
+            <a class="text-[#F9DCB4] lg:text-[#C07E4E] text-[1.5rem] lg:text-[32px]" href="">Asik</a>
+          </nav>
+          <!-- didukung oleh -->
+          <div class="flex flex-col items-center gap-3 lg:gap-4">
+            <p class="font-times text-[#F9DCB4] text-[20px] lg:text-[1.75rem] text-outline">Didukung Oleh</p>
+            <!-- logo baris atas -->
+            <div class="flex items-center justify-center gap-[10.63px] lg:gap-4">
+              <img class="h-[27px] lg:h-[49.75px]" src="../assets/images/99.Footer/Group 1410136690.png"
+                alt="Departemen Sistem Informasi ITS">
+              <img class="h-[23px] lg:h-[42px]" src="../assets/images/99.Footer/Logo SI.png" alt="Logo SI">
+              <img class="h-[22px] lg:h-[41px]" src="../assets/images/99.Footer/ITS Advancing Humanity SVG.png"
+                alt="ITS Advancing Humanity">
+              <img class="h-[24px] lg:h-[43.61px]" src="../assets/images/99.Footer/Group 13906.png" alt="Logo HMSI">
+            </div>
+            <!-- logo baris bawah -->
+            <div class="flex items-center justify-center gap-[10.63px] lg:gap-4">
+              <img class="h-[21px] lg:h-[38.72px]" src="../assets/images/99.Footer/Logo Kabinet.png" alt="Logo Kabinet">
+              <img class="h-[27px] lg:h-[48.47px]" src="../assets/images/99.Footer/Frame 48098812.png"
+                alt="Logo Kabinet">
+              <img class="h-[23px] lg:h-[42.01px]" src="../assets/images/99.Footer/diktisaintek.png"
+                alt="Diktisaintek Berdampak">
+              <img class="h-[27px] lg:h-[50px]" src="../assets/images/99.Footer/Mask group.png" alt="ITS">
+            </div>
+            <p class="font-times font-bold text-[14px] lg:text-[20px] text-[#F9DCB4] mt-2 lg:mt-4">&copy; SIMETRI HMSI
+              ITS</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="../assets/js/faq.js"></script>
+    <script src="../assets/js/carousel.js"></script>
+  </main>
+</body>
+
+</html>
