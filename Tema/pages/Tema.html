@@ -20,10 +20,10 @@
             <div class="flex items-center gap-16">
                 <img src="../assets/images/navbar/logo-simetri.png" class="w-[93.8px] h-[92.73px] md:w-[132px] md:h-[132px] object-contain" alt="Logo SIMETRI">
                 <ul class="hidden xl:flex items-center gap-16 text-[32px]">
-                    <li><a href="homepage.html" style="font-family: 'The Wild Breath of Zelda';" class="text-[#C07E4E] hover:text-[#F9DCB4]">Home</a></li>
-                    <li><a href="#" style="font-family: 'The Wild Breath of Zelda';" class="underline text-[#F9DCB4]">Tema</a></li>
-                    <li><a href="#" style="font-family: 'The Wild Breath of Zelda';" class="text-[#C07E4E] hover:text-[#F9DCB4]">Materi</a></li>
-                    <li><a href="#" style="font-family: 'The Wild Breath of Zelda';" class="text-[#C07E4E] hover:text-[#F9DCB4]">Asik</a></li>
+                    <li><a href="..\..\Home\homepage.html" style="font-family: 'The Wild Breath of Zelda';" class="text-[#C07E4E] hover:text-[#F9DCB4]">Home</a></li>
+                    <li><a href="..\..\Tema\pages\Tema.html" style="font-family: 'The Wild Breath of Zelda';" class="underline text-[#F9DCB4]">Tema</a></li>
+                    <li><a href="..\..\Materi\Materi.html" style="font-family: 'The Wild Breath of Zelda';" class="text-[#C07E4E] hover:text-[#F9DCB4]">Materi</a></li>
+                    <li><a href="..\..\Asik\asik.html" style="font-family: 'The Wild Breath of Zelda';" class="text-[#C07E4E] hover:text-[#F9DCB4]">Asik</a></li>
                 </ul>
             </div>
 
@@ -54,10 +54,10 @@
 
         <div id="mobile-menu" class="hidden xl:hidden absolute w-full top-full left-0 bg-[#F6EBD7] border-b-[6px] border-[#4C1C0E]">
             <ul class="flex flex-col text-[32px] leading-[36px]">
-                <li><a href="homepage.html" style="font-family: 'The Wild Breath of Zelda';" class="block w-full py-4 text-center bg-[#F9DCB4] text-[#7A3D21] underline underline-offset-4">Home</a></li>
-                <li><a href="#" style="font-family: 'The Wild Breath of Zelda';" class="block w-full py-4 text-center text-[#C07E4E] hover:bg-[#F9DCB4] hover:text-[#7A3D21]">Tema</a></li>
-                <li><a href="#" style="font-family: 'The Wild Breath of Zelda';" class="block w-full py-4 text-center text-[#C07E4E] hover:bg-[#F9DCB4] hover:text-[#7A3D21]">Materi</a></li>
-                <li><a href="#" style="font-family: 'The Wild Breath of Zelda';" class="block w-full py-4 text-center text-[#C07E4E] hover:bg-[#F9DCB4] hover:text-[#7A3D21]">Asik</a></li>
+                <li><a href="..\..\Home\homepage.html" style="font-family: 'The Wild Breath of Zelda';" class="block w-full py-4 text-center text-[#C07E4E] hover:bg-[#F9DCB4] hover:text-[#7A3D21]">Home</a></li>
+                <li><a href="..\..\Tema\pages\Tema.html" style="font-family: 'The Wild Breath of Zelda';" class="block w-full py-4 text-center bg-[#F9DCB4] text-[#7A3D21] underline underline-offset-4">Tema</a></li>
+                <li><a href="..\..\Materi\Materi.html" style="font-family: 'The Wild Breath of Zelda';" class="block w-full py-4 text-center text-[#C07E4E] hover:bg-[#F9DCB4] hover:text-[#7A3D21]">Materi</a></li>
+                <li><a href="..\..\Asik\asik.html" style="font-family: 'The Wild Breath of Zelda';" class="block w-full py-4 text-center text-[#C07E4E] hover:bg-[#F9DCB4] hover:text-[#7A3D21]">Asik</a></li>
             </ul>
             <div class="flex items-center justify-center gap-[15px] h-[88.22px] pt-4 pb-8">
                 <a href="https://x.com/hmsi_its" target="_blank" rel="noopener noreferrer" class="flex shrink-0">
@@ -108,7 +108,7 @@
         <!-- content div -->
         <div>
           <!--text-->
-          <div class="flex flex-col gap-4 w-full items-center lg:px-[60px]">
+          <div class="flex flex-col gap-4 w-full items-center lg:px-[60px] pt-12 md:pt-0">
             <h1 class=" font-thin text-[#FFFFFF] title-outline text-center leading-none text-[2.5rem] lg:text-[5rem] [text-shadow:0_5px_0_#4C1C0E,1px_5px_0_#4C1C0E,-1px_5px_0_#4C1C0E]
               [-webkit-text-stroke:3px_#4C1C0E] [paint-order:stroke_fill]">
               GRAND THEME
@@ -176,25 +176,30 @@
         </div>
 
         <!-- content -->
-        <div class="absolute inset-0 z-20 flex items-center justify-between px-[48px] md:px-[110px] lg:px-[160px]">
-          <div id="realmText" class="flex flex-col gap-4 items-start transition-opacity duration-300">
+        <div class="absolute inset-0 z-20 flex items-center justify-between px-5 md:px-[110px] lg:px-[160px] py-4">
+          
+          <!-- Kontainer teks: max-w diatur agar tidak nabrak kartu -->
+          <div id="realmText" class="flex flex-col gap-1.5 sm:gap-2 md:gap-3 items-start transition-opacity duration-300 max-w-[80%] sm:max-w-[70%] pr-2 md:pr-4">
+            
+            <!-- Headline -->
             <h5 id="realmName"
-              class="text-white title-outline leading-none text-[1.75rem] md:text-[3rem] lg:text-[5rem] [text-shadow:0_2px_0_#4C1C0E,1px_2px_0_#4C1C0E,-1px_2px_0_#4C1C0E] [-webkit-text-stroke:1px_#4C1C0E] [paint-order:stroke_fill] uppercase">
+              class="text-white title-outline leading-none text-[1.25rem] sm:text-[2rem] md:text-[3rem] lg:text-[4.5rem] [text-shadow:0_2px_0_#4C1C0E,1px_2px_0_#4C1C0E,-1px_2px_0_#4C1C0E] [-webkit-text-stroke:1px_#4C1C0E] [paint-order:stroke_fill] uppercase">
               IGNIS REALM
             </h5>
-            <a id="realmLink" href=""
-              style="--btn-a:#F36F41; --btn-b:#F39241; --btn-border:#F3B641; --btn-shadow:#6E3418;"
-              class="realm-btn inline-block px-[3vw] py-[1.2vw] md:px-5 md:py-2 lg:px-8 lg:py-3 rounded-[8px] border-double border-1 outline-1 outline-[#6E3418]/55 transition-all duration-100 hover:brightness-110 active:translate-y-[4px]">
-              <span id="realmBtnText"
-                class="block uppercase tracking-wide text-left leading-tight text-[3vw] md:text-[1.25rem] lg:text-[1.5rem] text-white [text-shadow:0_-1px_0_rgba(0,0,0,0.5),0_1px_0_rgba(255,255,255,0.4)]">
-                Take me to Ignis
-              </span>
-            </a>
+
+            <!-- Deskripsi Responsif: Menggunakan text fluid & overflow-y-auto untuk layar sangat kecil -->
+            <p id="realmDescription" 
+              class="text-white font-bold text-[0.625rem] xs:text-[0.75rem] sm:text-[0.875rem] md:text-[0.95rem] lg:text-[1.05rem] font-times leading-tight sm:leading-snug md:leading-relaxed p-2.5 sm:p-3 md:p-4 rounded-xl bg-[#2A1208]/60 backdrop-blur-md border border-white/15 shadow-md max-h-[160px] xs:max-h-[200px] sm:max-h-none overflow-y-auto custom-scrollbar">
+              Di bawah langit merah yang membara dan tanah retak yang dialiri lava, Ignis Realm berdiri sebagai kerajaan para pemberani. Warganya nggak kenal kata mundur: mereka bicara langsung, memutuskan tanpa ragu, dan selalu jadi yang pertama maju saat yang lain masih berpikir. Karena bagi Ignis, “Api tidak menunggu angin. Api menciptakannya.” Kalau kamu tipe yang gas duluan, mungkin kamu memang warga Ignis. 🔥
+            </p>
+
           </div>
 
-          <img id="realmCard" src="../assets/images/carousel/card-ignis.svg" alt=""
-            class="w-[113px] md:w-[200px] lg:w-[320px] [--glow:#FF6A1A] drop-shadow-[0_0_14px_var(--glow)] transition-opacity duration-300" />
-        </div>
+  <!-- Gambar Kartu: Ukuran disesuaikan di mobile agar tidak memakan tempat -->
+  <img id="realmCard" src="../assets/images/carousel/card-ignis.svg" alt=""
+    class="w-[80px] xs:w-[100px] sm:w-[140px] md:w-[200px] lg:w-[320px] [--glow:#FF6A1A] drop-shadow-[0_0_14px_var(--glow)] transition-opacity duration-300" />
+
+</div>
 
         <!-- arrows -->
         <!-- previous -->
@@ -243,7 +248,7 @@
                         border-[6px] md:border-[8px] border-[#3A1709]
                         rounded-[24px]">
             <span
-              class="text-[#FFFFFF] font-times text-[24px] md:text-[36px] lg:text-[48px] font-thin pr-2 leading-none">
+              class="text-[#FFFFFF] font-times text-[24px] md:text-[30px] lg:text-[36px] font-thin pr-2 leading-none">
               Apakah Pendaftaran SIMETRI Gratis ?
             </span>
             <button type="button" aria-label="Buka jawaban"
@@ -256,7 +261,7 @@
                         bg-[#C07E4E] border-[4px] md:border-[6px] border-t-0 border-[#7A3D21]
                         rounded-b-[20px]">
             <p
-              class="text-[#FFFFFF] font-thin font-times text-[20px] md:text-[26px] lg:text-[32px] leading-none md:leading-none text-justify">
+              class="text-[#FFFFFF] font-thin font-times text-[24px] md:text-[30px] lg:text-[36px] leading-none md:leading-none text-justify">
               Iya, 100% gratis tanpa biaya pendaftaran maupun biaya mengikuti kegiatan. Kamu hanya perlu membawa
               semangat belajar dan laptop pribadi. 🚀
             </p>
@@ -272,7 +277,7 @@
                         border-[6px] md:border-[8px] border-[#3A1709]
                         rounded-[24px]">
             <span
-              class="text-[#FFFFFF] font-times text-[24px] md:text-[36px] lg:text-[48px] font-thin pr-2 leading-none">
+              class="text-[#FFFFFF] font-times text-[24px] md:text-[30px] lg:text-[36px] font-thin pr-2 leading-none">
               Aku Tidak Punya Experience Dalam Coding, Apakah Boleh Ikut ?
             </span>
             <button type="button" aria-label="Buka jawaban"
@@ -285,7 +290,7 @@
                         bg-[#C07E4E] border-[4px] md:border-[6px] border-t-0 border-[#7A3D21]
                         rounded-b-[20px]">
             <p
-              class="text-[#FFFFFF] font-times font-thin text-[20px] md:text-[26px] lg:text-[32px] leading-none md:leading-none text-justify">
+              class="text-[#FFFFFF] font-times font-thin text-[24px] md:text-[30px] lg:text-[36px] leading-none md:leading-none text-justify">
               Tentu boleh! Justru SIMETRI dirancang khusus untuk pemula. Semua materi akan dimulai dari dasar dan
               dijelaskan step by step oleh mentor yang berpengalaman.
             </p>
@@ -301,7 +306,7 @@
                         border-[6px] md:border-[8px] border-[#3A1709]
                         rounded-[24px]">
             <span
-              class="text-[#FFFFFF] font-times text-[24px] md:text-[36px] lg:text-[48px] font-thin pr-2 leading-none">
+              class="text-[#FFFFFF] font-times text-[24px] md:text-[30px] lg:text-[36px] font-thin pr-2 leading-none">
               Aku Nggak Punya Laptop, Masih Boleh Ikut?
             </span>
             <button type="button" aria-label="Buka jawaban"
@@ -314,7 +319,7 @@
                         bg-[#C07E4E] border-[4px] md:border-[6px] border-t-0 border-[#7A3D21]
                         rounded-b-[20px]">
             <p
-              class="text-[#FFFFFF] font-times font-thin text-[20px] md:text-[26px] lg:text-[32px] leading-none md:leading-none text-justify">
+              class="text-[#FFFFFF] font-times font-thin text-[24px] md:text-[30px] lg:text-[36px] leading-none md:leading-none text-justify">
               Tentu boleh! Jika kamu belum memiliki laptop, panitia akan menyediakan laptop pinjaman selama kegiatan
               berlangsung. Jadi jangan ragu dan malu untuk daftar SIMETRI ya!
             </p>
@@ -325,46 +330,45 @@
     </section>
 
 
-    <footer
-      class="w-full bg-[url('../assets/images/99.Footer/bg-footer.png')] bg-cover bg-center px-4 py-8 lg:px-[90px] lg:py-[88px] lg:h-[605px] lg:border-t-[20px] lg:border-t-[#7A3D21] flex justify-center items-center">
-      <!-- frame -->
-      <div
-        class="w-full max-w-[360px] min-h-[520px] lg:max-w-none lg:min-h-0 lg:h-full bg-[url('../assets/images/99.Footer/frame-footer-mobile.png')] lg:bg-[url('../assets/images/99.Footer/frame-footer.png')] bg-center bg-contain bg-no-repeat px-6 py-14 lg:px-[60px] lg:py-10 flex items-center justify-center">
-        <!-- konten utama -->
-        <div class="flex flex-col lg:flex-row items-center justify-center gap-6 lg:gap-[100px]">
-          <!-- menu -->
-          <nav class="flex flex-col items-center lg:items-start gap-3 lg:gap-4">
-            <a class="text-[#F9DCB4] lg:text-[#C07E4E] text-[1.5rem] lg:text-[32px]" href="">Home</a>
-            <a class="text-[#F9DCB4] lg:text-[#C07E4E] text-[1.5rem] lg:text-[32px] underline" href="">Tema</a>
-            <a class="text-[#F9DCB4] lg:text-[#C07E4E] text-[1.5rem] lg:text-[32px]" href="">Materi</a>
-            <a class="text-[#F9DCB4] lg:text-[#C07E4E] text-[1.5rem] lg:text-[32px]" href="">Asik</a>
-          </nav>
-          <!-- didukung oleh -->
-          <div class="flex flex-col items-center gap-3 lg:gap-4">
-            <p class="font-times text-[#F9DCB4] text-[20px] lg:text-[1.75rem] text-outline">Didukung Oleh</p>
-            <!-- logo baris atas -->
-            <div class="flex items-center justify-center gap-[10.63px] lg:gap-4">
-              <img class="h-[27px] lg:h-[49.75px]" src="../assets/images/99.Footer/Group 1410136690.png"
-                alt="Departemen Sistem Informasi ITS">
-              <img class="h-[23px] lg:h-[42px]" src="../assets/images/99.Footer/Logo SI.png" alt="Logo SI">
-              <img class="h-[22px] lg:h-[41px]" src="../assets/images/99.Footer/ITS Advancing Humanity SVG.png"
-                alt="ITS Advancing Humanity">
-              <img class="h-[24px] lg:h-[43.61px]" src="../assets/images/99.Footer/Group 13906.png" alt="Logo HMSI">
+    <footer class="absolute w-full h-auto py-[30px] px-[24px] md:py-[78px] md:px-[90px] flex items-center justify-center overflow-hidden bg-[url('../assets/images/footer/bg-footer.png')] bg-cover bg-center">
+        <img src="../assets/images/footer/frame-footer-mobile.png" alt="" class="block md:hidden relative w-full h-full pointer-events-none">
+        <img src="../assets/images/footer/frame-footer.png" alt="" class="hidden md:block relative w-full h-full pointer-events-none">
+
+        <div class="absolute z-[2] flex flex-col md:flex-row items-center justify-center gap-[14px] md:gap-[120px]">
+
+            <nav class="flex flex-col items-center gap-[12px]">
+                <a href="..\..\Home\homepage.html" class="text-[#C07E4E] text-[24px] tracking-[0.3px] hover:text-[#F9DCB4] md:text-[27px]" style="font-family:'The Wild Breath of Zelda',serif;">Home</a>
+                <a href="..\..\Tema\pages\Tema.html" class="text-[#C07E4E] text-[24px] tracking-[0.3px] hover:text-[#F9DCB4] md:text-[27px]" style="font-family:'The Wild Breath of Zelda',serif;">Tema</a>
+                <a href="..\..\Materi\Materi.html" class="text-[#C07E4E] text-[24px] tracking-[0.3px] hover:text-[#F9DCB4] md:text-[27px]" style="font-family:'The Wild Breath of Zelda',serif;">Materi</a>
+                <a href="..\..\Asik\asik.html" class="text-[#C07E4E] text-[24px] tracking-[0.3px] hover:text-[#F9DCB4] md:text-[27px]" style="font-family:'The Wild Breath of Zelda',serif;">Asik</a>
+            </nav>
+
+            <div class="flex flex-col items-center justify-center gap-[31px] md:gap-[48px] text-center">
+                <div>
+                    <h3 class="text-[#F9DCB4] text-[18.38px] font-semibold md:text-[28px] [-webkit-text-stroke:0.5px_#f0c28a]" style="font-family:'Times New Roman',serif;">
+                        Didukung Oleh
+                    </h3>
+
+                    <div class="flex items-center justify-center gap-[10.63px] md:gap-[17px]">
+                        <img src="../assets/images/footer/Group 1410136690.png" alt="" class="w-[93px] h-[32px] md:w-[142px] md:h-[50px]">
+                        <img src="../assets/images/footer/Logo SI.png" alt="" class="w-[73px] h-[27px] md:w-[111px] md:h-[42px]">
+                        <img src="../assets/images/footer/ITS Advancing Humanity SVG.png" alt="" class="w-[50px] h-[27px] md:w-[76px] md:h-[41px]">
+                        <img src="../assets/images/footer/Group 13906.png" alt="" class="w-[70px] h-[28px] object-contain md:w-[54px] md:h-[47px]">
+                    </div>
+
+                    <div class="flex items-center justify-center gap-[10.63px] md:gap-[17px]">
+                        <img src="../assets/images/footer/Logo Kabinet.png" alt="" class="shrink-0 object-contain w-[84px] h-[25px] md:w-[128px] md:h-[39px]">
+                        <img src="../assets/images/footer/Frame 48098812.png" alt="" class="shrink-0 object-contain w-[23px] h-[32px] md:w-[43px] md:h-[48px]">
+                        <img src="../assets/images/footer/diktisaintek.png" alt="" class="shrink-0 object-contain w-[32px] h-[27px] md:w-[49px] md:h-[42px]">
+                        <img src="../assets/images/footer/Mask group.png" alt="" class="shrink-0 object-contain w-[56px] h-[33px] md:w-[86px] md:h-[50px]">
+                    </div>
+                </div>
+
+                <p class="text-[#F9DCB4] text-[13.13px] font-bold leading-[1.4] md:text-[20px]" style="font-family:'Times New Roman',serif;">
+                    © SIMETRI HMSI ITS
+                </p>
             </div>
-            <!-- logo baris bawah -->
-            <div class="flex items-center justify-center gap-[10.63px] lg:gap-4">
-              <img class="h-[21px] lg:h-[38.72px]" src="../assets/images/99.Footer/Logo Kabinet.png" alt="Logo Kabinet">
-              <img class="h-[27px] lg:h-[48.47px]" src="../assets/images/99.Footer/Frame 48098812.png"
-                alt="Logo Kabinet">
-              <img class="h-[23px] lg:h-[42.01px]" src="../assets/images/99.Footer/diktisaintek.png"
-                alt="Diktisaintek Berdampak">
-              <img class="h-[27px] lg:h-[50px]" src="../assets/images/99.Footer/Mask group.png" alt="ITS">
-            </div>
-            <p class="font-times font-bold text-[14px] lg:text-[20px] text-[#F9DCB4] mt-2 lg:mt-4">&copy; SIMETRI HMSI
-              ITS</p>
-          </div>
         </div>
-      </div>
     </footer>
     <script src="../assets/js/faq.js"></script>
     <script src="../assets/js/carousel.js"></script>

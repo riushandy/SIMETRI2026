@@ -2,62 +2,71 @@ const realms = [
     {
         name: 'IGNIS REALM', short: 'Ignis',
         bg: '../assets/images/carousel/ignis.jpg', card: '../assets/images/carousel/card-ignis.svg',
-        glow: '#FF6A1A', btnA: '#F36F41', btnB: '#F39241', btnBorder: '#F3B641', btnShadow: '#6E3418', link: ''
+        glow: '#FF6A1A',
+        desc: 'Di bawah langit merah dan tanah berlava, warga Ignis nggak kenal kata mundur. Mereka selalu jadi yang pertama maju saat yang lain masih berpikir. "Api tidak menunggu angin. Api menciptakannya." 🔥'
     },
     {
         name: 'AQUARIA KINGDOM', short: 'Aquaria',
         bg: '../assets/images/carousel/aquatic.jpg', card: '../assets/images/carousel/card-aquatic.svg',
-        glow: '#41C2F3', btnA: '#419FF3', btnB: '#41C2F3', btnBorder: '#41E6F3', btnShadow: '#1B4E8C', link: ''
-    },
-    {
-        name: 'VENTURA EMPIRE', short: 'Ventura',
-        bg: '../assets/images/carousel/ventura.jpg', card: '../assets/images/carousel/card-ventura.svg',
-        glow: '#E6EFB0', btnA: '#4AA294', btnB: '#5AB3AD', btnBorder: '#C4DCAC', btnShadow: '#2C5E55', link: ''
-    },
-    {
-        name: 'FULGUR CLAN', short: 'Fulgur',
-        bg: '../assets/images/carousel/fulgur.jpg', card: '../assets/images/carousel/card-flugur.svg',
-        glow: '#FFB020', btnA: '#FF9730', btnB: '#FFD943', btnBorder: '#FFF3C6', btnShadow: '#8A4A10', link: ''
-    },
-    {
-        name: 'NOCTURNA ENCLAVE', short: 'Nocturna',
-        bg: '../assets/images/carousel/nocturna.jpg', card: '../assets/images/carousel/card-nocturna.svg',
-        glow: '#3E588F', btnA: '#203562', btnB: '#3E588F', btnBorder: '#C0C5CD', btnShadow: '#101C3A', link: ''
-    },
-    {
-        name: 'VERDANT WOODS', short: 'Verdant Woods',
-        bg: '../assets/images/carousel/verdant.jpg', card: '../assets/images/carousel/card-verdant.svg',
-        glow: '#98BD49', btnA: '#528123', btnB: '#98BD49', btnBorder: '#EBF8A9', btnShadow: '#2E4A12', link: ''
+        glow: '#41C2F3',
+        desc: 'Di dasar laut yang tak terjangkau cahaya, warga Aquaria tenang, sabar, dan jeli membaca situasi. Mereka mengalir lewat celah yang tak terlihat siapa pun. "Air tidak melawan batu. Air menunggu sampai batu yang menyerah." 💧'
     },
     {
         name: 'TERRA DOMINION', short: 'Terra',
         bg: '../assets/images/carousel/terra.jpg', card: '../assets/images/carousel/card-terra.svg',
-        glow: '#C07E4E', btnA: '#7A3D21', btnB: '#C07E4E', btnBorder: '#F9DCB4', btnShadow: '#3A1709', link: ''
+        glow: '#C07E4E',
+        desc: 'Kerajaan tertua di Arksivara ini dihuni warga yang jarang bicara, tapi selalu menyelesaikan. Pondasi dulu, baru lantai dua. "Gunung tidak terburu-buru. Tapi gunung selalu ada ketika yang lain sudah runtuh." 🪨'
+    },
+    {
+        name: 'VENTURA EMPIRE', short: 'Ventura',
+        bg: '../assets/images/carousel/ventura.jpg', card: '../assets/images/carousel/card-ventura.svg',
+        glow: '#E6EFB0',
+        desc: 'Tanpa tembok dan tanpa rumah tetap, Ventura berpindah mengikuti angin. Saat situasi berubah, mereka sudah berubah duluan. "Kami tidak punya rumah yang tetap karena kami tidak pernah berhenti bergerak maju." 🌬️'
+    },
+    {
+        name: 'FULGUR CLAN', short: 'Fulgur',
+        bg: '../assets/images/carousel/fulgur.jpg', card: '../assets/images/carousel/card-flugur.svg',
+        glow: '#FFB020',
+        desc: 'Di dataran badai yang ditakuti orang lain, warga Fulgur menemukan rumah. Setiap langkah dihitung, dan sekali bergerak, secepat kilat. "Petir tidak pernah memperingatkan. Petir hanya menyambar." ⚡'
     },
     {
         name: 'GLACIA LAND', short: 'Glacia',
         bg: '../assets/images/carousel/glacia.jpg', card: '../assets/images/carousel/card-glacia.svg',
-        glow: '#7BD1EF', btnA: '#61AED1', btnB: '#7BD1EF', btnBorder: '#BFEBF8', btnShadow: '#2F6E8F', link: ''
+        glow: '#7BD1EF',
+        desc: 'Di utara yang dihiasi aurora, warga Glacia tak mudah terprovokasi dan tak pernah gegabah. Mereka tahu waktu berpihak pada yang tenang. "Es tidak meledak. Es menunggu sampai semuanya diam dan membeku." ❄️'
+    },
+    {
+        name: 'VERDANT WOODS', short: 'Verdant Woods',
+        bg: '../assets/images/carousel/verdant.jpg', card: '../assets/images/carousel/card-verdant.svg',
+        glow: '#98BD49',
+        desc: 'Kerajaan hutan yang benar-benar hidup, dihuni warga yang percaya bahwa pertumbuhan tak bisa dipaksakan. Merawat, konsisten, dan sabar. "Pohon terbesar di hutan ini pun dulunya hanya sebuah benih yang tidak ada yang perhatikan." 🌿'
     },
     {
         name: 'CANDORIA', short: 'Candoria',
         bg: '../assets/images/carousel/candoria.jpg', card: '../assets/images/carousel/card-candoria.svg',
-        glow: '#FBA4B5', btnA: '#FBA4B5', btnB: '#F9B77D', btnBorder: '#FFF184', btnShadow: '#9C4A5E', link: ''
+        glow: '#FBA4B5',
+        desc: 'Istananya dari gula, tapi jangan remehkan mereka. Saat yang lain mencari solusi lama, warga Candoria menciptakan yang belum pernah terpikirkan. "Jangan remehkan yang manis. Racun paling mematikan pun selalu datang dengan rasa yang menyenangkan." 🍬'
+    },
+    {
+        name: 'NOCTURNA ENCLAVE', short: 'Nocturna',
+        bg: '../assets/images/carousel/nocturna.jpg', card: '../assets/images/carousel/card-nocturna.svg',
+        glow: '#3E588F',
+        desc: 'Di bawah langit malam yang selalu berbintang, warga Nocturna bekerja dalam sunyi dan menyelesaikan dalam sunyi, lalu hasilnya mengejutkan semua orang. "Bayangan tidak menghilang saat lampu padam. Justru di situlah ia paling berkuasa." 🌑'
     },
     {
         name: 'MECHA FORGE', short: 'Mecha Forge',
         bg: '../assets/images/carousel/mecha.jpg', card: '../assets/images/carousel/card-mecha.svg',
-        glow: '#61A059', btnA: '#085857', btnB: '#61A059', btnBorder: '#61A059', btnShadow: '#043332', link: ''
+        glow: '#61A059',
+        desc: 'Kerajaan baja dan roda gigi ini dibangun sepenuhnya oleh tangan manusia. Warganya tak percaya keberuntungan, hanya sistem dan rencana yang teruji. "Mesin tidak pernah salah. Hanya manusia yang salah membangunnya." 🤖'
     },
 ];
 
-// preload so swaps don't flicker
+// preload gambar
 realms.forEach(r => { new Image().src = r.bg; new Image().src = r.card; });
 
 const text = document.getElementById('realmText');
 const nameEl = document.getElementById('realmName');
-const btnText = document.getElementById('realmBtnText');
-const linkEl = document.getElementById('realmLink');
+const descEl = document.getElementById('realmDescription'); 
 const card = document.getElementById('realmCard');
 
 let front = document.getElementById('bgA');
@@ -81,12 +90,12 @@ function go(dir) {
     // swap content while it's invisible
     setTimeout(() => {
         nameEl.textContent = r.name;
-        btnText.textContent = 'Take me to ' + r.short;
-        linkEl.href = r.link;
-        linkEl.style.setProperty('--btn-a', r.btnA);
-        linkEl.style.setProperty('--btn-b', r.btnB);
-        linkEl.style.setProperty('--btn-border', r.btnBorder);
-        linkEl.style.setProperty('--btn-shadow', r.btnShadow);
+        
+        // Update deskripsi teks jika elemennya ada
+        if (descEl && r.desc) {
+            descEl.textContent = r.desc;
+        }
+
         card.src = r.card;
         card.style.setProperty('--glow', r.glow);
         text.classList.remove('opacity-0');
