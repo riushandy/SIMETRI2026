@@ -49,65 +49,63 @@
     </style>
 </head>
 
-<body class="bg-gray-100 font-zelda">
-    <header class="sticky top-0 z-[10] border-b-[6px] border-[#4C1C0E]">
-        <nav class="flex items-center justify-between bg-[#7A3D21] px-6 md:px-16 h-[90px]">
-            <div class="flex items-center gap-12 lg:gap-16">
-                <img src="images/navbar/logo-simetri.png" alt="Logo Simetri"
-                    class="h-[92.72998046875px] lg:h-[132.78564453125px] w-auto">
-                <ul class="hidden md:flex items-center gap-10 lg:gap-14 text-2xl lg:text-[32px] text-[#C07E4E]">
-                    <li><a href="#" class="hover:text-[#F9DCB4] transition-colors">Home</a></li>
-                    <li><a href="#" class="hover:text-[#F9DCB4] transition-colors">Tema</a></li>
-                    <li><a href="#" class="underline underline-offset-8 text-[#F9DCB4]">Materi</a></li>
-                    <li><a href="#" class="hover:text-[#F9DCB4] transition-colors">Asik</a></li>
+<body class="bg-[#085857] font-zelda">
+    <header class="fixed top-0 left-0 w-full z-50">
+        <nav class="flex items-center justify-between bg-[#7A3D21] px-6 xl:px-[90px] h-[90px] outline outline-[6px] outline-[#4C1C0E]">
+            <div class="flex items-center gap-16">
+                <img src="images/navbar/logo-simetri.png" class="w-[93.8px] h-[92.73px] md:w-[132px] md:h-[132px] object-contain" alt="Logo SIMETRI">
+                <ul class="hidden xl:flex items-center gap-16 text-[32px]">
+                    <li><a href="..\Home\homepage.html" style="font-family: 'The Wild Breath of Zelda';" class="text-[#C07E4E] hover:text-[#F9DCB4]">Home</a></li>
+                    <li><a href="..\Tema\pages\Tema.html" style="font-family: 'The Wild Breath of Zelda';" class="text-[#C07E4E] hover:text-[#F9DCB4]">Tema</a></li>
+                    <li><a href="..\Materi\Materi.html" style="font-family: 'The Wild Breath of Zelda';" class="underline text-[#F9DCB4]">Materi</a></li>
+                    <li><a href="..\Asik\asik.html" style="font-family: 'The Wild Breath of Zelda';" class="text-[#C07E4E] hover:text-[#F9DCB4]">Asik</a></li>
                 </ul>
             </div>
 
-            <div class="hidden md:flex items-center gap-3 lg:gap-4">
-                <a href="https://x.com/HMSI_ITS?s=20" target="_blank">
-                    <img src="images/navbar/twitter-logo.png" alt="Twitter"
-                        class="h-9 lg:h-10 w-auto hover:opacity-85 transition-opacity">
+            <div class="hidden xl:flex items-center justify-end gap-[15px]">
+                <a href="https://x.com/hmsi_its" target="_blank" rel="noopener noreferrer" class="flex shrink-0">
+                    <img src="images/navbar/Exclude.png" class="w-[41.58px] h-[41.58px] transition-transform hover:scale-110" alt="X">
                 </a>
-                <a href="https://www.tiktok.com/@hmsi_its" target="_blank">
-                    <img src="images/navbar/Tiktok.png" alt="Tiktok"
-                        class="h-9 lg:h-10 w-auto hover:opacity-85 transition-opacity">
+                <a href="https://www.tiktok.com/@hmsi_its" target="_blank" rel="noopener noreferrer" class="flex shrink-0">
+                    <img src="images/navbar/Tiktok.png" class="w-[41.58px] h-[41.58px] transition-transform hover:scale-110" alt="TikTok">
                 </a>
-                <a href="https://www.instagram.com/hmsi_its/" target="_blank">
-                    <img src="images/navbar/ig-logo.png" alt="Instagram"
-                        class="h-9 lg:h-10 w-auto hover:opacity-85 transition-opacity">
+                <a href="https://www.instagram.com/simetri.hmsiits" target="_blank" rel="noopener noreferrer" class="flex shrink-0">
+                    <img src="images/navbar/ig-logo.png" class="w-[41.58px] h-[41.58px] transition-transform hover:scale-110" alt="Instagram">
                 </a>
-                <a href="https://www.youtube.com/@layarHMSI" target="_blank">
-                    <img src="images/navbar/yt-logo.png" alt="Youtube"
-                        class="h-9 lg:h-10 w-auto hover:opacity-85 transition-opacity">
+                <a href="https://youtube.com/@layarhmsi" target="_blank" rel="noopener noreferrer" class="flex shrink-0">
+                    <img src="images/navbar/yt-logo.png" class="w-[41.58px] h-[41.58px] transition-transform hover:scale-110" alt="YouTube">
                 </a>
             </div>
 
-            <button id="menu-btn" class="md:hidden bg-[#4C1C0E] rounded-xl flex justify-center items-center w-12 h-12">
-                <img id="menu-icon" src="images/navbar/hamburger-menu.svg" alt="Menu" class="w-6 h-auto">
+            <button id="menu-btn" class="flex xl:hidden items-center justify-center w-12 h-12 bg-[#4C1C0E] rounded-[9.35px]" aria-label="Buka menu" aria-expanded="false">
+                <svg id="icon-open" xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="#F9DCB4" stroke-width="2" stroke-linecap="round">
+                    <path d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+                <svg id="icon-close" xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 hidden" fill="none" viewBox="0 0 24 24" stroke="#F9DCB4" stroke-width="2" stroke-linecap="round">
+                    <path d="M6 6l12 12M18 6L6 18" />
+                </svg>
             </button>
         </nav>
 
-        <div id="mobile-menu" class="hidden md:hidden bg-[#F6EBD7] shadow-xl text-center">
-            <ul class="flex flex-col text-2xl text-[#C07E4E] gap-[10px] text-[32px]">
-                <li class="py-4 hover:underline underline-offset-8 hover:text-[#7A3D21] hover:bg-[#F9DCB4]"><a href="#">Home</a></li>
-                <li class="py-4 hover:underline underline-offset-8 hover:text-[#7A3D21] hover:bg-[#F9DCB4]"><a href="#">Tema</a></li>
-                <li class="py-4 hover:underline underline-offset-8 hover:text-[#7A3D21] hover:bg-[#F9DCB4]"><a href="#" class="underline underline-offset-8 text-[#7A3D21]">Materi</a>
-                </li>
-                <li class="py-4 hover:underline underline-offset-8 hover:text-[#7A3D21] hover:bg-[#F9DCB4]"><a href="#">Asik</a></li>
+        <div id="mobile-menu" class="hidden xl:hidden absolute w-full top-full left-0 bg-[#F6EBD7] border-b-[6px] border-[#4C1C0E]">
+            <ul class="flex flex-col text-[32px] leading-[36px]">
+                <li><a href="..\Home\homepage.html" style="font-family: 'The Wild Breath of Zelda';" class="block w-full py-4 text-center text-[#C07E4E] hover:bg-[#F9DCB4] hover:text-[#7A3D21]">Home</a></li>
+                <li><a href="..\Tema\pages\Tema.html" style="font-family: 'The Wild Breath of Zelda';" class="block w-full py-4 text-center text-[#C07E4E] hover:bg-[#F9DCB4] hover:text-[#7A3D21]">Tema</a></li>
+                <li><a href="..\Materi\Materi.html" style="font-family: 'The Wild Breath of Zelda';" class="block w-full py-4 text-center bg-[#F9DCB4] text-[#7A3D21] underline underline-offset-4">Materi</a></li>
+                <li><a href="..\Asik\asik.html" style="font-family: 'The Wild Breath of Zelda';" class="block w-full py-4 text-center text-[#C07E4E] hover:bg-[#F9DCB4] hover:text-[#7A3D21]">Asik</a></li>
             </ul>
-
-            <div class="flex justify-center items-center gap-[15px] py-4">
-                <a href="https://x.com/HMSI_ITS?s=20" target="_blank" rel="noopener noreferrer">
-                    <img src="images/navbar/twitter-dark.svg" alt="Twitter" class="h-10 w-auto hover:opacity-85 transition-opacity">
+            <div class="flex items-center justify-center gap-[15px] h-[88.22px] pt-4 pb-8">
+                <a href="https://x.com/hmsi_its" target="_blank" rel="noopener noreferrer" class="flex shrink-0">
+                    <img src="images/navbar/Exclude2.png" style="filter: url(#tint);" class="w-[41.58px] h-[41.58px] transition-transform hover:scale-110 active:scale-95" alt="X">
                 </a>
-                <a href="https://www.tiktok.com/@hmsi_its" target="_blank" rel="noopener noreferrer">
-                    <img src="images/navbar/Tiktok-dark.svg" alt="Tiktok" class="h-10 w-auto hover:opacity-85 transition-opacity">
+                <a href="https://www.tiktok.com/@hmsi_its" target="_blank" rel="noopener noreferrer" class="flex shrink-0">
+                    <img src="images/navbar/Tiktok2.png" style="filter: url(#tint);" class="w-[41.58px] h-[41.58px] transition-transform hover:scale-110 active:scale-95" alt="TikTok">
                 </a>
-                <a href="https://www.instagram.com/hmsi_its/" target="_blank" rel="noopener noreferrer">
-                    <img src="images/navbar/ig-logo-dark.svg" alt="Instagram" class="h-10 w-auto hover:opacity-85 transition-opacity">
+                <a href="https://www.instagram.com/simetri.hmsiits" target="_blank" rel="noopener noreferrer" class="flex shrink-0">
+                    <img src="images/navbar/ig-logo2.png" style="filter: url(#tint);" class="w-[41.58px] h-[41.58px] transition-transform hover:scale-110 active:scale-95" alt="Instagram">
                 </a>
-                <a href="https://www.youtube.com/@layarHMSI" target="_blank" rel="noopener noreferrer">
-                    <img src="images/navbar/yt-logo-dark.svg" alt="Youtube" class="h-10 w-auto hover:opacity-85 transition-opacity">
+                <a href="https://youtube.com/@layarhmsi" target="_blank" rel="noopener noreferrer" class="flex shrink-0">
+                    <img src="images/navbar/yt-logo2.png" style="filter: url(#tint);" class="w-[41.58px] h-[41.58px] transition-transform hover:scale-110 active:scale-95" alt="YouTube">
                 </a>
             </div>
         </div>
@@ -135,12 +133,11 @@
                         </div>
                     </div>
 
-                    <a href="https://drive.google.com/drive/folders/1TkwIuBJVa_2qAAn-PETQ8rFqpkqygu3P?usp=drive_link"
-                        target="_blank">
-                        <button
-                            class="button mt-[0.5vw] text-[3.5vw] md:text-[1.5vw] hover:bg-[linear-gradient(to_bottom,#ee915f_50%,#e38c4e_50%)]">ACCES
-                            MODUL
-                        </button>
+                    <a href="https://drive.google.com/drive/folders/1XJKVuD4FVfmD9hAMcmwrNgbDsS5emLMN?usp=sharing" style="font-family: 'The Wild Breath of Zelda', serif;"
+                   class="group inline-block shrink-0 w-[155px] md:w-[278px] rounded-[12px] md:rounded-[18px] border border-[#5C1A2E] bg-[#6E2F1F] pb-[6px] md:pb-[10px]">
+                    <span class="flex items-center justify-center w-full h-[36px] md:h-[56px] rounded-[11px] md:rounded-[17px] border border-[#F3B641] bg-[linear-gradient(180deg,#F36F41_0%,#F39241_46.15%,#F36F41_46.16%,#F39241_100%)] text-[16px] md:text-[28px] leading-none uppercase text-white [text-shadow:0_-1px_0_#808080] transition duration-150 group-hover:brightness-110 group-active:translate-y-[4px] md:group-active:translate-y-[8px]">
+                        Access Modul
+                    </span>
                     </a>
                 </div>
             </div>
@@ -177,16 +174,14 @@
         </section>
 
         <!-- FAQ Section -->
-        <section class="relative font-['Times_New_Roman',serif]">
-            <img src="images/materi/bg-section3.svg" alt="section3"
-                class="absolute inset-0 w-full h-full object-cover object-center z-0">
-            <div class="relative z-[4] w-full px-4 flex flex-col items-center gap-6">
+        <section class="relative font-['Times_New_Roman',serif]  faq w-full bg-[url('images/materi/bg-section3.svg')] bg-cover bg-top bg-no-repeat pt-16 md:pt-24 px-4 md:px-10 flex flex-col items-center">
+            <div class="relative z-[4] w-full px-4 flex flex-col items-center gap-6 my-12">
                 <!-- FAQ Item 1 -->
                 <div class="faq-item mb-4 w-full">
                     <button
                         class="faq-button relative z-10 flex w-full items-center justify-between rounded-[20px] border-[8px] border-[#4c1c0e] bg-[#7A3D21] px-6 py-6 text-left">
-                        <span class="text-[24px] text-white ">
-                            Day 1 (10 Okt)
+                        <span class="text-[24px] md:text-[30px] lg:text-[36px] text-white ">
+                            Day 1 (17 Oktober 2026)
                         </span>
                         <span class="flex h-[38px] w-[38px] items-center justify-center rounded-[12px] bg-[#4c1c0e]">
                             <img src="images/materi/chevron-down.png" alt="chevron"
@@ -209,8 +204,8 @@
                 <div class="faq-item mb-4 w-full">
                     <button
                         class="faq-button relative z-10 flex w-full items-center justify-between rounded-[20px] border-[8px] border-[#4c1c0e] bg-[#7A3D21] px-6 py-6 text-left">
-                        <span class="text-[24px] text-white ">
-                            Day 2 (11 Okt)
+                        <span class="text-[24px] md:text-[30px] lg:text-[36px] text-white ">
+                            Day 2 (18 Oktober 2026)
                         </span>
                         <span class="flex h-[38px] w-[38px] items-center justify-center rounded-[12px] bg-[#4c1c0e]">
                             <img src="images/materi/chevron-down.png" alt="chevron"
@@ -234,8 +229,8 @@
                 <div class="faq-item mb-4 w-full">
                     <button
                         class="faq-button relative z-10 flex w-full items-center justify-between rounded-[20px] border-[8px] border-[#4c1c0e] bg-[#7A3D21] px-6 py-6 text-left">
-                        <span class="text-[24px] text-white ">
-                            Day 3 (17 Okt)
+                        <span class="text-[24px] md:text-[30px] lg:text-[36px] text-white ">
+                            Day 3 (24 Oktober 2026)
                         </span>
                         <span class="flex h-[38px] w-[38px] items-center justify-center rounded-[12px] bg-[#4c1c0e]">
                             <img src="images/materi/chevron-down.png" alt="chevron"
@@ -259,8 +254,8 @@
                 <div class="faq-item mb-4 w-full">
                     <button
                         class="faq-button relative z-10 flex w-full items-center justify-between rounded-[20px] border-[8px] border-[#4c1c0e] bg-[#7A3D21] px-6 py-6 text-left">
-                        <span class="text-[24px] text-white ">
-                            Day 4 (18 Okt)
+                        <span class="text-[24px] md:text-[30px] lg:text-[36px] text-white ">
+                            Day 4 (25 Oktober 2026)
                         </span>
                         <span class="flex h-[38px] w-[38px] items-center justify-center rounded-[12px] bg-[#4c1c0e]">
                             <img src="images/materi/chevron-down.png" alt="chevron"
@@ -284,214 +279,262 @@
         </section>
 
         <!-- What Awaits You Section -->
-        <section class="relative">
-            <!-- Background Image -->
-            <img src="images/materi/bg-section4.svg" alt="Section 4 Background"
-                class="block w-full h-[130vw] object-cover object-center md:h-auto">
+        <section class="relative w-full overflow-hidden">
+    <!-- Background Image -->
+    <img src="images/materi/bg-section4.svg" alt="Section 4 Background"
+        class="block w-full h-[100%] min-h-[620px] sm:h-[110vw] md:h-[85vw] lg:h-auto object-cover object-center absolute inset-0 z-0">
 
-            <!-- Content Container -->
-            <div class="absolute inset-0 flex flex-col items-center justify-center px-4 py-8">
-                <!-- Title Text -->
-                <h2
-                    class="text-white text-[10.67vw] md:text-[5.56vw] [-webkit-text-stroke:0.04em_#7A3D21] [paint-order:stroke_fill] drop-shadow-[0_4px_0_#7A3D21] text-center leading-none mb-6 md:mb-10 font-zelda">
-                    WHAT AWAITS YOU
-                </h2>
+    <!-- Content Container -->
+    <div class="relative z-10 flex flex-col items-center justify-between min-h-[620px] sm:min-h-0 px-3 py-6 md:py-12">
+        
+        <!-- Title Text -->
+        <h2
+            class="text-white text-[9vw] sm:text-[6.5vw] md:text-[4vw] lg:text-[5.56vw] [-webkit-text-stroke:0.04em_#7A3D21] [paint-order:stroke_fill] drop-shadow-[0_4px_0_#7A3D21] text-center leading-none font-zelda mb-2">
+            WHAT AWAITS YOU
+        </h2>
 
-                <!-- Carousel Track Outer Container -->
-                <div
-                    class="relative w-full max-w-[340px] sm:max-w-[500px] md:max-w-[750px] lg:max-w-[850px] overflow-hidden">
-                    <!-- Carousel Inner Track -->
-                    <div id="Track" class="flex transition-transform duration-500 ease-in-out">
+        <!-- Carousel Track Outer Container -->
+        <div
+            class="relative w-full max-w-[340px] xs:max-w-[370px] sm:max-w-[520px] md:max-w-[680px] lg:max-w-[850px] overflow-hidden my-auto">
+            <!-- Carousel Inner Track -->
+            <div id="Track" class="flex transition-transform duration-500 ease-in-out">
 
-                        <!-- CARD 1 -->
-                        <div id="card-1" class="w-full flex-shrink-0 relative flex items-center justify-center">
-                            <img src="images/materi/card.svg" alt="Card Background Desktop"
-                                class="hidden md:block w-full h-auto object-contain drop-shadow-md">
-                            <img src="images/materi/card-mobile.svg" alt="Card Background Mobile"
-                                class="block md:hidden w-full h-auto object-contain drop-shadow-md">
-                            <div class="absolute inset-0 flex flex-col justify-between p-6 md:p-12 my-auto">
-                                <div class="flex flex-col gap-2 md:gap-3 mt-2 md:mt-4 md:px-10">
-                                    <h3
-                                        class="text-[#4C1C0E] text-[40px] md:text-[48px] text-left leading-tight">
-                                        TECHNICAL MEETING
-                                    </h3>
-                                    <p class="text-[#7A3D21] text-[20px] md:text-[32px] font-bold">
-                                        9 Oktober 2026, (Jam menyusul)
-                                    </p>
-                                </div>
-                                <p
-                                    class="font-baskerville text-[#7A3D21] text-[18px] md:text-[32px] leading-tight max-w-[90%] text-left md:px-10">
-                                    Persiapan sebelum petualangan dimulai — instalasi VSCode, Node.js, GitHub, dan semua
-                                    tools yang dibutuhkan, dilakukan secara online sebelum hari pertama.
-                                </p>
-                                <div class="flex items-center justify-center gap-4 sm:gap-6 mb-2 md:mb-4 text-center">
-                                    <button
-                                        class="flex items-center justify-center w-[138px] h-[28px] md:w-[171px] md:h-[48px] bg-[#C07E4E] border border-[#F9DCB4] text-white text-[14px] md:text-[28px] text-center py-2 px-6 sm:px-8 rounded-md md:rounded-xl drop-shadow-[0_8px_0_#7A3D21] bg-[linear-gradient(to_bottom,#ee915f_50%,#e38c4e_50%)] hover:brightness-110 transition-all ">
-                                        PPT
-                                    </button>
-                                    <button
-                                        class="flex items-center justify-center w-[138px] h-[28px] md:w-[171px] md:h-[48px] bg-[#C07E4E] border border-[#F9DCB4] text-white text-[14px] md:text-[28px] text-center py-2 px-6 sm:px-8 rounded-md md:rounded-xl drop-shadow-[0_8px_0_#7A3D21] bg-[linear-gradient(to_bottom,#ee915f_50%,#e38c4e_50%)] hover:brightness-110 transition-all">
-                                        RECORDING
-                                    </button>
-                                </div>
-                            </div>
+                <!-- CARD 1 -->
+                <div id="card-1" class="w-full flex-shrink-0 relative flex items-center justify-center">
+                    <img src="images/materi/card.svg" alt="Card Background Desktop"
+                        class="hidden sm:block w-full h-auto object-contain drop-shadow-md">
+                    <img src="images/materi/card-mobile.svg" alt="Card Background Mobile"
+                        class="block sm:hidden w-full h-auto object-contain drop-shadow-md">
+                    
+                    <div class="absolute inset-0 flex flex-col justify-between p-5 xs:p-6 sm:p-7 md:p-9 lg:p-12">
+                        <div class="flex flex-col gap-1 sm:gap-1.5 md:gap-2 mt-1 sm:mt-2 sm:px-4 md:px-6 lg:px-10">
+                            <h3
+                                class="text-[#4C1C0E] text-[6.5vw] xs:text-[22px] sm:text-[26px] md:text-[34px] lg:text-[48px] text-left leading-tight font-bold">
+                                TECHNICAL MEETING
+                            </h3>
+                            <p class="text-[#7A3D21] text-[4vw] xs:text-[14px] sm:text-[16px] md:text-[22px] lg:text-[32px] font-bold">
+                                16 Oktober 2026, 19.00 WIB - 20.00 WIB
+                            </p>
                         </div>
+                        
+                        <p
+                            class="font-baskerville text-[#7A3D21] text-[3.8vw] xs:text-[13px] sm:text-[15px] md:text-[20px] lg:text-[32px] leading-snug md:leading-tight max-w-[98%] text-left sm:px-4 md:px-6 lg:px-10 my-1">
+                            Persiapan sebelum petualangan dimulai — instalasi VSCode, GitHub, dan semua
+                            tools yang dibutuhkan, dilakukan secara online sebelum hari pertama.
+                        </p>
+                        
+                        <!-- Container Tombol Bergaya 3D Responsif -->
+                        <div class="flex items-center justify-center gap-2 xs:gap-3 sm:gap-4 md:gap-6 mb-1 text-center">
+                            <!-- Button PPT -->
+                            <a href="https://drive.google.com/drive/folders/1VVVUzmng11eY4voPL7G3L3nVl6vtxtju?usp=drive_link" style="font-family: 'The Wild Breath of Zelda', serif;"
+                                class="group inline-block shrink-0 w-[100px] xs:w-[115px] sm:w-[130px] md:w-[150px] lg:w-[180px] rounded-[8px] xs:rounded-[10px] md:rounded-[12px] lg:rounded-[14px] border border-[#5C1A2E] bg-[#6E2F1F] pb-[4px] md:pb-[6px]">
+                                <span class="flex items-center justify-center w-full h-[28px] xs:h-[32px] sm:h-[36px] md:h-[42px] lg:h-[48px] rounded-[7px] xs:rounded-[9px] md:rounded-[11px] lg:rounded-[13px] border border-[#F3B641] bg-[linear-gradient(180deg,#7A3D21_0%,#C07E4E_46%,#7A3D21_46%,#C07E4E_100%)] text-[12px] xs:text-[14px] sm:text-[16px] md:text-[20px] lg:text-[24px] leading-none uppercase text-white [text-shadow:0_-1px_0_#808080] transition duration-150 group-hover:brightness-110 group-active:translate-y-[3px] md:group-active:translate-y-[5px]">
+                                    PPT
+                                </span>
+                            </a>
 
-                        <!-- CARD 2 -->
-                        <div id="card-2" class="w-full flex-shrink-0 relative flex items-center justify-center">
-                            <img src="images/materi/card.svg" alt="Card Background Desktop"
-                                class="hidden md:block w-full h-auto object-contain drop-shadow-md">
-                            <img src="images/materi/card-mobile.svg" alt="Card Background Mobile"
-                                class="block md:hidden w-full h-auto object-contain drop-shadow-md">
-                            <div class="absolute inset-0 flex flex-col justify-between p-6 md:p-12 my-auto">
-                                <div class="flex flex-col gap-2 md:gap-3 mt-2 md:mt-4 md:px-10">
-                                    <h3
-                                        class="text-[#4C1C0E] text-[40px] md:text-[48px] text-left leading-tight">
-                                        DAY 1
-                                    </h3>
-                                    <p class="text-[#7A3D21] text-[20px] md:text-[32px] font-bold">
-                                        10 Oktober 2026, 08.30 - 14.45
-                                    </p>
-                                </div>
-                                <p
-                                    class="font-baskerville text-[#7A3D21] text-[18px] md:text-[32px] leading-tight max-w-[90%] text-left md:px-10">
-                                    Persiapan sebelum petualangan dimulai — instalasi VSCode, Node.js, GitHub, dan semua
-                                    tools yang dibutuhkan, dilakukan secara online sebelum hari pertama.
-                                </p>
-                                <div class="flex items-center justify-center gap-4 sm:gap-6 mb-2 md:mb-4 text-center">
-                                    <button
-                                        class="flex items-center justify-center w-[138px] h-[28px] md:w-[171px] md:h-[48px] bg-[#C07E4E] border border-[#F9DCB4] text-white text-[14px] md:text-[28px] text-center py-2 px-6 sm:px-8 rounded-md md:rounded-xl drop-shadow-[0_8px_0_#7A3D21] hover:brightness-110 transition-all">
-                                        PPT
-                                    </button>
-                                    <button
-                                        class="flex items-center justify-center w-[138px] h-[28px] md:w-[171px] md:h-[48px] bg-[#C07E4E] border border-[#F9DCB4] text-white text-[14px] md:text-[28px] text-center py-2 px-6 sm:px-8 rounded-md md:rounded-xl drop-shadow-[0_8px_0_#7A3D21] hover:brightness-110 transition-all">
-                                        RECORDING
-                                    </button>
-                                </div>
-                            </div>
+                            <!-- Button RECORDING -->
+                            <a href="https://drive.google.com/drive/folders/1oY4dU1LfQunw9zAtKbIAVphbq5VzAzuh?usp=drive_link" style="font-family: 'The Wild Breath of Zelda', serif;"
+                                class="group inline-block shrink-0 w-[100px] xs:w-[115px] sm:w-[130px] md:w-[150px] lg:w-[180px] rounded-[8px] xs:rounded-[10px] md:rounded-[12px] lg:rounded-[14px] border border-[#5C1A2E] bg-[#6E2F1F] pb-[4px] md:pb-[6px]">
+                                <span class="flex items-center justify-center w-full h-[28px] xs:h-[32px] sm:h-[36px] md:h-[42px] lg:h-[48px] rounded-[7px] xs:rounded-[9px] md:rounded-[11px] lg:rounded-[13px] border border-[#F3B641] bg-[linear-gradient(180deg,#7A3D21_0%,#C07E4E_46%,#7A3D21_46%,#C07E4E_100%)] text-[11px] xs:text-[13px] sm:text-[15px] md:text-[18px] lg:text-[22px] leading-none uppercase text-white [text-shadow:0_-1px_0_#808080] transition duration-150 group-hover:brightness-110 group-active:translate-y-[3px] md:group-active:translate-y-[5px]">
+                                    RECORDING
+                                </span>
+                            </a>
                         </div>
-
-                        <!-- CARD 3 -->
-                        <div id="card-1" class="w-full flex-shrink-0 relative flex items-center justify-center">
-                            <img src="images/materi/card.svg" alt="Card Background Desktop"
-                                class="hidden md:block w-full h-auto object-contain drop-shadow-md">
-                            <img src="images/materi/card-mobile.svg" alt="Card Background Mobile"
-                                class="block md:hidden w-full h-auto object-contain drop-shadow-md">
-                            <div class="absolute inset-0 flex flex-col justify-between p-6 md:p-12 my-auto">
-                                <div class="flex flex-col gap-2 md:gap-3 mt-2 md:mt-4 md:px-10">
-                                    <h3
-                                        class="text-[#4C1C0E] text-[40px] md:text-[48px] text-left leading-tight">
-                                        DAY 2
-                                    </h3>
-                                    <p class="text-[#7A3D21] text-[20px] md:text-[32px] font-bold">
-                                        11 Oktober 2026, 08.30 - 14.45
-                                    </p>
-                                </div>
-                                <p
-                                    class="font-baskerville text-[#7A3D21] text-[18px] md:text-[32px] leading-tight max-w-[90%] text-left md:px-10">
-                                    Tailwind CSS dan Flowbite membangun tampilan website 
-                                    yang modern dan efisien menggunakan utility class dan component library.
-                                </p>
-                                <div class="flex items-center justify-center gap-4 sm:gap-6 mb-2 md:mb-4 text-center">
-                                    <button
-                                        class="flex items-center justify-center w-[138px] h-[28px] md:w-[171px] md:h-[48px] bg-[#C07E4E] border border-[#F9DCB4] text-white text-[14px] md:text-[28px] text-center py-2 px-6 sm:px-8 rounded-md md:rounded-xl drop-shadow-[0_8px_0_#7A3D21] hover:brightness-110 transition-all">
-                                        PPT
-                                    </button>
-                                    <button
-                                        class="flex items-center justify-center w-[138px] h-[28px] md:w-[171px] md:h-[48px] bg-[#C07E4E] border border-[#F9DCB4] text-white text-[14px] md:text-[28px] text-center py-2 px-6 sm:px-8 rounded-md md:rounded-xl drop-shadow-[0_8px_0_#7A3D21] hover:brightness-110 transition-all">
-                                        RECORDING
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- CARD 4 -->
-                        <div id="card-1" class="w-full flex-shrink-0 relative flex items-center justify-center">
-                            <img src="images/materi/card.svg" alt="Card Background Desktop"
-                                class="hidden md:block w-full h-auto object-contain drop-shadow-md">
-                            <img src="images/materi/card-mobile.svg" alt="Card Background Mobile"
-                                class="block md:hidden w-full h-auto object-contain drop-shadow-md">
-                            <div class="absolute inset-0 flex flex-col justify-between p-6 md:p-12 my-auto">
-                                <div class="flex flex-col gap-2 md:gap-3 mt-2 md:mt-4 md:px-10">
-                                    <h3
-                                        class="text-[#4C1C0E] text-[40px] md:text-[48px] text-left leading-tight">
-                                        DAY 3
-                                    </h3>
-                                    <p class="text-[#7A3D21] text-[20px] md:text-[32px] font-bold">
-                                        17 Oktober 2026, 08.30 - 14.45
-                                    </p>
-                                </div>
-                                <p
-                                    class="font-baskerville text-[#7A3D21] text-[18px] md:text-[32px] leading-tight max-w-[90%] text-left md:px-10">
-                                    JavaScript dasar DOM manipulation dan interaksi UI untuk membuat website 
-                                    menjadi hidup dan responsif terhadap pengguna.
-                                </p>
-                                <div class="flex items-center justify-center gap-4 sm:gap-6 mb-2 md:mb-4 text-center">
-                                    <button
-                                        class="flex items-center justify-center w-[138px] h-[28px] md:w-[171px] md:h-[48px] bg-[#C07E4E] border border-[#F9DCB4] text-white text-[14px] md:text-[28px] text-center py-2 px-6 sm:px-8 rounded-md md:rounded-xl drop-shadow-[0_8px_0_#7A3D21] hover:brightness-110 transition-all">
-                                        PPT
-                                    </button>
-                                    <button
-                                        class="flex items-center justify-center w-[138px] h-[28px] md:w-[171px] md:h-[48px] bg-[#C07E4E] border border-[#F9DCB4] text-white text-[14px] md:text-[28px] text-center py-2 px-6 sm:px-8 rounded-md md:rounded-xl drop-shadow-[0_8px_0_#7A3D21] hover:brightness-110 transition-all">
-                                        RECORDING
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- CARD 5 -->
-                        <div id="card-1" class="w-full flex-shrink-0 relative flex items-center justify-center">
-                            <img src="images/materi/card.svg" alt="Card Background Desktop"
-                                class="hidden md:block w-full h-auto object-contain drop-shadow-md">
-                            <img src="images/materi/card-mobile.svg" alt="Card Background Mobile"
-                                class="block md:hidden w-full h-auto object-contain drop-shadow-md">
-                            <div class="absolute inset-0 flex flex-col justify-between p-6 md:p-12 my-auto">
-                                <div class="flex flex-col gap-2 md:gap-3 mt-2 md:mt-4 md:px-10">
-                                    <h3
-                                        class="text-[#4C1C0E] text-[40px] md:text-[48px] text-left leading-tight">
-                                        DAY 4
-                                    </h3>
-                                    <p class="text-[#7A3D21] text-[20px] md:text-[32px] font-bold">
-                                        18 Oktober 2026, 08.30 - 14.45
-                                    </p>
-                                </div>
-                                <p
-                                    class="font-baskerville text-[#7A3D21] text-[18px] md:text-[32px] leading-tight max-w-[90%] text-left md:px-10">
-                                    Presentasi final project peserta mempresentasikan dan 
-                                    mendemonstrasikan website yang telah mereka bangun selama empat hari.
-                                </p>
-                                <div class="flex items-center justify-center gap-4 sm:gap-6 mb-2 md:mb-4 text-center">
-                                    <button
-                                        class="flex items-center justify-center w-[138px] h-[28px] md:w-[171px] md:h-[48px] bg-[#C07E4E] border border-[#F9DCB4] text-white text-[14px] md:text-[28px] text-center py-2 px-6 sm:px-8 rounded-md md:rounded-xl drop-shadow-[0_8px_0_#7A3D21] hover:brightness-110 transition-all">
-                                        PPT
-                                    </button>
-                                    <button
-                                        class="flex items-center justify-center w-[138px] h-[28px] md:w-[171px] md:h-[48px] bg-[#C07E4E] border border-[#F9DCB4] text-white text-[14px] md:text-[28px] text-center py-2 px-6 sm:px-8 rounded-md md:rounded-xl drop-shadow-[0_8px_0_#7A3D21] hover:brightness-110 transition-all">
-                                        RECORDING
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-
                     </div>
                 </div>
 
-                <!-- Navigation Controls (Arrow Left, Indicators, Arrow Right) -->
-                <div class="flex items-center justify-center gap-4 sm:gap-6 mt-6 md:mt-8 z-[4]">
-                    <button id="prev-btn"
-                        class="hover:scale-105 active:scale-95 transition-transform focus:outline-none">
-                        <img src="images/materi/arrow-left.png" alt="Previous" class="w-12 sm:w-16 md:w-20 h-auto">
-                    </button>
+                <!-- CARD 2 -->
+                <div id="card-2" class="w-full flex-shrink-0 relative flex items-center justify-center">
+                    <img src="images/materi/card.svg" alt="Card Background Desktop"
+                        class="hidden sm:block w-full h-auto object-contain drop-shadow-md">
+                    <img src="images/materi/card-mobile.svg" alt="Card Background Mobile"
+                        class="block sm:hidden w-full h-auto object-contain drop-shadow-md">
+                    
+                    <div class="absolute inset-0 flex flex-col justify-between p-5 xs:p-6 sm:p-7 md:p-9 lg:p-12">
+                        <div class="flex flex-col gap-1 sm:gap-1.5 md:gap-2 mt-1 sm:mt-2 sm:px-4 md:px-6 lg:px-10">
+                            <h3
+                                class="text-[#4C1C0E] text-[6.5vw] xs:text-[22px] sm:text-[26px] md:text-[34px] lg:text-[48px] text-left leading-tight font-bold">
+                                DAY 1
+                            </h3>
+                            <p class="text-[#7A3D21] text-[4vw] xs:text-[14px] sm:text-[16px] md:text-[22px] lg:text-[32px] font-bold">
+                                10 Oktober 2026, 08.30 WIB - 14.30 WIB
+                            </p>
+                        </div>
+                        
+                        <p
+                            class="font-baskerville text-[#7A3D21] text-[3.8vw] xs:text-[13px] sm:text-[15px] md:text-[20px] lg:text-[32px] leading-snug md:leading-tight max-w-[98%] text-left sm:px-4 md:px-6 lg:px-10 my-1">
+                            HTML dan CSS dasar untuk menyusun struktur halaman dengan semantic HTML, lalu Tailwind CSS untuk menata tampilan dengan lebih cepat dan efisien.
+                        </p>
+                        
+                        <div class="flex items-center justify-center gap-2 xs:gap-3 sm:gap-4 md:gap-6 mb-1 text-center">
+                            <!-- Button PPT -->
+                            <a href="https://drive.google.com/drive/folders/1CpFfOP9i4bUZB4MDpWjAyX6X6gnp_z3s?usp=drive_link" style="font-family: 'The Wild Breath of Zelda', serif;"
+                                class="group inline-block shrink-0 w-[100px] xs:w-[115px] sm:w-[130px] md:w-[150px] lg:w-[180px] rounded-[8px] xs:rounded-[10px] md:rounded-[12px] lg:rounded-[14px] border border-[#5C1A2E] bg-[#6E2F1F] pb-[4px] md:pb-[6px]">
+                                <span class="flex items-center justify-center w-full h-[28px] xs:h-[32px] sm:h-[36px] md:h-[42px] lg:h-[48px] rounded-[7px] xs:rounded-[9px] md:rounded-[11px] lg:rounded-[13px] border border-[#F3B641] bg-[linear-gradient(180deg,#7A3D21_0%,#C07E4E_46%,#7A3D21_46%,#C07E4E_100%)] text-[12px] xs:text-[14px] sm:text-[16px] md:text-[20px] lg:text-[24px] leading-none uppercase text-white [text-shadow:0_-1px_0_#808080] transition duration-150 group-hover:brightness-110 group-active:translate-y-[3px] md:group-active:translate-y-[5px]">
+                                    PPT
+                                </span>
+                            </a>
 
-                    <div id="dots-container" class="flex items-center gap-2 sm:gap-3"></div>
-
-                    <button id="next-btn"
-                        class="hover:scale-105 active:scale-95 transition-transform focus:outline-none">
-                        <img src="images/materi/arrow-right.png" alt="Next" class="w-12 sm:w-16 md:w-20 h-auto">
-                    </button>
+                            <!-- Button RECORDING -->
+                            <a href="https://drive.google.com/drive/folders/1zNVBNgFGP1HIbxLMnhWIZjBv9pEXFTsa?usp=drive_link" style="font-family: 'The Wild Breath of Zelda', serif;"
+                                class="group inline-block shrink-0 w-[100px] xs:w-[115px] sm:w-[130px] md:w-[150px] lg:w-[180px] rounded-[8px] xs:rounded-[10px] md:rounded-[12px] lg:rounded-[14px] border border-[#5C1A2E] bg-[#6E2F1F] pb-[4px] md:pb-[6px]">
+                                <span class="flex items-center justify-center w-full h-[28px] xs:h-[32px] sm:h-[36px] md:h-[42px] lg:h-[48px] rounded-[7px] xs:rounded-[9px] md:rounded-[11px] lg:rounded-[13px] border border-[#F3B641] bg-[linear-gradient(180deg,#7A3D21_0%,#C07E4E_46%,#7A3D21_46%,#C07E4E_100%)] text-[11px] xs:text-[13px] sm:text-[15px] md:text-[18px] lg:text-[22px] leading-none uppercase text-white [text-shadow:0_-1px_0_#808080] transition duration-150 group-hover:brightness-110 group-active:translate-y-[3px] md:group-active:translate-y-[5px]">
+                                    RECORDING
+                                </span>
+                            </a>
+                        </div>
+                    </div>
                 </div>
+
+                <!-- CARD 3 -->
+                <div id="card-3" class="w-full flex-shrink-0 relative flex items-center justify-center">
+                    <img src="images/materi/card.svg" alt="Card Background Desktop"
+                        class="hidden sm:block w-full h-auto object-contain drop-shadow-md">
+                    <img src="images/materi/card-mobile.svg" alt="Card Background Mobile"
+                        class="block sm:hidden w-full h-auto object-contain drop-shadow-md">
+                    
+                    <div class="absolute inset-0 flex flex-col justify-between p-5 xs:p-6 sm:p-7 md:p-9 lg:p-12">
+                        <div class="flex flex-col gap-1 sm:gap-1.5 md:gap-2 mt-1 sm:mt-2 sm:px-4 md:px-6 lg:px-10">
+                            <h3
+                                class="text-[#4C1C0E] text-[6.5vw] xs:text-[22px] sm:text-[26px] md:text-[34px] lg:text-[48px] text-left leading-tight font-bold">
+                                DAY 2
+                            </h3>
+                            <p class="text-[#7A3D21] text-[4vw] xs:text-[14px] sm:text-[16px] md:text-[22px] lg:text-[32px] font-bold">
+                                11 Oktober 2026, 08.30 WIB - 14.30 WIB
+                            </p>
+                        </div>
+                        
+                        <p
+                            class="font-baskerville text-[#7A3D21] text-[3.8vw] xs:text-[13px] sm:text-[15px] md:text-[20px] lg:text-[32px] leading-snug md:leading-tight max-w-[98%] text-left sm:px-4 md:px-6 lg:px-10 my-1">
+                            Flexbox, parent-child, pengolahan gambar, dan responsive design untuk membuat navbar dan footer yang rapi di layar HP maupun laptop.
+                        </p>
+                        
+                        <div class="flex items-center justify-center gap-2 xs:gap-3 sm:gap-4 md:gap-6 mb-1 text-center">
+                            <!-- Button PPT -->
+                            <a href="https://drive.google.com/drive/folders/1340S_9UjpxKWXnFIyIy9zGM0P9Tn2DOm?usp=drive_link" style="font-family: 'The Wild Breath of Zelda', serif;"
+                                class="group inline-block shrink-0 w-[100px] xs:w-[115px] sm:w-[130px] md:w-[150px] lg:w-[180px] rounded-[8px] xs:rounded-[10px] md:rounded-[12px] lg:rounded-[14px] border border-[#5C1A2E] bg-[#6E2F1F] pb-[4px] md:pb-[6px]">
+                                <span class="flex items-center justify-center w-full h-[28px] xs:h-[32px] sm:h-[36px] md:h-[42px] lg:h-[48px] rounded-[7px] xs:rounded-[9px] md:rounded-[11px] lg:rounded-[13px] border border-[#F3B641] bg-[linear-gradient(180deg,#7A3D21_0%,#C07E4E_46%,#7A3D21_46%,#C07E4E_100%)] text-[12px] xs:text-[14px] sm:text-[16px] md:text-[20px] lg:text-[24px] leading-none uppercase text-white [text-shadow:0_-1px_0_#808080] transition duration-150 group-hover:brightness-110 group-active:translate-y-[3px] md:group-active:translate-y-[5px]">
+                                    PPT
+                                </span>
+                            </a>
+
+                            <!-- Button RECORDING -->
+                            <a href="https://drive.google.com/drive/folders/1yots8Cumy1_iudnyZ-xgu3X6DsFSlwJL?usp=drive_link" style="font-family: 'The Wild Breath of Zelda', serif;"
+                                class="group inline-block shrink-0 w-[100px] xs:w-[115px] sm:w-[130px] md:w-[150px] lg:w-[180px] rounded-[8px] xs:rounded-[10px] md:rounded-[12px] lg:rounded-[14px] border border-[#5C1A2E] bg-[#6E2F1F] pb-[4px] md:pb-[6px]">
+                                <span class="flex items-center justify-center w-full h-[28px] xs:h-[32px] sm:h-[36px] md:h-[42px] lg:h-[48px] rounded-[7px] xs:rounded-[9px] md:rounded-[11px] lg:rounded-[13px] border border-[#F3B641] bg-[linear-gradient(180deg,#7A3D21_0%,#C07E4E_46%,#7A3D21_46%,#C07E4E_100%)] text-[11px] xs:text-[13px] sm:text-[15px] md:text-[18px] lg:text-[22px] leading-none uppercase text-white [text-shadow:0_-1px_0_#808080] transition duration-150 group-hover:brightness-110 group-active:translate-y-[3px] md:group-active:translate-y-[5px]">
+                                    RECORDING
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CARD 4 -->
+                <div id="card-4" class="w-full flex-shrink-0 relative flex items-center justify-center">
+                    <img src="images/materi/card.svg" alt="Card Background Desktop"
+                        class="hidden sm:block w-full h-auto object-contain drop-shadow-md">
+                    <img src="images/materi/card-mobile.svg" alt="Card Background Mobile"
+                        class="block sm:hidden w-full h-auto object-contain drop-shadow-md">
+                    
+                    <div class="absolute inset-0 flex flex-col justify-between p-5 xs:p-6 sm:p-7 md:p-9 lg:p-12">
+                        <div class="flex flex-col gap-1 sm:gap-1.5 md:gap-2 mt-1 sm:mt-2 sm:px-4 md:px-6 lg:px-10">
+                            <h3
+                                class="text-[#4C1C0E] text-[6.5vw] xs:text-[22px] sm:text-[26px] md:text-[34px] lg:text-[48px] text-left leading-tight font-bold">
+                                DAY 3
+                            </h3>
+                            <p class="text-[#7A3D21] text-[4vw] xs:text-[14px] sm:text-[16px] md:text-[22px] lg:text-[32px] font-bold">
+                                17 Oktober 2026, 08.30 WIB - 14.30 WIB
+                            </p>
+                        </div>
+                        
+                        <p
+                            class="font-baskerville text-[#7A3D21] text-[3.8vw] xs:text-[13px] sm:text-[15px] md:text-[20px] lg:text-[32px] leading-snug md:leading-tight max-w-[98%] text-left sm:px-4 md:px-6 lg:px-10 my-1">
+                            JavaScript dasar untuk membuat navbar mobile dan hamburger button, serta sesi PKF untuk melaporkan progress, membahas kendala, dan finishing website.
+                        </p>
+                        
+                        <div class="flex items-center justify-center gap-2 xs:gap-3 sm:gap-4 md:gap-6 mb-1 text-center">
+                            <!-- Button PPT -->
+                            <a href="https://drive.google.com/drive/folders/1_7pDFo8C8oGWc_qMHmHw79r1VOexmT-G?usp=drive_link" style="font-family: 'The Wild Breath of Zelda', serif;"
+                                class="group inline-block shrink-0 w-[100px] xs:w-[115px] sm:w-[130px] md:w-[150px] lg:w-[180px] rounded-[8px] xs:rounded-[10px] md:rounded-[12px] lg:rounded-[14px] border border-[#5C1A2E] bg-[#6E2F1F] pb-[4px] md:pb-[6px]">
+                                <span class="flex items-center justify-center w-full h-[28px] xs:h-[32px] sm:h-[36px] md:h-[42px] lg:h-[48px] rounded-[7px] xs:rounded-[9px] md:rounded-[11px] lg:rounded-[13px] border border-[#F3B641] bg-[linear-gradient(180deg,#7A3D21_0%,#C07E4E_46%,#7A3D21_46%,#C07E4E_100%)] text-[12px] xs:text-[14px] sm:text-[16px] md:text-[20px] lg:text-[24px] leading-none uppercase text-white [text-shadow:0_-1px_0_#808080] transition duration-150 group-hover:brightness-110 group-active:translate-y-[3px] md:group-active:translate-y-[5px]">
+                                    PPT
+                                </span>
+                            </a>
+
+                            <!-- Button RECORDING -->
+                            <a href="https://drive.google.com/drive/folders/1jhhJ-KlUhv0xRicAO0YT8zVaH0bHyCHj?usp=drive_link" style="font-family: 'The Wild Breath of Zelda', serif;"
+                                class="group inline-block shrink-0 w-[100px] xs:w-[115px] sm:w-[130px] md:w-[150px] lg:w-[180px] rounded-[8px] xs:rounded-[10px] md:rounded-[12px] lg:rounded-[14px] border border-[#5C1A2E] bg-[#6E2F1F] pb-[4px] md:pb-[6px]">
+                                <span class="flex items-center justify-center w-full h-[28px] xs:h-[32px] sm:h-[36px] md:h-[42px] lg:h-[48px] rounded-[7px] xs:rounded-[9px] md:rounded-[11px] lg:rounded-[13px] border border-[#F3B641] bg-[linear-gradient(180deg,#7A3D21_0%,#C07E4E_46%,#7A3D21_46%,#C07E4E_100%)] text-[11px] xs:text-[13px] sm:text-[15px] md:text-[18px] lg:text-[22px] leading-none uppercase text-white [text-shadow:0_-1px_0_#808080] transition duration-150 group-hover:brightness-110 group-active:translate-y-[3px] md:group-active:translate-y-[5px]">
+                                    RECORDING
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CARD 5 -->
+                <div id="card-5" class="w-full flex-shrink-0 relative flex items-center justify-center">
+                    <img src="images/materi/card.svg" alt="Card Background Desktop"
+                        class="hidden sm:block w-full h-auto object-contain drop-shadow-md">
+                    <img src="images/materi/card-mobile.svg" alt="Card Background Mobile"
+                        class="block sm:hidden w-full h-auto object-contain drop-shadow-md">
+                    
+                    <div class="absolute inset-0 flex flex-col justify-between p-5 xs:p-6 sm:p-7 md:p-9 lg:p-12">
+                        <div class="flex flex-col gap-1 sm:gap-1.5 md:gap-2 mt-1 sm:mt-2 sm:px-4 md:px-6 lg:px-10">
+                            <h3
+                                class="text-[#4C1C0E] text-[6.5vw] xs:text-[22px] sm:text-[26px] md:text-[34px] lg:text-[48px] text-left leading-tight font-bold">
+                                DAY 4
+                            </h3>
+                            <p class="text-[#7A3D21] text-[4vw] xs:text-[14px] sm:text-[16px] md:text-[22px] lg:text-[32px] font-bold">
+                                18 Oktober 2026, 08.30 WIB - 14.30 WIB
+                            </p>
+                        </div>
+                        
+                        <p
+                            class="font-baskerville text-[#7A3D21] text-[3.8vw] xs:text-[13px] sm:text-[15px] md:text-[20px] lg:text-[32px] leading-snug md:leading-tight max-w-[98%] text-left sm:px-4 md:px-6 lg:px-10 my-1">
+                            Presentasi personal website hasil karya masing-masing peserta, menunjukkan hasil perjalanan belajar dari nol sampai selesai.
+                        </p>
+                        
+                        <div class="flex items-center justify-center gap-2 xs:gap-3 sm:gap-4 md:gap-6 mb-1 text-center">
+                            <!-- Button PPT -->
+                            <a href="https://drive.google.com/drive/folders/1yFg0s5df6sq5lCexI7ujkHObgTmeB4Wd?usp=drive_link" style="font-family: 'The Wild Breath of Zelda', serif;"
+                                class="group inline-block shrink-0 w-[100px] xs:w-[115px] sm:w-[130px] md:w-[150px] lg:w-[180px] rounded-[8px] xs:rounded-[10px] md:rounded-[12px] lg:rounded-[14px] border border-[#5C1A2E] bg-[#6E2F1F] pb-[4px] md:pb-[6px]">
+                                <span class="flex items-center justify-center w-full h-[28px] xs:h-[32px] sm:h-[36px] md:h-[42px] lg:h-[48px] rounded-[7px] xs:rounded-[9px] md:rounded-[11px] lg:rounded-[13px] border border-[#F3B641] bg-[linear-gradient(180deg,#7A3D21_0%,#C07E4E_46%,#7A3D21_46%,#C07E4E_100%)] text-[12px] xs:text-[14px] sm:text-[16px] md:text-[20px] lg:text-[24px] leading-none uppercase text-white [text-shadow:0_-1px_0_#808080] transition duration-150 group-hover:brightness-110 group-active:translate-y-[3px] md:group-active:translate-y-[5px]">
+                                    PPT
+                                </span>
+                            </a>
+
+                            <!-- Button RECORDING -->
+                            <a href="https://drive.google.com/drive/folders/1omtKruvPug5cH0T32zaaHV4vTUzKtqGm?usp=drive_link" style="font-family: 'The Wild Breath of Zelda', serif;"
+                                class="group inline-block shrink-0 w-[100px] xs:w-[115px] sm:w-[130px] md:w-[150px] lg:w-[180px] rounded-[8px] xs:rounded-[10px] md:rounded-[12px] lg:rounded-[14px] border border-[#5C1A2E] bg-[#6E2F1F] pb-[4px] md:pb-[6px]">
+                                <span class="flex items-center justify-center w-full h-[28px] xs:h-[32px] sm:h-[36px] md:h-[42px] lg:h-[48px] rounded-[7px] xs:rounded-[9px] md:rounded-[11px] lg:rounded-[13px] border border-[#F3B641] bg-[linear-gradient(180deg,#7A3D21_0%,#C07E4E_46%,#7A3D21_46%,#C07E4E_100%)] text-[11px] xs:text-[13px] sm:text-[15px] md:text-[18px] lg:text-[22px] leading-none uppercase text-white [text-shadow:0_-1px_0_#808080] transition duration-150 group-hover:brightness-110 group-active:translate-y-[3px] md:group-active:translate-y-[5px]">
+                                    RECORDING
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
             </div>
-        </section>
+        </div>
+
+        <!-- Navigation Controls -->
+        <div class="flex items-center justify-center gap-3 sm:gap-6 mt-2 z-[4]">
+            <button id="prev-btn"
+                class="hover:scale-105 active:scale-95 transition-transform focus:outline-none">
+                <img src="images/materi/arrow-left.png" alt="Previous" class="w-8 sm:w-12 md:w-16 lg:w-20 h-auto">
+            </button>
+
+            <div id="dots-container" class="flex items-center gap-1.5 sm:gap-3"></div>
+
+            <button id="next-btn"
+                class="hover:scale-105 active:scale-95 transition-transform focus:outline-none">
+                <img src="images/materi/arrow-right.png" alt="Next" class="w-8 sm:w-12 md:w-16 lg:w-20 h-auto">
+            </button>
+        </div>
+    </div>
+</section>
     </main>
 
     
@@ -578,37 +621,43 @@
     </script>
     </body>
 
-    <footer class="relative w-full bg-[url(images/footer/bg-footer.png)] bg-cover bg-center flex justify-center items-center border-t-[16px] border-[#7A3D21] px-[4vw] py-[6vw] md:px-[5.5vw] md:py-[5vw]">
+    <footer class="absolute w-full h-auto py-[30px] px-[24px] md:py-[78px] md:px-[90px] flex items-center justify-center overflow-hidden bg-[url('images/footer/bg-footer.png')] bg-cover bg-center">
+        <img src="images/footer/frame-footer-mobile.png" alt="" class="block md:hidden relative w-full h-full pointer-events-none">
+        <img src="images/footer/frame-footer.png" alt="" class="hidden md:block relative w-full h-full pointer-events-none">
 
-        <div class="w-full aspect-[3/4] md:aspect-[2.85/1] bg-[url(images/footer/frame-footer-mobile.png)] md:bg-[url(images/footer/frame-footer.png)] bg-[length:100%_100%] bg-center bg-no-repeat flex flex-col md:flex-row justify-center items-center gap-[4vw] md:gap-[4vw]">
+        <div class="absolute z-[2] flex flex-col md:flex-row items-center justify-center gap-[14px] md:gap-[120px]">
 
-            <div class="flex flex-col gap-[0.5vw] items-center justify-center text-[6vw] md:text-[3vw]">
-                <a class="text-[#C07E4E] hover:text-[#F9DCB4] transition-colors" href="">Home</a>
-                <a class="text-[#C07E4E] hover:text-[#F9DCB4] transition-colors" href="">Tema</a>
-                <a class="underline underline-offset-4 text-[#F9DCB4] transition-colors" href="">Materi</a>
-                <a class="text-[#C07E4E] hover:text-[#F9DCB4] transition-colors" href="">Asik</a>
-            </div>
+            <nav class="flex flex-col items-center gap-[12px]">
+                <a href="..\Home\homepage.html" class="text-[#C07E4E] text-[24px] tracking-[0.3px] hover:text-[#F9DCB4] md:text-[27px]" style="font-family:'The Wild Breath of Zelda',serif;">Home</a>
+                <a href="..\Tema\pages\Tema.html" class="text-[#C07E4E] text-[24px] tracking-[0.3px] hover:text-[#F9DCB4] md:text-[27px]" style="font-family:'The Wild Breath of Zelda',serif;">Tema</a>
+                <a href="..\Materi\Materi.html" class="text-[#C07E4E] text-[24px] tracking-[0.3px] hover:text-[#F9DCB4] md:text-[27px]" style="font-family:'The Wild Breath of Zelda',serif;">Materi</a>
+                <a href="..\Asik\asik.html" class="text-[#C07E4E] text-[24px] tracking-[0.3px] hover:text-[#F9DCB4] md:text-[27px]" style="font-family:'The Wild Breath of Zelda',serif;">Asik</a>
+            </nav>
 
-            <div class="flex flex-col items-center justify-center gap-[4vw] md:gap-[2vw]">
-                <div class="flex flex-col items-center justify-center gap-[2vw] md:gap-[0.8vw]">
-                    <p class="text-[4vw] md:text-[1.6vw] text-center text-[#F9DCB4] font-baskerville">Didukung Oleh</p>
+            <div class="flex flex-col items-center justify-center gap-[31px] md:gap-[48px] text-center">
+                <div>
+                    <h3 class="text-[#F9DCB4] text-[18.38px] font-semibold md:text-[28px] [-webkit-text-stroke:0.5px_#f0c28a]" style="font-family:'Times New Roman',serif;">
+                        Didukung Oleh
+                    </h3>
 
-                    <div class="flex flex-row items-center justify-center gap-[2vw] md:gap-[1vw]">
-                        <img class="w-[22.9vw] md:w-[9.86vw] md:max-w-[9.86vw]" src="images/footer/Group 1410136690.png" alt="Logo ITS DSI">
-                        <img class="w-[16.24vw] md:w-[7.71vw]" src="images/footer/Logo SI.png" alt="Logo SI">
-                        <img class="w-[9.97vw] md:w-[5.32vw]" src="images/footer/ITS Advancing Humanity SVG.png" alt="Logo ITS Advancing Humanity">
-                        <img class="w-[6.92vw] md:w-[3.78vw]" src="images/footer/Group 13906.png" alt="Logo HMSI">
+                    <div class="flex items-center justify-center gap-[10.63px] md:gap-[17px]">
+                        <img src="images/footer/Group 1410136690.png" alt="" class="w-[93px] h-[32px] md:w-[142px] md:h-[50px]">
+                        <img src="images/footer/Logo SI.png" alt="" class="w-[73px] h-[27px] md:w-[111px] md:h-[42px]">
+                        <img src="images/footer/ITS Advancing Humanity SVG.png" alt="" class="w-[50px] h-[27px] md:w-[76px] md:h-[41px]">
+                        <img src="images/footer/Group 13906.png" alt="" class="w-[70px] h-[28px] object-contain md:w-[54px] md:h-[47px]">
                     </div>
 
-                    <div class="flex flex-row items-center justify-center gap-[2vw] md:gap-[1vw]">
-                        <img class="w-[18.9vw] md:w-[8.86vw]" src="images/footer/Logo Kabinet.png" alt="Logo Kabinet">
-                        <img class="w-[7.24vw] md:w-[3.71vw]" src="images/footer/Frame 48098812.png" alt="Logo Simetri">
-                        <img class="w-[7.97vw] md:w-[4.32vw]" src="images/footer/diktisaintek.png" alt="Logo Dikti Saintek">
-                        <img class="w-[11.92vw] md:w-[3.78vw]" src="images/footer/Mask group.png" alt="Logo Diesnatalis ITS">
+                    <div class="flex items-center justify-center gap-[10.63px] md:gap-[17px]">
+                        <img src="images/footer/Logo Kabinet.png" alt="" class="shrink-0 object-contain w-[84px] h-[25px] md:w-[128px] md:h-[39px]">
+                        <img src="images/footer/Frame 48098812.png" alt="" class="shrink-0 object-contain w-[23px] h-[32px] md:w-[43px] md:h-[48px]">
+                        <img src="images/footer/diktisaintek.png" alt="" class="shrink-0 object-contain w-[32px] h-[27px] md:w-[49px] md:h-[42px]">
+                        <img src="images/footer/Mask group.png" alt="" class="shrink-0 object-contain w-[56px] h-[33px] md:w-[86px] md:h-[50px]">
                     </div>
                 </div>
 
-                <p class="text-[3.5vw] md:text-[1.1vw] font-bold text-[#F9DCB4] font-['Times_New_Roman']">© SIMETRI HMSI ITS</p>
+                <p class="text-[#F9DCB4] text-[13.13px] font-bold leading-[1.4] md:text-[20px]" style="font-family:'Times New Roman',serif;">
+                    © SIMETRI HMSI ITS
+                </p>
             </div>
         </div>
     </footer>
